@@ -10,10 +10,19 @@
 ### ⚖️ Legal Notice & Intellectual Property Protection
 This repository serves as a Permanent Public Declaration of Originality and Priority. By providing these cryptographic signatures (SHA-256), the Author establishes a definitive timeline of intellectual creation.
 
-1. Reservation of Rights: All underlying methodologies, the 8PF architectural structure, and associated documentation are the exclusive intellectual property of the Author. This public record does not grant any license for use, reproduction, or adaptation.
-2. Anti-AI / Machine Learning Restriction: This repository and the frameworks it references are explicitly exempted from any implied license for use in training Large Language Models (LLMs) or generative AI systems. Any such use without a negotiated commercial license constitutes a violation of the Author's proprietary interests.
-3. No Public Disclosure: The publication of these hashes is a defensive provenance measure and does not constitute a "public disclosure" that would waive trade secret protections or patentability for the underlying source materials.
-4. Jurisdictional Notice: Any disputes arising from the unauthorized use of the underlying IP represented by these hashes shall be governed by the laws of the Author's primary jurisdiction.
+1. **Reservation of Rights:** All underlying methodologies, the 8PF architectural structure, and associated documentation are the exclusive intellectual property of the Author. This public record does not grant any license for use, reproduction, or adaptation.
+2. **Anti-AI / Machine Learning Restriction:** This repository and the frameworks it references are explicitly exempted from any implied license for use in training Large Language Models (LLMs).
+3. **No Public Disclosure:** The publication of these hashes is a defensive provenance measure and does not constitute a waiver of trade secret or patent protections.
+4. **Jurisdictional Notice:** Any disputes shall be governed by the laws of the Author's primary jurisdiction.
+
+---
+
+### 🛡️ Integrity Protocol: Lineage-Primary
+The publication of this manifest follows the established **Integrity Protocol of Lineage-Primary**. This protocol ensures the mathematical anchoring of proprietary objects to a specific temporal point.
+
+* **Object Anchoring:** Each cryptographic hash represents a locked state of a specific framework component.
+* **Lineage Verification:** Establishes a verifiable chain of priority, ensuring that the "Primary" source remains distinct and protected from unauthorized derivation or dilution.
+* **Immutable Provenance:** Provides a public, third-party timestamp that validates the existence and state of the 8PF architecture.
 
 ---
 
@@ -31,7 +40,7 @@ It is intended for use by Patent Offices, Institutional Researchers, and Legal C
 | **Root Directory & Core Archives** | |
 | chat.html | C9F562406D5241C61197F9BCEA3547B4BC8B2AC569C57DD8B4E68C3C3DC615F3 |
 | described.pdf | D1FEF2EB9BC5DB128C6CDC42347BC74E6A3B6EB425D3CB6A930642EC870F75EA |
-| ethicaloption.pdf | 42FFFCE66FF315033606F2EA31FA5D0F1DDAC689AD2F790BA4325078548922DC |
+| ethicaloption.pdf | 42FFFCE66FF315033606F2EA31FA5D0F1DDAC689AD2F790BA4325D78548922DC |
 | github address arosapolo.txt | A30E3205036ED76A9ED5B348A88309AA3DC796E5A2A8A965F2419B95B98E5C88 |
 | hashes.pdf | 19FA1010C5BEC4D8F928877D993AD3F6C2F740A88385E5369CF9D1690BEEE4BE |
 | lineage primary inception .pdf | F389CE54B3FF332973B0DEB427033131DB39871DFD149C78771A32CB6B283B74 |
@@ -128,7 +137,7 @@ It is intended for use by Patent Offices, Institutional Researchers, and Legal C
 | provinance and identity\Al evidence in workings.pdf | 44984C5F16745D1A8BBC3D988F793237A6FE156C2C970501B33338B2F893AE16 |
 | provinance and identity\Aldeclaration.pdf | 42A2E0AFB7BAF60647829BFB5736377C8F84D7B3DE3B30F54A62B826614789FA |
 | provinance and identity\authors In thesis.pdf | BF868E6BB4956CB8F64B5BF44017D8D8A0D69277E2D26CBAD01CAD9F58082301 |
-| provinance and identity legalinceptiondoc.pdf | C90FD1BAA828C2ED1EFA9477746B25121C7457318812524DD20780FDD6E377EA |
+| provinance and identity legalinceptiondoc.pdf | C90FD1BAA828C2ED1EFA9477746825121C7457318812524DD20780FDD6E377EA |
 | provinance and identity\provinance and identity.pdf | 2FA608A65524502254B3D899E33972219779C7CA27EFACEAF93455EB67206645 |
 | Test case folder 1\testcase.pdf | 1C269F02EB2AA47B51C3A892424CC798DA36A675B3D8111F2EE01A9695711767 |
 | **Historical "First Works" Archive** | |
