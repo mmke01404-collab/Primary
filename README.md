@@ -151,6 +151,21 @@ It is intended for use by Patent Offices, Institutional Researchers, and Legal C
 | First works 1\DocTest alpha.pdf | 6C4255CE7035F46C610B59DA303AE6B5AC48FE4430EE16205780BFOFDDFC3ED3 |
 | First works 1\lineage primary forks defined.pdf | 7DBC54CB494C26930AEBF1F973DAE5C0591ADEC86A916A41F73263EC4635BBB9 |
 
+1 8PF_Density_Diagnostic_cbyte.pdf
+
+Date: April 2026SHA‑256: f1cbd831ec489933c508493b55ad97b92c48c2202140d620e644f735163b5e40
+
+2. 8PF_Density_Sweet_Spot.pdf
+
+Date: April 2026SHA‑256: e860f5dc537fc1eb27aac9d99feacfc87a442f50d2aed7d226726f79e5bb9c72
+
+3. 8PF_Preservation_Analysis.pdf
+
+Date: April 2026SHA‑256: 84a31816ee8dd5913bf7e5e6fa05a2458391208e14fc6031b90316107d797088
+
+4. total object loss.pdf
+
+Date: April 1, 2026SHA‑256: 32452c555e9b97f3854582d34157e27d5271b6a4d2ff41771952ad5da045b119
 ---
 
 ### 📧 Contact & Professional Inquiries
