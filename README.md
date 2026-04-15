@@ -205,7 +205,6 @@ These files define:
 ./NOTICE
 ./COPYRIGHT.md
 ./PROVENANCE_STATEMENT.md
-./Github Placeholder.pdf
 
 
 ---
