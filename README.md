@@ -95,7 +95,7 @@ And we are building more of them every single second.
 
 ### Open to discussion
 
-This is an early public draft of the idea. I’m genuinely curious what it stirs up for you.
+This is an early public draft of the idea. I’m genuinely curious what people think. 
 
 - Have you run into the Humming Box Problem in your own archives, codebases, or research data?  
 - Where do you see meaning drifting even when the bits stay perfect?  
