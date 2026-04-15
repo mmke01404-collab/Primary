@@ -26,9 +26,7 @@ Examples of unacceptable behavior:
 
 ## Enforcement Responsibilities
 
-The repository maintainer (Matthew Keen / @mmke01404-collab) is responsible for clarifying and enforcing this Code of Conduct.
-
-Maintainers have the right to remove, edit, or reject comments, commits, issues, and other contributions that do not align with this Code of Conduct. They will provide a clear reason for any moderation decision.
+The repository maintainer (Matthew Keen / @mmke01404-collab) is responsible for clarifying and enforcing this Code of Conduct. Maintainers have the right to remove, edit, or reject comments, commits, issues, and other contributions that do not align with this Code of Conduct. They will provide a clear reason for any moderation decision.
 
 ## Scope
 
@@ -36,35 +34,39 @@ This Code of Conduct applies within all community spaces (Issues, Discussions, p
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to **lineage8pf@outlook.com** (subject: `CODE OF CONDUCT REPORT`). All complaints will be reviewed and investigated promptly and fairly.
-
-All maintainers are obligated to respect the privacy and security of the reporter.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to **lineage8pf@outlook.com** (subject: `CODE OF CONDUCT REPORT`). All complaints will be reviewed and investigated promptly and fairly. All maintainers are obligated to respect the privacy and security of the reporter.
 
 ## Enforcement Guidelines
 
 Maintainers will follow these Community Impact Guidelines when determining consequences:
 
 ### 1. Correction
-**Community Impact:** Use of inappropriate language or unprofessional behavior.  
+
+**Community Impact:** Use of inappropriate language or unprofessional behavior.
+
 **Consequence:** A private, written warning from the maintainer.
 
 ### 2. Warning
-**Community Impact:** A pattern of minor violations or a single moderate incident.  
+
+**Community Impact:** A pattern of minor violations or a single moderate incident.
+
 **Consequence:** A public warning. Continued interaction may result in a temporary ban.
 
 ### 3. Temporary Ban
-**Community Impact:** Serious or sustained violation of standards.  
+
+**Community Impact:** Serious or sustained violation of standards.
+
 **Consequence:** Temporary ban from any interaction with the community.
 
 ### 4. Permanent Ban
-**Community Impact:** Harassment, doxxing, or repeated severe violations.  
+
+**Community Impact:** Harassment, doxxing, or repeated severe violations.
+
 **Consequence:** Permanent ban from the repository and all related spaces.
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
-
-It has been lightly modified to reflect the specific concerns of digital preservation, provenance, and the Humming Box Problem.
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1]. It has been lightly modified to reflect the specific concerns of digital preservation, provenance, and the Humming Box Problem.
 
 [homepage]: https://www.contributor-covenant.org
 [v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
