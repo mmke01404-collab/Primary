@@ -1,3 +1,77 @@
+# Cryptographic Manifest — Lineage-Primary Framework
+
+**Work Title:**  
+Humming Box Problem — 8PF & Lineage-Primary Framework
+
+**Author:**  
+Matthew Keen
+
+**Copyright:**  
+© 2026 Matthew Keen  
+All Rights Reserved.
+
+**Hash Algorithm:**  
+SHA-256
+
+**Manifest Version:**  
+v1.0 — Primary Declaration
+
+---
+
+# Manifest Purpose
+
+This manifest records cryptographic hashes representing
+fixed identity states of protected documents.
+
+Each hash functions as:
+
+• A digital fingerprint  
+• A document identity anchor  
+• A lineage reference point  
+
+The materials referenced by this manifest
+are privately retained by the author.
+
+This repository publishes cryptographic identity
+records without distributing original content.
+
+---
+
+# Verification Method
+
+File authenticity may be verified using:
+
+1. Obtain candidate file  
+2. Compute SHA-256 hash  
+3. Compare with recorded hash  
+
+If:
+
+Computed Hash = Recorded Hash
+
+Then:
+
+The file is verified as identical to the
+original recorded state.
+
+---
+
+# Integrity Principle
+
+If file content changes:
+
+The hash changes.
+
+Therefore:
+
+Matching hashes confirm identity continuity.
+
+---
+
+# Full Cryptographic Hash Table
+
+| File Path | SHA-256 |
+|-----------|--------|
 
 # Full Cryptographic Manifest
 
@@ -161,6 +235,49 @@ Hash Algorithm: **SHA-256**
 Verification Source: **Lineage8PFv1.zip**
 
 ---
+
+
+
+# Manifest Integrity Notice
+
+This manifest represents a fixed declaration
+of document identity states at time of publication.
+
+Modification of existing hash values
+may invalidate verification continuity.
+
+New versions should be issued as:
+
+Manifest Version v1.1  
+Manifest Version v2.0  
+
+Rather than altering previous entries.
+
+---
+
+# Attribution Reference
+
+All references to this manifest should cite:
+
+Matthew Keen  
+Humming Box Problem — Lineage-Primary Framework  
+© 2026 Matthew Keen  
+
+---
+
+# Contact
+
+For verification requests or institutional review:
+
+Email: lineage8pf@outlook.com  
+Subject: MANIFEST VERIFICATION REQUEST
+
+---
+
+END OF MANIFEST
+
+
+
 
 # Contact
 
