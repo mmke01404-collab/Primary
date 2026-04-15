@@ -131,7 +131,8 @@ I'm genuinely curious what it stirs up for you.
 - Where have you seen meaning drift while the bits remain intact?
 - What examples — or counter-examples — challenge this idea?
 
-Feel free to open an issue or start a discussion.
+Feel free to open an issue or start a discussion.  
+Please read our **[CONTRIBUTING.md](./CONTRIBUTING.md)** and **[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)** first.
 
 The bits are perfect.  
 The meaning doesn't have to die.
@@ -161,7 +162,7 @@ Full source materials remain privately retained by the author.
 
 The full cryptographic manifest of protected materials is stored in:
 
-**MANIFEST.md**
+**[MANIFEST.md](./MANIFEST.md)**
 
 This manifest contains SHA-256 hashes representing fixed identity states of protected documents.
 
@@ -183,10 +184,10 @@ This repository records lineage identity states rather than distributing object 
 
 This repository includes formal legal and provenance declarations:
 
-**LICENCE**  
-**NOTICE**  
-**COPYRIGHT.md**  
-**PROVENANCE_STATEMENT.md**
+- **[LICENCE](./LICENCE)**
+- **[NOTICE](./NOTICE)**
+- **[COPYRIGHT.md](./COPYRIGHT.md)**
+- **[PROVENANCE_STATEMENT.md](./PROVENANCE_STATEMENT.md)**
 
 These files define:
 
@@ -199,17 +200,15 @@ These files define:
 
 ## Repository Structure
 
-README.md
-MANIFEST.md
-LICENCE
-NOTICE
-COPYRIGHT.md
-PROVENANCE_STATEMENT.md
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
-CONTRIBUTORS.md
-
-
+- **[README.md](./README.md)**
+- **[MANIFEST.md](./MANIFEST.md)**
+- **[LICENCE](./LICENCE)**
+- **[NOTICE](./NOTICE)**
+- **[COPYRIGHT.md](./COPYRIGHT.md)**
+- **[PROVENANCE_STATEMENT.md](./PROVENANCE_STATEMENT.md)**
+- **[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)**
+- **[CONTRIBUTING.md](./CONTRIBUTING.md)**
+- **[CONTRIBUTORS.md](./CONTRIBUTORS.md)**
 
 ---
 
@@ -217,9 +216,9 @@ CONTRIBUTORS.md
 
 This repository is open to discussion about the Humming Box Problem, digital continuity, and the Lineage-Primary framework.
 
-- **Code of Conduct:** [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md)
-- **Contributing Guide:** [`CONTRIBUTING.md`](./CONTRIBUTING.md)
-- **Contributors:** [`CONTRIBUTORS.md`](./CONTRIBUTORS.md)
+- **Code of Conduct:** **[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)**
+- **Contributing Guide:** **[CONTRIBUTING.md](./CONTRIBUTING.md)**
+- **Contributors:** **[CONTRIBUTORS.md](./CONTRIBUTORS.md)**
 
 ---
 
@@ -248,8 +247,8 @@ For verification requests, institutional review or licensing enquiries:
 **Copyright:** © 2026 Matthew Keen
 
 **Hash Algorithm:** SHA-256  
-**Manifest File:** MANIFEST.md
+**Manifest File:** [MANIFEST.md](./MANIFEST.md)
 
 This repository functions as a **cryptographic declaration of authorship and document lineage.**
 
-[Lineage-Primary Repository](https://github.com/mmke01404-collab/Primary)
+**[Lineage-Primary Repository](https://github.com/mmke01404-collab/Primary)**
