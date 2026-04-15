@@ -198,6 +198,7 @@ These files define:
 ---
 
 ## Repository Structure
+
 ./README.md
 ./MANIFEST.md
 ./LICENCE
