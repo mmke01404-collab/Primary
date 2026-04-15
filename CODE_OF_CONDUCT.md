@@ -56,13 +56,13 @@ Maintainers will follow these Community Impact Guidelines when determining conse
 
 **Community Impact:** Serious or sustained violation of standards.
 
-**Consequence:** Temporary ban from any interaction with the community.
+**Consequence:** A temporary ban from any interaction with the community.
 
 ### 4. Permanent Ban
 
 **Community Impact:** Harassment, doxxing, or repeated severe violations.
 
-**Consequence:** Permanent ban from the repository and all related spaces.
+**Consequence:** A permanent ban from the repository and all related spaces.
 
 ## Attribution
 
