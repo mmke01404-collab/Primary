@@ -162,7 +162,7 @@ Full source materials remain privately retained by the author.
 
 The full cryptographic manifest of protected materials is stored in:
 
-MANIFEST.md
+**MANIFEST.md**
 
 This manifest contains SHA-256 hashes representing fixed identity states of protected documents.
 
@@ -245,4 +245,4 @@ Copyright: © 2026 Matthew Keen
 Hash Algorithm: SHA-256  
 Manifest File: MANIFEST.md  
 
-This repository functions as a cryptographic declaration of authorship and document lineage. 
+This repository functions as a cryptographic declaration of authorship and document lineage.
