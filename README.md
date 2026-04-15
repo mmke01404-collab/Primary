@@ -1,19 +1,19 @@
 # Humming Box Problem — 8PF & Lineage-Primary Framework
 
-Author: Matthew Keen  
-Copyright: © 2026 Matthew Keen. All rights reserved.  
-Version: 1.0 — Primary Public Declaration
+**Author:** Matthew Keen  
+**Copyright:** © 2026 Matthew Keen. All rights reserved.  
+**Version:** 1.0 — Primary Public Declaration
 
 ---
 
-# Humming Box
+## Humming Box
 
 **Your files are doomed — but not for the reason you think.**
 
-We’ve spent decades protecting the bits.  
+We've spent decades protecting the bits.  
 We forgot to protect the meaning.
 
-We’ve been sold the wrong problem. Digital preservation isn’t failing because of bit rot. It’s failing because we’ve built a world full of humming boxes.
+We've been sold the wrong problem. Digital preservation isn't failing because of bit rot. It's failing because we've built a world full of humming boxes.
 
 You know the sound — the low, constant whir of a server rack or an old external drive. A machine that is technically alive, but in terms of meaning, already dead.
 
@@ -27,7 +27,7 @@ This is the Humming Box Problem.
 
 ## The Domesday Lesson
 
-In 1986 the BBC created a “future-proof” snapshot of British life on LaserDisc. Fifteen years later the bits were still perfect.
+In 1986 the BBC created a "future-proof" snapshot of British life on LaserDisc. Fifteen years later the bits were still perfect.
 
 No corruption.  
 No loss.
@@ -49,7 +49,7 @@ We checksum it.
 Clone it.  
 Migrate it.
 
-We think we’re saving the ship.
+We think we're saving the ship.
 
 But we preserve the ship  
 and lose the sea.
@@ -72,13 +72,13 @@ The identity does not.
 
 ## The Ship of Theseus Was the Wrong Question
 
-Replacement isn’t the problem.
+Replacement isn't the problem.
 
 **Drift is.**
 
-Digital identity doesn’t break because parts change.
+Digital identity doesn't break because parts change.
 
-It breaks when meaning, context, and interpretation slowly slide out of alignment.
+It breaks when meaning, context and interpretation slowly slide out of alignment.
 
 ---
 
@@ -104,43 +104,43 @@ Stability is the illusion.
 
 Change is the default.
 
-We don’t need more backups.
+We don't need more backups.
 
 We need better maps of change.
 
 If drift is coherent, identity survives.
 
-If it isn’t, identity collapses —  
+If it isn't, identity collapses —  
 no matter how perfect the data is.
 
-A humming box isn’t a memory.
+A humming box isn't a memory.
 
-It’s a mausoleum.
+It's a mausoleum.
 
 And we are building more of them every single second.
 
 ---
 
-# Open to Discussion
+## Open to Discussion
 
 This is an early public draft of the idea.
 
-I’m genuinely curious what it stirs up for you.
+I'm genuinely curious what it stirs up for you.
 
-- Have you encountered the Humming Box Problem in archives, research data, or software systems?  
+- Have you encountered the Humming Box Problem in archives, research data or software systems?  
 - Where have you seen meaning drift while the bits remain intact?  
 - What examples — or counter-examples — challenge this idea?
 
 Feel free to open an issue or start a discussion.
 
 The bits are perfect.  
-The meaning doesn’t have to die.
+The meaning doesn't have to die.
 
-**Let’s talk about continuity.**
+**Let's talk about continuity.**
 
 ---
 
-# Repository Purpose
+## Repository Purpose
 
 This repository serves as a **public cryptographic declaration of authorship and provenance** under the Lineage-Primary framework.
 
@@ -157,7 +157,7 @@ Full source materials remain privately retained by the author.
 
 ---
 
-# Cryptographic Manifest
+## Cryptographic Manifest
 
 The full cryptographic manifest of protected materials is stored in:
 
@@ -169,7 +169,7 @@ Matching hashes confirm document authenticity.
 
 ---
 
-# Integrity Model — Lineage-Primary
+## Integrity Model — Lineage-Primary
 
 Core principle:
 
@@ -179,11 +179,11 @@ This repository records lineage identity states rather than distributing object 
 
 ---
 
-# Legal and Attribution Files
+## Legal and Attribution Files
 
 This repository includes formal legal and provenance declarations:
 
-LICENSE  
+**LICENCE**  
 NOTICE  
 COPYRIGHT.md  
 PROVENANCE_STATEMENT.md  
@@ -197,46 +197,43 @@ These files define:
 
 ---
 
-# Repository Structure
+## Repository Structure
+./README.md
+./MANIFEST.md
+./LICENCE
+./NOTICE
+./COPYRIGHT.md
+./PROVENANCE_STATEMENT.md
+./Github Placeholder.pdf
 
-The following directory tree shows the structure of this repository.
-
-
-├── README.md  
-├── MANIFEST.md  
-├── LICENSE  
-├── NOTICE  
-├── COPYRIGHT.md  
-├── PROVENANCE_STATEMENT.md  
-├── Github Placeholder.pdf  
 
 ---
 
-# Attribution Reference
+## Attribution Reference
 
 All references to this work should cite:
 
 Matthew Keen  
 **Humming Box Problem — Lineage-Primary Framework**  
-© 2026 Matthew Keen  
+© 2026 Matthew Keen
 
 ---
 
-# Contact
+## Contact
 
-For verification requests, institutional review, or licensing inquiries:
+For verification requests, institutional review or licensing enquiries:
 
-Email: lineage8pf@outlook.com  
-Subject: LINEAGE-PRIMARY INQUIRY  
+**Email:** lineage8pf@outlook.com  
+**Subject:** LINEAGE-PRIMARY INQUIRY
 
 ---
 
-# Repository Integrity Status
+## Repository Integrity Status
 
-Author: Matthew Keen  
-Copyright: © 2026 Matthew Keen  
+**Author:** Matthew Keen  
+**Copyright:** © 2026 Matthew Keen
 
-Hash Algorithm: SHA-256  
-Manifest File: MANIFEST.md  
+**Hash Algorithm:** SHA-256  
+**Manifest File:** MANIFEST.md
 
 This repository functions as a **cryptographic declaration of authorship and document lineage.**
