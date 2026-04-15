@@ -1,82 +1,57 @@
 # Cryptographic Manifest — Lineage-Primary Framework
 
-**Work Title:**  
-Humming Box Problem — 8PF & Lineage-Primary Framework
-
-**Author:**  
-Matthew Keen
-
-**Copyright:**  
-© 2026 Matthew Keen  
-All Rights Reserved.
-
-**Hash Algorithm:**  
-SHA-256
-
-**Manifest Version:**  
-v1.0 — Primary Declaration
+**Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
+**Author:** Matthew Keen  
+**Copyright:** © 2026 Matthew Keen. All rights reserved.  
+**Hash Algorithm:** SHA-256  
+**Manifest Version:** v1.0 — Primary Declaration  
 
 ---
 
-# Manifest Purpose
+## Manifest Purpose
 
-This manifest records cryptographic hashes representing
-fixed identity states of protected documents.
+This manifest records cryptographic hashes representing fixed identity states of protected documents.
 
 Each hash functions as:
 
-• A digital fingerprint  
-• A document identity anchor  
-• A lineage reference point  
+- A digital fingerprint
+- A document identity anchor
+- A lineage reference point
 
-The materials referenced by this manifest
-are privately retained by the author.
+The materials referenced by this manifest are privately retained by the author.
 
-This repository publishes cryptographic identity
-records without distributing original content.
+This repository publishes cryptographic identity records without distributing original content.
 
 ---
 
-# Verification Method
+## Verification Method
 
 File authenticity may be verified using:
 
-1. Obtain candidate file  
-2. Compute SHA-256 hash  
-3. Compare with recorded hash  
+1. Obtain candidate file
+2. Compute the SHA-256 hash
+3. Compare with the recorded hash
 
 If:
 
-Computed Hash = Recorded Hash
+`Computed Hash = Recorded Hash`
 
-Then:
-
-The file is verified as identical to the
-original recorded state.
+Then the file is verified as identical to the original recorded state.
 
 ---
 
-# Integrity Principle
+## Integrity Principle
 
-If file content changes:
+If file content changes, the hash changes.
 
-The hash changes.
-
-Therefore:
-
-Matching hashes confirm identity continuity.
+Therefore, matching hashes confirm identity continuity.
 
 ---
 
-# Full Cryptographic Hash Table
+## Full Cryptographic Manifest
 
 | File Path | SHA-256 |
-|-----------|--------|
-
-# Full Cryptographic Manifest
-
-| File Path | SHA-256 |
-|-----------|--------|
+|-----------|---------|
 | Lineage8PF/8PF/8 lens.pdf | 7963678173EF8C47F63B54A702C78C90A3A77F478F3206586EB9BDA9FBA23C1D |
 | Lineage8PF/8PF/8PF for a cross domain analytical tool.pdf | 8519B3C8FD8C40365C43932E91D27DAE1801CC7B1D4BB1DAC0E30EDA2DDEA791 |
 | Lineage8PF/8PF/8PF for digital preservation.pdf | FC994120FDE0E7EB72797FB72B9D1069EE8CA891BC7F061A61E682B04637F4CC |
@@ -228,58 +203,42 @@ Matching hashes confirm identity continuity.
 
 ---
 
-# Repository Integrity Status
+## Repository Integrity Status
 
-Total Files Anchored: **148**  
-Hash Algorithm: **SHA-256**  
-Verification Source: **Lineage8PFv1.zip**
+**Total Files Anchored:** 148  
+**Hash Algorithm:** SHA-256  
+**Verification Source:** Lineage8PFv1.zip  
 
 ---
 
+## Manifest Integrity Notice
 
+This manifest represents a fixed declaration of document identity states at time of publication.
 
-# Manifest Integrity Notice
-
-This manifest represents a fixed declaration
-of document identity states at time of publication.
-
-Modification of existing hash values
-may invalidate verification continuity.
+Modification of existing hash values may invalidate verification continuity.
 
 New versions should be issued as:
 
-Manifest Version v1.1  
-Manifest Version v2.0  
+- Manifest Version v1.1
+- Manifest Version v2.0
 
 Rather than altering previous entries.
 
 ---
 
-# Attribution Reference
+## Attribution Reference
 
 All references to this manifest should cite:
 
 Matthew Keen  
 Humming Box Problem — Lineage-Primary Framework  
-© 2026 Matthew Keen  
+© 2026 Matthew Keen
 
 ---
 
-# Contact
+## Contact
 
 For verification requests or institutional review:
 
-Email: lineage8pf@outlook.com  
-Subject: MANIFEST VERIFICATION REQUEST
-
----
-
-END OF MANIFEST
-
-
-
-
-# Contact
-
-Email: lineage8pf@outlook.com  
-Subject: 8PF PRIORITY INQUIRY - [Organisation]
+**Email:** lineage8pf@outlook.com  
+**Subject:** MANIFEST VERIFICATION REQUEST
