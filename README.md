@@ -1,13 +1,14 @@
 # Humming Box Problem — 8PF & Lineage-Primary Framework
 
 Author: Matthew Keen  
-Copyright: © 2026 Matthew Keen. All rights reserved.
+Copyright: © 2026 Matthew Keen. All rights reserved.  
+Version: 1.0 — Primary Public Declaration
 
 ---
 
 # Humming Box
 
-Your files are doomed — but not for the reason you think.
+**Your files are doomed — but not for the reason you think.**
 
 We’ve spent decades protecting the bits.  
 We forgot to protect the meaning.
@@ -73,7 +74,7 @@ The identity does not.
 
 Replacement isn’t the problem.
 
-Drift is.
+**Drift is.**
 
 Digital identity doesn’t break because parts change.
 
@@ -126,24 +127,22 @@ This is an early public draft of the idea.
 
 I’m genuinely curious what it stirs up for you.
 
-Have you encountered the Humming Box Problem in archives, research data, or software systems?
-
-Where have you seen meaning drift while the bits remain intact?
-
-What examples — or counter-examples — challenge this idea?
+- Have you encountered the Humming Box Problem in archives, research data, or software systems?  
+- Where have you seen meaning drift while the bits remain intact?  
+- What examples — or counter-examples — challenge this idea?
 
 Feel free to open an issue or start a discussion.
 
 The bits are perfect.  
 The meaning doesn’t have to die.
 
-Let’s talk about continuity.
+**Let’s talk about continuity.**
 
 ---
 
 # Repository Purpose
 
-This repository serves as a public cryptographic declaration of authorship and provenance under the Lineage-Primary framework.
+This repository serves as a **public cryptographic declaration of authorship and provenance** under the Lineage-Primary framework.
 
 It establishes:
 
@@ -174,7 +173,7 @@ Matching hashes confirm document authenticity.
 
 Core principle:
 
-Identity persists through continuity, not static preservation.
+**Identity persists through continuity, not static preservation.**
 
 This repository records lineage identity states rather than distributing object copies.
 
@@ -202,8 +201,7 @@ These files define:
 
 The following directory tree shows the structure of this repository.
 
-Primary/
-
+./
 ├── README.md  
 ├── MANIFEST.md  
 ├── LICENSE  
@@ -212,10 +210,6 @@ Primary/
 ├── PROVENANCE_STATEMENT.md  
 ├── Github Placeholder.pdf  
 
-This structure defines the public lineage anchor for the Lineage-Primary framework.
-
-Each file contributes to the declared cryptographic and legal provenance of the work.
-
 ---
 
 # Attribution Reference
@@ -223,7 +217,7 @@ Each file contributes to the declared cryptographic and legal provenance of the 
 All references to this work should cite:
 
 Matthew Keen  
-Humming Box Problem — Lineage-Primary Framework  
+**Humming Box Problem — Lineage-Primary Framework**  
 © 2026 Matthew Keen  
 
 ---
@@ -245,4 +239,4 @@ Copyright: © 2026 Matthew Keen
 Hash Algorithm: SHA-256  
 Manifest File: MANIFEST.md  
 
-This repository functions as a cryptographic declaration of authorship and document lineage. 
+This repository functions as a **cryptographic declaration of authorship and document lineage.**
