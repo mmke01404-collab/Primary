@@ -7,6 +7,118 @@
 
 ---
 
+# Humming Box
+
+**Your files are doomed — but not for the reason you think.**
+
+We’ve spent decades protecting the bits.  
+We forgot to protect the meaning.
+
+We’ve been sold the wrong problem. Digital preservation isn’t failing because of bit rot. It’s failing because we’ve built a world full of humming boxes.
+
+You know the sound — the low, constant whir of a server rack or an old external drive. A machine that is technically alive, but in terms of meaning, already dead.
+
+The data is intact. The system is running. And yet — there is nothing left to understand.
+
+This is the Humming Box Problem.
+
+---
+
+### The Domesday Lesson
+
+In 1986 the BBC created a “future-proof” snapshot of British life on LaserDisc. Fifteen years later the bits were still perfect. No corruption. No loss.
+
+The hardware was gone.  
+The software was extinct.  
+The interpretive context had vanished.
+
+The box was still humming.  
+It just had nothing left to say.
+
+---
+
+### The Real Delusion
+
+We preserve files as if the object *is* the thing.  
+We checksum it. Clone it. Migrate it.
+
+We think we’re saving the ship.  
+But we preserve the ship and lose the sea.
+
+You can keep a PDF bit-perfect for a century.  
+But when the last person who understands its cultural context is gone and the last system that renders it correctly has disappeared… what remains?
+
+Not a living document.  
+A semantic tombstone.
+
+The object survives.  
+The identity does not.
+
+---
+
+### The Ship of Theseus Was the Wrong Question
+
+Replacement isn’t the problem.  
+**Drift** is.
+
+Digital identity doesn’t break because parts change. It breaks when meaning, context, and interpretation slowly slide out of alignment.
+
+---
+
+### The Human Body Proves the Point
+
+Your body replaces most of its cells over time, yet you remain you.  
+Identity survives turnover because it lives in *continuity*, not in the components.
+
+This is the lesson digital preservation keeps missing.
+
+---
+
+### Stop Preserving. Start Engineering Continuity.
+
+Preservation assumes stability.  
+Stability is the illusion.  
+Change is the default.
+
+We don’t need more backups.  
+We need better maps of change.
+
+If drift is coherent, identity survives.  
+If it isn’t, identity collapses — no matter how perfect the data is.
+
+A humming box isn’t a memory.  
+It’s a mausoleum.
+
+And we are building more of them every single second.
+
+---
+
+### Open to discussion
+
+This is an early public draft of the idea. I’m genuinely curious what it stirs up for you.
+
+- Have you run into the Humming Box Problem in your own archives, codebases, or research data?  
+- Where do you see meaning drifting even when the bits stay perfect?  
+- What examples (or counter-examples) come to mind?
+
+Feel free to open an issue, leave a comment, or start a discussion. I read every one and the conversation is the point.
+
+The bits are perfect.  
+The meaning doesn’t have to die.
+
+**Let’s talk about how we trace continuity.**
+
+---
+
+### 📜 Cryptographic Provenance & Integrity Archive (8PF & Lineage-Primary Framework)
+
+**© 2026 Matthew Keen. All rights reserved.**  
+This repository serves as **public evidence of authorship and creation date** under the Lineage-Primary provenance model.
+
+*(Your full existing legal notice, Integrity Protocol, Statement of Purpose, and complete SHA-256 manifest table go here exactly as they are now.)*
+
+**Repository for immutable SHA-256 hashes of all foundational 8PF documents.**
+
 ### ⚖️ Legal Notice & Intellectual Property Protection
 This repository serves as a Permanent Public Declaration of Originality and Priority. By providing these cryptographic signatures (SHA-256), the Author establishes a definitive timeline of intellectual creation.
 
