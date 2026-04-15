@@ -120,7 +120,7 @@ It establishes:
 • Cryptographic identity anchoring  
 • Document lineage continuity  
 
-This repository publishes **cryptographic hashes** of protected materials without distributing the original source files.
+This repository publishes **cryptographic hashes** of protected materials without distributing original source files.
 
 Full source materials remain privately retained by the author.
 
@@ -128,7 +128,7 @@ Full source materials remain privately retained by the author.
 
 # Cryptographic Manifest
 
-The complete cryptographic manifest of protected materials is stored in:
+The full cryptographic manifest of protected materials is stored in:
 
 Manifest.md
 
