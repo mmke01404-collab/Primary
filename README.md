@@ -201,7 +201,7 @@ These files define:
 
 The following directory tree shows the structure of this repository.
 
-./
+
 ├── README.md  
 ├── MANIFEST.md  
 ├── LICENSE  
