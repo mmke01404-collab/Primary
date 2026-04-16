@@ -1,6 +1,6 @@
 # Humming Box Problem — 8PF & Lineage-Primary Framework
 
-**Author:** M. Keen
+**Author:** M.Keen
 **Copyright:** © 2026 M.Keen. All rights reserved.  
 **Version:** 1.0 — Primary Public Declaration
 
