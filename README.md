@@ -1,6 +1,6 @@
 # Humming Box Problem — 8PF & Lineage-Primary Framework
 
-**Author:** Matthew Keen  
+**Author:** M. Keen
 **Copyright:** © 2026 Matthew Keen. All rights reserved.  
 **Version:** 1.0 — Primary Public Declaration
 
@@ -226,9 +226,9 @@ This repository is open to discussion about the Humming Box Problem, digital con
 
 All references to this work should cite:
 
-Matthew Keen  
+M.Keen  
 **Humming Box Problem — Lineage-Primary Framework**  
-© 2026 Matthew Keen
+© 2026 M.Keen
 
 ---
 
@@ -243,8 +243,8 @@ For verification requests, institutional review or licensing enquiries:
 
 ## Repository Integrity Status
 
-**Author:** Matthew Keen  
-**Copyright:** © 2026 Matthew Keen
+**Author:** M.Keen
+**Copyright:** © 2026 M.Keen
 
 **Hash Algorithm:** SHA-256  
 **Manifest File:** [MANIFEST.md](./MANIFEST.md)
