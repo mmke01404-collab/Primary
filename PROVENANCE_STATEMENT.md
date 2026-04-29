@@ -99,7 +99,7 @@ Matthew Keen
 **Humming Box Problem — Lineage-Primary Framework**  
 © 2026 Matthew Keen  
 
----
+--
 
 # Contact
 
