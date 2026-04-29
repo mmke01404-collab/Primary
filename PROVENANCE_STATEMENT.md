@@ -64,3 +64,23 @@ If:
 
 ```text
 Computed Hash = Recorded Hash
+
+
+---
+
+## Current Cryptographic State
+
+Manifest Version: v4.1  
+Declaration Date: 29 April 2026  
+
+Source Archive:
+Lineage8PFApril26.zip  
+
+Archive SHA-256:
+2AF10231A223D17A710C1613C9F3534D6ADA46A2EB721AEFC7E63DCCC0913F09  
+
+Total Files Anchored:
+175  
+
+Status:
+Active — First Canonical Manifest Declaration
