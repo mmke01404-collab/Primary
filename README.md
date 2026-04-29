@@ -140,8 +140,8 @@ I'm genuinely curious what it stirs up for you.
 
 Please read:
 
-- CONTRIBUTING.md  
-- CODE_OF_CONDUCT.md  
+- [CONTRIBUTING.md](./CONTRIBUTING.md)  
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)  
 
 before participating.
 
@@ -173,7 +173,7 @@ Full source materials remain privately retained by the author.
 
 The full cryptographic manifest of protected materials is stored in:
 
-**MANIFEST.md**
+**[MANIFEST.md](./MANIFEST.md)**
 
 **Current Manifest Version:** v4.1  
 **Archive Source:** Lineage8PFApril26.zip  
@@ -205,10 +205,10 @@ This repository records lineage identity states rather than distributing object 
 
 This repository includes formal legal and provenance declarations:
 
-- LICENCE  
-- NOTICE  
-- COPYRIGHT.md  
-- PROVENANCE_STATEMENT.md  
+- [LICENCE](./LICENCE)  
+- [NOTICE](./NOTICE)  
+- [COPYRIGHT.md](./COPYRIGHT.md)  
+- [PROVENANCE_STATEMENT.md](./PROVENANCE_STATEMENT.md)  
 
 These files define:
 
@@ -224,13 +224,13 @@ These files define:
 Core repository files:
 
 - README.md  
-- MANIFEST.md  
-- LICENCE  
-- NOTICE  
-- COPYRIGHT.md  
-- PROVENANCE_STATEMENT.md  
-- CODE_OF_CONDUCT.md  
-- CONTRIBUTING.md  
+- [MANIFEST.md](./MANIFEST.md)  
+- [LICENCE](./LICENCE)  
+- [NOTICE](./NOTICE)  
+- [COPYRIGHT.md](./COPYRIGHT.md)  
+- [PROVENANCE_STATEMENT.md](./PROVENANCE_STATEMENT.md)  
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)  
+- [CONTRIBUTING.md](./CONTRIBUTING.md)  
 - CONTRIBUTORS.md  
 
 ---
@@ -245,8 +245,8 @@ This repository is open to discussion about:
 
 Participation guidelines:
 
-- CODE_OF_CONDUCT.md  
-- CONTRIBUTING.md  
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)  
+- [CONTRIBUTING.md](./CONTRIBUTING.md)  
 
 ---
 
@@ -276,7 +276,7 @@ For verification requests, institutional review, or licensing enquiries:
 
 **Hash Algorithm:** SHA-256  
 
-**Manifest File:** MANIFEST.md  
+**Manifest File:** [MANIFEST.md](./MANIFEST.md)  
 **Manifest Version:** v4.1  
 
 This repository functions as a **cryptographic declaration of authorship and document lineage.**
