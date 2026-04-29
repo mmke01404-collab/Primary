@@ -1,17 +1,9 @@
 # Cryptographic Provenance Statement
 
-**Work Title:**  
-Humming Box Problem — 8PF & Lineage-Primary Framework
-
-**Author:**  
-Matthew Keen
-
-**Date of Declaration:**  
-2026
-
-**Copyright:**  
-© 2026 Matthew Keen  
-All Rights Reserved.
+**Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
+**Author:** Matthew Keen  
+**Date of Declaration:** 2026  
+**Copyright:** © 2026 Matthew Keen. All Rights Reserved.
 
 ---
 
@@ -56,31 +48,62 @@ Matching hashes confirm that a file is identical to the original recorded versio
 
 File authenticity may be verified using the following process:
 
-1. Obtain the original file
-2. Compute the SHA-256 hash
-3. Compare the result with the hash listed in the repository manifest
+1. Obtain the candidate file  
+2. Compute the SHA-256 hash  
+3. Compare the result with the hash listed in the repository manifest  
 
 If:
 
-```text
-Computed Hash = Recorded Hash
+**Computed Hash = Recorded Hash**
 
+Then:
+
+The file is verified as byte-identical to the recorded identity state.
 
 ---
 
-## Current Cryptographic State
+# Current Cryptographic State
 
 Manifest Version: v4.1  
 Declaration Date: 29 April 2026  
 
-Source Archive:
+Source Archive:  
 Lineage8PFApril26.zip  
 
-Archive SHA-256:
+Archive SHA-256:  
 2AF10231A223D17A710C1613C9F3534D6ADA46A2EB721AEFC7E63DCCC0913F09  
 
-Total Files Anchored:
+Total Files Anchored:  
 175  
 
-Status:
+Status:  
 Active — First Canonical Manifest Declaration
+
+---
+
+# Integrity Declaration
+
+This provenance statement reflects the declared identity state of the repository at the time of manifest publication.
+
+Any modification to recorded files will result in a change to their cryptographic hash values and will therefore produce a new identity state.
+
+New identity states must be recorded through issuance of a new manifest version rather than alteration of existing records.
+
+---
+
+# Attribution Reference
+
+All references to this work should cite:
+
+Matthew Keen  
+**Humming Box Problem — Lineage-Primary Framework**  
+© 2026 Matthew Keen  
+
+---
+
+# Contact
+
+For verification requests, institutional review, or provenance enquiries:
+
+**Email:** lineage8pf@outlook.com  
+**Subject:** MANIFEST VERIFICATION REQUEST
