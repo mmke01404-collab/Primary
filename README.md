@@ -201,6 +201,18 @@ This repository records lineage identity states rather than distributing object 
 
 ---
 
+# Conceptual Demonstration — Baton and the Race
+
+A conceptual illustration of lineage continuity using a relay model:
+
+**[Baton and the Race — 8PF v9.1 Lite](./docs/Baton_and_the_Race_8PF_v9.1_Lite.pdf)**
+
+This document provides a visual and narrative model demonstrating how identity persists through ordered continuity rather than static preservation.
+
+It serves as an explanatory companion to the Lineage-Primary framework.
+
+---
+
 # Legal and Attribution Files
 
 This repository includes formal legal and provenance declarations:
@@ -232,6 +244,7 @@ Core repository files:
 - [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)  
 - [CONTRIBUTING.md](./CONTRIBUTING.md)  
 - CONTRIBUTORS.md  
+- docs/Baton_and_the_Race_8PF_v9.1_Lite.pdf  
 
 ---
 
