@@ -107,3 +107,16 @@ For verification requests, institutional review, or provenance enquiries:
 
 **Email:** lineage8pf@outlook.com  
 **Subject:** MANIFEST VERIFICATION REQUEST
+
+Supporting Repository Document:
+
+docs/baton-and-racev2.pdf
+
+Title:
+Baton and the Race — Lineage Continuity Demonstration
+
+Status:
+Public Conceptual Demonstration
+
+Role:
+Illustrative model supporting the Lineage-Primary framework.
