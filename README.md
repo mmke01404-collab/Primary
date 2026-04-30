@@ -131,8 +131,8 @@ I'm genuinely curious what it stirs up for you.
 
 Please read:
 
-- **CONTRIBUTING.md**  
-- **CODE_OF_CONDUCT.md**
+- **[CONTRIBUTING.md](CONTRIBUTING.md)**  
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**  
 
 before participating.
 
@@ -178,7 +178,7 @@ Together, the Humming Box Problem and The Cognitive Bicycle examine continuity a
 
 The full cryptographic manifest of protected materials is stored in:
 
-**MANIFEST.md**
+- **[MANIFEST.md](MANIFEST.md)**
 
 - **Current Manifest Version:** v4.1  
 - **Archive Source:** Lineage8PFApril26.zip  
@@ -187,10 +187,6 @@ The full cryptographic manifest of protected materials is stored in:
 `2AF10231A223D17A710C1613C9F3534D6ADA46A2EB721AEFC7E63DCCC0913F09`
 
 Total Files Anchored: **175**
-
-This manifest contains SHA‑256 hashes representing fixed identity states of protected documents.
-
-Matching hashes confirm document authenticity.
 
 Previous manifest versions remain immutable historical records.
 
@@ -209,7 +205,7 @@ This repository records lineage identity states rather than distributing object 
 
 A conceptual illustration of lineage continuity using a relay model:
 
-**docs/baton-and-racev2.pdf**
+- **[docs/baton-and-racev2.pdf](docs/baton-and-racev2.pdf)**
 
 This document provides a visual and narrative model demonstrating how identity persists through ordered continuity rather than static preservation.
 
@@ -219,10 +215,10 @@ This document provides a visual and narrative model demonstrating how identity p
 
 This repository includes formal legal and provenance declarations:
 
-- LICENCE  
-- NOTICE  
-- COPYRIGHT.md  
-- PROVENANCE_STATEMENT.md  
+- **[LICENCE](LICENCE)**  
+- **[NOTICE](NOTICE)**  
+- **[COPYRIGHT.md](COPYRIGHT.md)**  
+- **[PROVENANCE_STATEMENT.md](PROVENANCE_STATEMENT.md)**  
 
 These files define:
 
@@ -237,16 +233,16 @@ These files define:
 
 Core repository files:
 
-- README.md  
-- MANIFEST.md  
-- LICENCE  
-- NOTICE  
-- COPYRIGHT.md  
-- PROVENANCE_STATEMENT.md  
-- CODE_OF_CONDUCT.md  
-- CONTRIBUTING.md  
-- CONTRIBUTORS.md  
-- docs/baton-and-racev2.pdf  
+- **[README.md](README.md)**  
+- **[MANIFEST.md](MANIFEST.md)**  
+- **[LICENCE](LICENCE)**  
+- **[NOTICE](NOTICE)**  
+- **[COPYRIGHT.md](COPYRIGHT.md)**  
+- **[PROVENANCE_STATEMENT.md](PROVENANCE_STATEMENT.md)**  
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**  
+- **[CONTRIBUTING.md](CONTRIBUTING.md)**  
+- **[CONTRIBUTORS.md](CONTRIBUTORS.md)**  
+- **[docs/baton-and-racev2.pdf](docs/baton-and-racev2.pdf)**  
 
 ---
 
@@ -260,8 +256,8 @@ This repository is open to discussion about:
 
 Participation guidelines:
 
-- CODE_OF_CONDUCT.md  
-- CONTRIBUTING.md  
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**  
+- **[CONTRIBUTING.md](CONTRIBUTING.md)**  
 
 ---
 
