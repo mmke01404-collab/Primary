@@ -177,8 +177,8 @@ A companion manuscript extends these ideas into the domain of **AI-assisted scho
 
 *A framework for documenting human direction, authorship, and reasoning continuity in AI-assisted work.*
 
-📄 **Read the manuscript:**  
-[The Cognitive Bicycle v2.3 (PDF)](https://raw.githubusercontent.com/lineageframework/Cognitive-Bicycle/main/CognitiveBicycle_v2.3.pdf)
+📄 **Read the manuscript (v2.3 — browser preview):**  
+[The Cognitive Bicycle — Honest AI Use & Intellectual Lineage](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
 
 Together, the Humming Box Problem and The Cognitive Bicycle examine continuity across both **digital systems** and **human reasoning**, using lineage as the unifying analytical principle.
 
