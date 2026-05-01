@@ -179,7 +179,7 @@ Applied Architecture — Raw + 8PF Resilience
 
 https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf
 
-A technical application specification demonstrating how lineage-first preservation can be implemented.
+A technical application specification examining possible lineage-first preservation options. 
 
 ---
 
