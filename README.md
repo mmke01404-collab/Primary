@@ -150,6 +150,43 @@ Let’s talk about continuity.
 
 ---
 
+# Core Documents — Navigation
+
+This repository contains several linked works that together form the working foundation of the **Lineage-Primary framework**.
+
+---
+
+## Conceptual Demonstration — Baton and the Race
+
+A conceptual illustration of lineage continuity using a relay model:
+
+**[Baton and the Race](https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf)**
+
+This document provides a visual and narrative model demonstrating how identity persists through ordered continuity rather than static preservation.
+
+---
+
+## Historical Reflection — Library and the Lineage
+
+A practical reflection examining how traditional libraries operated as record-first systems and why continuity depended on catalogues rather than individual books.
+
+**[Library and the Lineage](https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pdf)**
+
+This document demonstrates how continuity was historically preserved through records rather than objects.
+
+---
+
+## Companion Framework — The Cognitive Bicycle
+
+*A framework for documenting human direction, authorship, and reasoning continuity in AI-assisted work.*
+
+📄 **Read the manuscript (v2.3 — browser preview):**  
+[The Cognitive Bicycle — Honest AI Use & Intellectual Lineage](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
+
+Together, the Humming Box Problem and The Cognitive Bicycle examine continuity across both **digital systems** and **human reasoning**, using lineage as the unifying analytical principle.
+
+---
+
 # Repository Purpose
 
 This repository serves as a public cryptographic declaration of authorship and provenance under the **Lineage-Primary framework**.
@@ -164,23 +201,6 @@ It establishes:
 This repository publishes cryptographic hashes of protected materials **without** distributing original source files.
 
 Full source materials remain privately retained by the author.
-
----
-
-# Intellectual Lineage — Companion Project
-
-This work forms part of a broader exploration into continuity, identity, and the structures that preserve meaning across time.
-
-A companion manuscript extends these ideas into the domain of **AI-assisted scholarship**, authorship, and intellectual responsibility:
-
-## The Cognitive Bicycle — Honest AI Use & Intellectual Lineage
-
-*A framework for documenting human direction, authorship, and reasoning continuity in AI-assisted work.*
-
-📄 **Read the manuscript (v2.3 — browser preview):**  
-[The Cognitive Bicycle — Honest AI Use & Intellectual Lineage](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
-
-Together, the Humming Box Problem and The Cognitive Bicycle examine continuity across both **digital systems** and **human reasoning**, using lineage as the unifying analytical principle.
 
 ---
 
@@ -209,16 +229,6 @@ Previous manifest versions remain immutable historical records.
 **Identity persists through continuity, not static preservation.**
 
 This repository records lineage identity states rather than distributing object copies.
-
----
-
-# Conceptual Demonstration — Baton and the Race
-
-A conceptual illustration of lineage continuity using a relay model:
-
-**[docs/baton-and-racev2.pdf](https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf)**
-
-This document provides a visual and narrative model demonstrating how identity persists through ordered continuity rather than static preservation.
 
 ---
 
@@ -253,7 +263,11 @@ Core repository files:
 - **CODE_OF_CONDUCT.md**  
 - **CONTRIBUTING.md**  
 - **CONTRIBUTORS.md**  
-- **docs/baton-and-racev2.pdf**
+
+Supporting documents:
+
+- **docs/baton-and-racev2.pdf**  
+- **docs/library and the lineage.pdf**
 
 ---
 
