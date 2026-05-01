@@ -141,52 +141,65 @@ And we are building more of them every second.
 
 ---
 
-# Start Here — Recommended Reading Order
+# Why This Matters
+
+Loss of identity is not rare.
+
+It is predictable when transformation is not recorded.
+
+This repository demonstrates how continuity can remain visible even when systems evolve.
+
+---
+
+# Start Here
 
 If you are new to this work:
 
-1. Baton and the Race — conceptual demonstration  
-2. Library and the Lineage — historical reflection  
-3. Raw + 8PF Resilience — applied architecture  
-4. Cryptographic Manifest — verification anchor  
+1. [Baton and the Race](docs/baton-and-racev2.pdf)  
+   Conceptual demonstration of lineage continuity.
+
+2. [Library and the Lineage](docs/library%20and%20the%20lineage.pdf)  
+   Historical reflection on continuity-first systems.
+
+3. [Raw + 8PF Resilience](docs/raw+8pf%20resillience.pdf)  
+   Applied architecture exploration.
+
+4. [Cryptographic Manifest](MANIFEST.md)  
+   Verification and provenance anchor.
 
 ---
 
-# Core Documents — Navigation
+# Core Documents
 
-This repository contains several linked works that together form the working foundation of the Lineage-Primary framework.
+## Baton and the Race
 
----
+[Read Baton and the Race](docs/baton-and-racev2.pdf)
 
-## Conceptual Demonstration — Baton and the Race
-
-A conceptual illustration of lineage continuity using a relay model.
-
-[Read Baton and the Race](https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf)
+Conceptual illustration showing how identity persists through sequential transmission.
 
 ---
 
-## Historical Reflection — Library and the Lineage
+## Library and the Lineage
 
-A practical reflection examining how traditional libraries operated as record-first systems.
+[Read Library and the Lineage](docs/library%20and%20the%20lineage.pdf)
 
-[Read Library and the Lineage](https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pdf)
-
----
-
-## Applied Architecture — Raw + 8PF Resilience
-
-A technical application specification examining possible lineage-first preservation options.
-
-[Read Raw + 8PF Resilience](https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf)
+Practical reflection examining how traditional libraries operated as record-first systems.
 
 ---
 
-## Companion Framework — The Cognitive Bicycle
+## Raw + 8PF Resilience
 
-A framework for documenting human direction and authorship in AI-assisted work.
+[Read Raw + 8PF Resilience](docs/raw+8pf%20resillience.pdf)
+
+Technical application specification exploring lineage-first preservation.
+
+---
+
+## The Cognitive Bicycle
 
 [Read The Cognitive Bicycle](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
+
+Framework describing human direction and authorship in AI-assisted work.
 
 ---
 
@@ -209,9 +222,9 @@ Full source materials remain privately retained by the author.
 
 # Cryptographic Manifest
 
-[Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
+[Open MANIFEST.md](MANIFEST.md)
 
-Current Manifest Version: **v4.1**  
+Current Manifest Version: **v4.1**
 
 Archive Source: **Lineage8PFApril26.zip**
 
@@ -229,10 +242,10 @@ Previous manifest versions remain immutable historical records.
 
 # Legal and Attribution Files
 
-- LICENCE  
-- NOTICE  
-- COPYRIGHT.md  
-- PROVENANCE_STATEMENT.md  
+- [LICENCE](LICENCE)  
+- [NOTICE](NOTICE)  
+- [COPYRIGHT.md](COPYRIGHT.md)  
+- [PROVENANCE_STATEMENT.md](PROVENANCE_STATEMENT.md)
 
 ---
 
@@ -249,8 +262,8 @@ Feedback is welcomed from:
 
 Before participating, please review:
 
-- CONTRIBUTING.md  
-- CODE_OF_CONDUCT.md  
+- [CONTRIBUTING.md](CONTRIBUTING.md)  
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ---
 
@@ -265,9 +278,7 @@ Subject: **LINEAGE-PRIMARY INQUIRY**
 # Repository Integrity Status
 
 Author: M. Keen  
-Copyright: © 2026 M. Keen  
 Hash Algorithm: SHA-256  
-Manifest File: MANIFEST.md  
 Manifest Version: v4.1  
 
 This repository functions as a cryptographic declaration of authorship and document lineage.
