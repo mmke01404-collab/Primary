@@ -134,13 +134,13 @@ I’m genuinely curious what it stirs up for you.
 
 Have you encountered the Humming Box Problem in archives, research data, or software systems?  
 Where have you seen meaning drift while the bits remain intact?  
-What examples — or counter-examples — challenge this idea?  
+What examples — or counter-examples — challenge this idea?
 
 Please read:
 
-[CONTRIBUTING.md](https://mmke01404-collab.github.io/Primary/CONTRIBUTING.md)
+[CONTRIBUTING.md](https://github.com/mmke01404-collab/Primary/blob/main/CONTRIBUTING.md)
 
-[CODE_OF_CONDUCT.md](https://mmke01404-collab.github.io/Primary/CODE_OF_CONDUCT.md)
+[CODE_OF_CONDUCT.md](https://github.com/mmke01404-collab/Primary/blob/main/CODE_OF_CONDUCT.md)
 
 before participating.
 
@@ -208,7 +208,7 @@ Full source materials remain privately retained by the author.
 
 # Cryptographic Manifest
 
-[MANIFEST.md](https://mmke01404-collab.github.io/Primary/MANIFEST.html)
+[MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
 
 Current Manifest Version: v4.1  
 Archive Source: Lineage8PFApril26.zip  
@@ -220,6 +220,15 @@ Archive SHA-256:
 Total Files Anchored: 175  
 
 Previous manifest versions remain immutable historical records.
+
+---
+
+# Legal and Attribution Files
+
+[LICENCE](https://github.com/mmke01404-collab/Primary/blob/main/LICENCE)  
+[NOTICE](https://github.com/mmke01404-collab/Primary/blob/main/NOTICE)  
+[COPYRIGHT.md](https://github.com/mmke01404-collab/Primary/blob/main/COPYRIGHT.md)  
+[PROVENANCE_STATEMENT.md](https://github.com/mmke01404-collab/Primary/blob/main/PROVENANCE_STATEMENT.md)
 
 ---
 
