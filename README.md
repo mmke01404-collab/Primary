@@ -162,7 +162,7 @@ This repository contains several linked works that together form the working fou
 
 A conceptual illustration of lineage continuity using a relay model.
 
-https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf
+[Read Baton and the Race](https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf)
 
 ---
 
@@ -170,7 +170,7 @@ https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf
 
 A practical reflection examining how traditional libraries operated as record-first systems.
 
-https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pdf
+[Read Library and the Lineage](https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pdf)
 
 ---
 
@@ -178,7 +178,7 @@ https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pd
 
 A technical application specification examining possible lineage-first preservation options.
 
-https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf
+[Read Raw + 8PF Resilience](https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf)
 
 ---
 
@@ -186,7 +186,7 @@ https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf
 
 A framework for documenting human direction and authorship in AI-assisted work.
 
-https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf
+[Read The Cognitive Bicycle](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
 
 ---
 
@@ -196,10 +196,10 @@ This repository serves as a public cryptographic declaration of authorship and p
 
 It establishes:
 
-Authorship declaration  
-Priority of creation  
-Cryptographic identity anchoring  
-Document lineage continuity  
+- Authorship declaration  
+- Priority of creation  
+- Cryptographic identity anchoring  
+- Document lineage continuity  
 
 This repository publishes cryptographic hashes of protected materials without distributing original source files.
 
@@ -209,16 +209,19 @@ Full source materials remain privately retained by the author.
 
 # Cryptographic Manifest
 
-https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md
+[Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
 
-Current Manifest Version: v4.1  
-Archive Source: Lineage8PFApril26.zip  
+Current Manifest Version: **v4.1**  
+
+Archive Source: **Lineage8PFApril26.zip**
 
 Archive SHA-256:
 
+```
 2AF10231A223D17A710C1613C9F3534D6ADA46A2EB721AEFC7E63DCCC0913F09
+```
 
-Total Files Anchored: 175  
+Total Files Anchored: **175**
 
 Previous manifest versions remain immutable historical records.
 
@@ -226,10 +229,10 @@ Previous manifest versions remain immutable historical records.
 
 # Legal and Attribution Files
 
-LICENCE  
-NOTICE  
-COPYRIGHT.md  
-PROVENANCE_STATEMENT.md  
+- LICENCE  
+- NOTICE  
+- COPYRIGHT.md  
+- PROVENANCE_STATEMENT.md  
 
 ---
 
@@ -239,22 +242,23 @@ This repository is published as an early public declaration.
 
 Feedback is welcomed from:
 
-Archivists  
-Software engineers  
-Preservation specialists  
-Systems researchers  
+- Archivists  
+- Software engineers  
+- Preservation specialists  
+- Systems researchers  
 
 Before participating, please review:
 
-CONTRIBUTING.md  
-CODE_OF_CONDUCT.md  
+- CONTRIBUTING.md  
+- CODE_OF_CONDUCT.md  
 
 ---
 
 # Contact
 
-Email: lineage8pf@outlook.com  
-Subject: LINEAGE-PRIMARY INQUIRY  
+Email: **lineage8pf@outlook.com**  
+
+Subject: **LINEAGE-PRIMARY INQUIRY**
 
 ---
 
