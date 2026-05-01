@@ -1,6 +1,6 @@
 # Primary — Lineage-Primary Framework
 
-**Humming Box Problem — 8PF & Lineage-Primary Framework**
+# Humming Box Problem — 8PF & Lineage-Primary Framework
 
 Author: M. Keen  
 Copyright: © 2026 M. Keen  
@@ -10,7 +10,7 @@ Version: 1.0 — Primary Public Declaration
 
 # What This Repository Is
 
-This repository establishes a public declaration of authorship, continuity, and lineage under the Lineage-Primary framework.
+This repository establishes a public declaration of authorship and continuity under the Lineage-Primary framework.
 
 It exists to record:
 
@@ -19,21 +19,7 @@ It exists to record:
 - Cryptographic identity anchoring  
 - Verifiable lineage across revisions  
 
-This repository does not function as a storage archive.
-
-It functions as a **lineage anchor**.
-
----
-
-# Start Here — Recommended Reading Order
-
-Readers new to this work should begin in the following order:
-
-1. **Humming Box Problem** — conceptual foundation  
-2. **Baton and the Race** — continuity demonstration  
-3. **Library and the Lineage** — historical grounding  
-4. **Raw + 8PF Resilience** — applied architecture  
-5. **Cryptographic Manifest** — verification anchor  
+This repository functions as a lineage anchor, not simply a document store.
 
 ---
 
@@ -44,23 +30,20 @@ Your files are doomed — but not for the reason you think.
 We’ve spent decades protecting the bits.  
 We forgot to protect the meaning.
 
-Digital preservation is widely treated as a storage problem.
+We’ve been sold the wrong problem.
 
-It is not.
+Digital preservation isn’t failing because of bit rot.  
+It’s failing because we’ve built a world full of humming boxes.
 
-It is a **continuity problem**.
+You know the sound — the low, constant whir of a server rack or an old external drive.  
+A machine that is technically alive, but in terms of meaning, already silent.
 
-Systems preserve objects.  
-Identity depends on lineage.
+The data is intact.  
+The system is running.
 
-When continuity is not engineered, meaning disappears even when data survives.
+And yet — there is nothing left to understand.
 
-That condition is called:
-
-**The Humming Box Problem**
-
-A system that is technically alive  
-but interpretively silent.
+This is the Humming Box Problem.
 
 ---
 
@@ -68,21 +51,14 @@ but interpretively silent.
 
 In 1986 the BBC created a “future-proof” snapshot of British life on LaserDisc.
 
-Fifteen years later:
+Fifteen years later the bits were still perfect.
 
-- The bits were intact  
-- The data was uncorrupted  
-- The storage medium survived  
+No corruption.  
+No loss.
 
-But:
-
-- The hardware was gone  
-- The software was extinct  
-- The interpretive environment was lost  
-
-The system still existed.
-
-Understanding did not.
+The hardware was gone.  
+The software was extinct.  
+The interpretive context had vanished.
 
 The box was still humming.
 
@@ -90,56 +66,101 @@ It simply had nothing left to say.
 
 ---
 
-# The Core Shift
+# The Real Delusion
 
-Digital preservation traditionally protects:
+We preserve files as if the object is the thing.
 
-**Objects**
+We checksum it.  
+Clone it.  
+Migrate it.
 
-This framework protects:
+We think we’re saving the ship.
 
-**Continuity**
+But we preserve the ship  
+and lose the sea.
 
-Identity is not maintained by freezing objects.
+You can keep a PDF bit-perfect for a century.
 
-Identity is maintained through controlled transformation, declared lineage, and visible change.
+But when the last person who understands its cultural context is gone,  
+and the last system that renders it correctly has disappeared…
 
-Loss of continuity — not loss of bits — is the true failure condition.
+What remains?
+
+Not a living document.  
+A semantic tombstone.
+
+The object survives.  
+The identity does not.
 
 ---
 
-# Why This Repository Exists
+# The Ship of Theseus Was the Wrong Question
 
-This repository serves as a public declaration of lineage continuity.
+Replacement isn’t the problem.  
+Drift is.
 
-It establishes:
+Digital identity doesn’t break because parts change.
 
-- Priority of authorship  
-- Persistence of identity  
-- Verifiable structural continuity  
-- Publicly inspectable provenance  
+It breaks when meaning, context, and interpretation  
+slowly slide out of alignment.
 
-All material referenced here is linked through declared lineage.
+---
 
-Not implied lineage.
+# The Human Body Proves the Point
 
-Not assumed lineage.
+Your body replaces most of its cells over time.
 
-Declared lineage.
+Yet you remain you.
+
+Identity survives turnover  
+because it lives in continuity,  
+not in the components.
+
+This is the lesson digital preservation keeps missing.
+
+---
+
+# Stop Preserving. Start Engineering Continuity.
+
+Preservation assumes stability.
+
+Stability is the illusion.  
+Change is the default.
+
+We don’t need more backups.  
+We need better maps of change.
+
+If drift is coherent, identity survives.  
+If it isn’t, identity collapses —  
+no matter how perfect the data is.
+
+A humming box isn’t a memory.  
+It’s a mausoleum.
+
+And we are building more of them every second.
+
+---
+
+# Start Here — Recommended Reading Order
+
+If you are new to this work:
+
+1. Baton and the Race — conceptual demonstration  
+2. Library and the Lineage — historical reflection  
+3. Raw + 8PF Resilience — applied architecture  
+4. Cryptographic Manifest — verification anchor  
 
 ---
 
 # Core Documents — Navigation
 
-The following documents form the working foundation of this framework.
+This repository contains several linked works that together form the working foundation of the Lineage-Primary framework.
 
 ---
 
 ## Conceptual Demonstration — Baton and the Race
 
-A conceptual demonstration showing how identity persists through sequential transmission.
-
-Read:
+A conceptual illustration of lineage continuity using a relay model.
 
 https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf
 
@@ -147,9 +168,7 @@ https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf
 
 ## Historical Reflection — Library and the Lineage
 
-An examination of traditional library practice as a continuity-first system.
-
-Read:
+A practical reflection examining how traditional libraries operated as record-first systems.
 
 https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pdf
 
@@ -157,9 +176,7 @@ https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pd
 
 ## Applied Architecture — Raw + 8PF Resilience
 
-A technical architecture exploration applying lineage-first continuity principles.
-
-Read:
+A technical application specification examining possible lineage-first preservation options.
 
 https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf
 
@@ -167,145 +184,67 @@ https://mmke01404-collab.github.io/Primary/docs/raw+8pf%20resillience.pdf
 
 ## Companion Framework — The Cognitive Bicycle
 
-A structured approach to documenting human direction in AI-assisted work.
-
-Read:
+A framework for documenting human direction and authorship in AI-assisted work.
 
 https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf
 
 ---
 
-# Repository Role
+# Repository Purpose
 
-This repository performs four primary functions:
+This repository serves as a public cryptographic declaration of authorship and provenance.
 
-## 1 — Foundational Declaration
+It establishes:
 
-The existence of this repository establishes:
+Authorship declaration  
+Priority of creation  
+Cryptographic identity anchoring  
+Document lineage continuity  
 
-- Named authorship  
-- Defined origin  
-- Public declaration of continuity  
+This repository publishes cryptographic hashes of protected materials without distributing original source files.
 
-This repository acts as a visible inception point.
-
----
-
-## 2 — Lineage Continuity
-
-Changes to documents occur as traceable lineage events.
-
-Nothing is silently replaced.
-
-Nothing is overwritten without continuity.
-
-All transformation remains visible.
-
----
-
-## 3 — Verification Anchor
-
-Integrity is supported through cryptographic reference.
-
-Verification is reproducible.
-
-Verification is inspectable.
-
-Verification is durable.
-
----
-
-## 4 — Public Reference State
-
-This repository provides a stable reference environment.
-
-External documents remain linked.
-
-Internal structure remains coherent.
-
-Navigation remains consistent.
+Full source materials remain privately retained by the author.
 
 ---
 
 # Cryptographic Manifest
 
-Primary Manifest:
-
 https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md
 
-Current Manifest Version: **v4.1**
-
-Archive Source:
-
-Lineage8PFApril26.zip
+Current Manifest Version: v4.1  
+Archive Source: Lineage8PFApril26.zip  
 
 Archive SHA-256:
 
-```
 2AF10231A223D17A710C1613C9F3534D6ADA46A2EB721AEFC7E63DCCC0913F09
-```
 
-Total Files Anchored:
-
-**175**
+Total Files Anchored: 175  
 
 Previous manifest versions remain immutable historical records.
 
 ---
 
-# Repository Integrity Model
-
-Integrity is maintained through:
-
-- Recorded origin  
-- Sequential continuity  
-- Visible transformation  
-- Verifiable reference  
-
-Integrity is not assumed.
-
-Integrity is demonstrated.
-
----
-
-# Governance Discipline
-
-All changes follow declared structure.
-
-No silent modification is permitted.
-
-All transformation events remain observable.
-
-All lineage transitions remain attributable.
-
----
-
 # Legal and Attribution Files
-
-The following files define legal structure and attribution:
 
 LICENCE  
 NOTICE  
 COPYRIGHT.md  
 PROVENANCE_STATEMENT.md  
 
-These materials are maintained at repository root.
-
 ---
 
 # Participation and Discussion
 
-This repository is published as an open reference declaration.
+This repository is published as an early public declaration.
 
-Discussion is welcomed from:
+Feedback is welcomed from:
 
-- Archivists  
-- Software engineers  
-- Preservation specialists  
-- Systems researchers  
-- Continuity engineers  
+Archivists  
+Software engineers  
+Preservation specialists  
+Systems researchers  
 
-Before participating, review:
+Before participating, please review:
 
 CONTRIBUTING.md  
 CODE_OF_CONDUCT.md  
@@ -314,56 +253,21 @@ CODE_OF_CONDUCT.md
 
 # Contact
 
-Email:
-
-lineage8pf@outlook.com
-
-Subject:
-
-LINEAGE-PRIMARY INQUIRY
+Email: lineage8pf@outlook.com  
+Subject: LINEAGE-PRIMARY INQUIRY  
 
 ---
 
-# Repository Identity Statement
+# Repository Integrity Status
 
 Author: M. Keen  
+Copyright: © 2026 M. Keen  
 Hash Algorithm: SHA-256  
+Manifest File: MANIFEST.md  
 Manifest Version: v4.1  
 
-This repository functions as:
-
-**A cryptographic declaration of authorship and lineage continuity.**
+This repository functions as a cryptographic declaration of authorship and document lineage.
 
 Primary repository:
 
 https://github.com/mmke01404-collab/Primary
-
----
-
-# Stability Notice
-
-This repository represents a declared public state.
-
-Changes occur through lineage progression.
-
-Not silent replacement.
-
-Not undocumented revision.
-
-All updates preserve continuity.
-
----
-
-# Closing Statement
-
-The goal of preservation is not survival of data.
-
-It is survival of identity.
-
-Systems that preserve objects alone eventually become silent.
-
-Systems that preserve lineage remain interpretable.
-
-Continuity must be engineered.
-
-Not assumed.
