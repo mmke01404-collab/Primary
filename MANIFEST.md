@@ -331,6 +331,10 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 **SHA-256:** `BE272725D6E257500FB4F6C88281F789B06BC3F767339A20622C8DE6C861F86B`  
 **File Date:** 2026-04-29
 
+**File Path:** docs/baton and the race 9.5a.png  
+**SHA-256:** `57477D188E6D08C4767E446E5ADD16D32BFA0119F71B859B89BA89D8FA1BA04A`  
+**File Date:** 2026-05-02
+
 ---
 **File Path:** Lineage8PF/Final/Stable/Deep_Rosetta_v1.0one to cite.pdf  
 **SHA-256:** `7C4F3F9FE70A2FEEF290F003CAAB3D784582BA81E8C33651C61D76FD9B244582`  
