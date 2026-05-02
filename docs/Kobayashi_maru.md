@@ -4,7 +4,7 @@
 **Author:** M. Keen  
 **Date:** April 2026  
 **Version:** 1.0 — Worked Concept Note  
-**Status:** Non-operational explanatory document  
+**Status:** Non-operational explanatory document
 
 ---
 
