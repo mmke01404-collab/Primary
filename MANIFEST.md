@@ -4,8 +4,8 @@
 **Author:** Matthew Keen  
 **Copyright:** © 2026 Matthew Keen. All rights reserved.  
 **Hash Algorithm:** SHA-256  
-**Manifest Version:** v5.1 — Date-Only File Metadata Edition  
-**Date Generated:** 2026-05-01
+**Manifest Version:** v5.2 — Recomputed From Source ZIP  
+**Date Generated:** 2026-05-02
 
 ---
 
@@ -25,8 +25,8 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 
 ## Archive Identity
 
-**Source Archive:** Lineage8PFMay.zip  
-**Archive SHA-256:** `B367526835F4E707FC8F3CAC2F1E7A16CFAB317C338E10F67C7DF373C4C98E41`  
+**Source Archive:** Lineage8PFmayv3.zip  
+**Archive SHA-256:** `4763A43554EED33E86C7C96CAD39845E51C0D00764D32DEB6ED07058144E35D5`  
 
 ---
 
@@ -322,20 +322,49 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 **File Date:** 2026-04-20
 
 ---
+**File Path:** Lineage8PF/Final/Stable/8PF_v9.2_Lite.pdf  
+**SHA-256:** `49DC210C159E90F8E3118F99D8D0E2C8E21735363BAA10353BF7E80C8C430248`  
+**File Date:** 2026-05-02
+
+---
+**File Path:** Lineage8PF/Final/Stable/8PF_v9.3_Lite.pdf  
+**SHA-256:** `7BD82246E35B1A24496173A3B4029D68837F4021478171DC00788F78CB531E15`  
+**File Date:** 2026-05-02
+
+---
+**File Path:** Lineage8PF/Final/Stable/8PF_v9.4_Lite.pdf  
+**SHA-256:** `6C48A6AF5D35CCBDB3666F30D66AA41CFA3836813E5C1DCCD7D2C36958FCE4FB`  
+**File Date:** 2026-05-02
+
+---
+**File Path:** Lineage8PF/Final/Stable/8PF_v9.5_Lite.pdf  
+**SHA-256:** `A610E4695449B3E3E856D268712071858A6163EA472229848A9F8B55A84BDB91`  
+**File Date:** 2026-05-02
+
+---
+**File Path:** Lineage8PF/Final/Stable/8PF_v9.5a_Lite.pdf  
+**SHA-256:** `EBC3C3318927ACF4DCA7A12E95D19BC4D1C7C214A11401C03A3472728DEB489E`  
+**File Date:** 2026-05-02
+
+---
+**File Path:** Lineage8PF/Final/Stable/baton and the race 9.5a.png  
+**SHA-256:** `441EBB366B35201AC9E9DF4CB2F0F6D51EAA21B8527D755BE0EBAA76748C30EE`  
+**File Date:** 2026-05-02
+
+---
 **File Path:** Lineage8PF/Final/Stable/baton-and-race.pdf  
 **SHA-256:** `CB819337346783EA599EC982AFFC073398C00741FEA97912B99A335D9638B70D`  
 **File Date:** 2026-04-24
 
 ---
+**File Path:** Lineage8PF/Final/Stable/baton-and-race9.5a.pdf  
+**SHA-256:** `E5037BD44E0B7521391E96F091E951BB103ABE181301B7C66E088B4E36C2AD5E`  
+**File Date:** 2026-05-02
+
+---
 **File Path:** Lineage8PF/Final/Stable/baton-and-racev2.pdf  
 **SHA-256:** `BE272725D6E257500FB4F6C88281F789B06BC3F767339A20622C8DE6C861F86B`  
 **File Date:** 2026-04-29
-
----
-
-**File Path:** docs/baton and the race 9.5a.png  
-**SHA-256:** `441ebb366b35201ac9e9df4cb2f0f6d51eaa21b8527d755be0ebaa76748c30ee`  
-**File Date:** 2026-05-02
 
 ---
 **File Path:** Lineage8PF/Final/Stable/Deep_Rosetta_v1.0one to cite.pdf  
@@ -919,10 +948,9 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 
 ---
 
-
 ## Repository Integrity Status
 
-**Total Files Anchored:** 176  
+**Total Files Anchored:** 183  
 **Hash Algorithm:** SHA-256  
 
 ---
@@ -933,7 +961,7 @@ This manifest represents a fixed declaration of document identity states at time
 
 Future updates should increment version numbering:
 
-- v5.2  
+- v5.3  
 - v6.0  
 - etc.
 
