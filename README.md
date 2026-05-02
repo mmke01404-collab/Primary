@@ -25,7 +25,7 @@ This repository functions as a lineage anchor, not simply a document store.
 
 # The Core Problem — The Humming Box
 
-Your files are doomed — but not for the reason you think.
+**Your files are doomed — but not for the reason you think.**
 
 We’ve spent decades protecting the bits.  
 We forgot to protect the meaning.
@@ -43,7 +43,7 @@ The system is running.
 
 And yet — there is nothing left to understand.
 
-This is the Humming Box Problem.
+**This is the Humming Box Problem.**
 
 ---
 
@@ -167,6 +167,9 @@ If you are new to this work:
 4. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
    Verification and provenance anchor.
 
+5. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
+   Structural model showing how technological capability must be rebuilt step-by-step to regain the ability to read dense storage systems.
+
 ---
 
 # Core Documents
@@ -192,6 +195,15 @@ Practical reflection examining how traditional libraries operated as record-firs
 [Read Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)
 
 Technical application specification exploring lineage-first preservation.
+
+---
+
+## Post-Collapse Technology Ladder
+
+[Read Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)
+
+Structural model describing the sequential technological reconstruction required for recovering advanced reading environments after collapse.  
+Demonstrates why preservation survivability depends on the lowest recoverable technological tier.
 
 ---
 
@@ -229,60 +241,3 @@ Current Manifest Version: **v4.1**
 Archive Source: **Lineage8PFApril26.zip**
 
 Archive SHA-256:
-
-```
-2AF10231A223D17A710C1613C9F3534D6ADA46A2EB721AEFC7E63DCCC0913F09
-```
-
-Total Files Anchored: **175**
-
-Previous manifest versions remain immutable historical records.
-
----
-
-# Legal and Attribution Files
-
-- [LICENCE](https://github.com/mmke01404-collab/Primary/blob/main/LICENCE)  
-- [NOTICE](https://github.com/mmke01404-collab/Primary/blob/main/NOTICE)  
-- [COPYRIGHT.md](https://github.com/mmke01404-collab/Primary/blob/main/COPYRIGHT.md)  
-- [PROVENANCE_STATEMENT.md](https://github.com/mmke01404-collab/Primary/blob/main/PROVENANCE_STATEMENT.md)
-
----
-
-# Participation and Discussion
-
-This repository is published as an early public declaration.
-
-Feedback is welcomed from:
-
-- Archivists  
-- Software engineers  
-- Preservation specialists  
-- Systems researchers  
-
-Before participating, please review:
-
-- [CONTRIBUTING.md](https://github.com/mmke01404-collab/Primary/blob/main/CONTRIBUTING.md)  
-- [CODE_OF_CONDUCT.md](https://github.com/mmke01404-collab/Primary/blob/main/CODE_OF_CONDUCT.md)
-
----
-
-# Contact
-
-Email: **lineage8pf@outlook.com**
-
-Subject: **LINEAGE-PRIMARY INQUIRY**
-
----
-
-# Repository Integrity Status
-
-Author: M. Keen  
-Hash Algorithm: SHA-256  
-Manifest Version: v4.1  
-
-This repository functions as a cryptographic declaration of authorship and document lineage.
-
-Primary repository:
-
-https://github.com/mmke01404-collab/Primary
