@@ -1,39 +1,38 @@
-# Primary — Lineage-Primary Framework
-
-# Humming Box Problem — 8PF & Lineage-Primary Framework
+# Primary — Lineage-Primary Framework  
+# Humming Box Problem — 8PF & Lineage-Primary Framework  
 
 **Author:** M. Keen  
 **Copyright:** © 2026 M. Keen  
-**Version:** 1.0 — Primary Public Declaration
+**Version:** 1.0 — Primary Public Declaration  
 
 ---
 
-## What This Repository Is
+# What This Repository Is
 
 This repository establishes a public declaration of authorship and continuity under the Lineage-Primary framework.
 
 It exists to record:
 
-- Foundational declaration of authorship
-- Continuity of framework development
-- Cryptographic identity anchoring
-- Verifiable lineage across revisions
+- Foundational declaration of authorship  
+- Continuity of framework development  
+- Cryptographic identity anchoring  
+- Verifiable lineage across revisions  
 
 This repository functions as a lineage anchor, not simply a document store.
 
 ---
 
-## The Core Problem — The Humming Box
+# The Core Problem — The Humming Box
 
-Your files are doomed — but not for the reason you think.
+**Your files are doomed — but not for the reason you think.**
 
-We've spent decades protecting the bits.  
+We’ve spent decades protecting the bits.  
 We forgot to protect the meaning.
 
-We've been sold the wrong problem.
+We’ve been sold the wrong problem.
 
-Digital preservation isn't failing because of bit rot.  
-It's failing because we've built a world full of humming boxes.
+Digital preservation isn’t failing because of bit rot.  
+It’s failing because we’ve built a world full of humming boxes.
 
 You know the sound — the low, constant whir of a server rack or an old external drive.  
 A machine that is technically alive, but in terms of meaning, already silent.
@@ -47,9 +46,9 @@ And yet — there is nothing left to understand.
 
 ---
 
-## The Domesday Lesson
+# The Domesday Lesson
 
-In 1986 the BBC created a "future-proof" snapshot of British life on LaserDisc.
+In 1986 the BBC created a “future-proof” snapshot of British life on LaserDisc.
 
 Fifteen years later the bits were still perfect.
 
@@ -66,7 +65,7 @@ It simply had nothing left to say.
 
 ---
 
-## The Real Delusion
+# The Real Delusion
 
 We preserve files as if the object is the thing.
 
@@ -74,10 +73,9 @@ We checksum it.
 Clone it.  
 Migrate it.
 
-We think we're saving the ship.
+We think we’re saving the ship.
 
-But we preserve the ship  
-and lose the sea.
+But we preserve the ship and lose the sea.
 
 You can keep a PDF bit-perfect for a century.
 
@@ -94,19 +92,19 @@ The identity does not.
 
 ---
 
-## The Ship of Theseus Was the Wrong Question
+# The Ship of Theseus Was the Wrong Question
 
-Replacement isn't the problem.  
+Replacement isn’t the problem.  
 Drift is.
 
-Digital identity doesn't break because parts change.
+Digital identity doesn’t break because parts change.
 
 It breaks when meaning, context, and interpretation  
 slowly slide out of alignment.
 
 ---
 
-## The Human Body Proves the Point
+# The Human Body Proves the Point
 
 Your body replaces most of its cells over time.
 
@@ -120,28 +118,29 @@ This is the lesson digital preservation keeps missing.
 
 ---
 
-## Stop Preserving. Start Engineering Continuity.
+# Stop Preserving. Start Engineering Continuity.
 
 Preservation assumes stability.
 
 Stability is the illusion.  
 Change is the default.
 
-We don't need more backups.  
+We don’t need more backups.  
 We need better maps of change.
 
 If drift is coherent, identity survives.  
-If it isn't, identity collapses —  
+If it isn’t, identity collapses —  
 no matter how perfect the data is.
 
-A humming box isn't a memory.  
-It's a mausoleum.
+A humming box isn’t a memory.
+
+It’s a mausoleum.
 
 And we are building more of them every second.
 
 ---
 
-## Why This Matters
+# Why This Matters
 
 Loss of identity is not rare.
 
@@ -151,49 +150,79 @@ This repository demonstrates how continuity can remain visible even when systems
 
 ---
 
-## Start Here
+# Start Here
 
 If you are new to this work:
 
-- **[Baton and the Race](baton-and-racev2.pdf)** — Conceptual demonstration of lineage continuity.
-- **[Library and the Lineage](library%20and%20the%20lineage.pdf)** — Historical reflection on continuity-first systems.
-- **[Raw + 8PF Resilience](raw-8pf-resilience.pdf)** — Applied architecture exploration.
-- **[Cryptographic Manifest](MANIFEST.md)** — Verification and provenance anchor.
-- **[Post-Collapse Technology Ladder](Post-Collapse_Technology_Ladder.pdf)** — Structural model showing how technological capability must be rebuilt step-by-step to regain the ability to read dense storage systems.
+1. [Baton and the Race](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
+   Conceptual demonstration of lineage continuity.
+
+2. [Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)  
+   Historical reflection on continuity-first systems.
+
+3. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
+   Applied architecture exploration.
+
+4. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
+   Verification and provenance anchor.
+
+5. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
+   Structural model showing how technological capability must be rebuilt step-by-step to regain the ability to read dense storage systems.
 
 ---
 
-## Core Documents
+# Core Documents
 
-The documents below form a single, layered argument. They are best read in sequence, as each builds on the last to examine the same core problem from a different angle.
+## Baton and the Race
 
-### [Baton and the Race](baton-and-racev2.pdf)
+[Read Baton and the Race](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
+
 Conceptual illustration showing how identity persists through sequential transmission.
 
-### [Library and the Lineage](library%20and%20the%20lineage.pdf)
+---
+
+## Library and the Lineage
+
+[Read Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)
+
 Practical reflection examining how traditional libraries operated as record-first systems.
 
-### [Raw + 8PF Resilience](raw-8pf-resilience.pdf)
+---
+
+## Raw + 8PF Resilience
+
+[Read Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)
+
 Technical application specification exploring lineage-first preservation.
 
-### [Post-Collapse Technology Ladder](Post-Collapse_Technology_Ladder.pdf)
+---
+
+## Post-Collapse Technology Ladder
+
+[Read Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)
+
 Structural model describing the sequential technological reconstruction required for recovering advanced reading environments after collapse. Demonstrates why preservation survivability depends on the lowest recoverable technological tier.
 
-### [The Cognitive Bicycle](CognitiveBicycle_v2.3.pdf)
+---
+
+## The Cognitive Bicycle
+
+[Read The Cognitive Bicycle](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
+
 Framework describing human direction and authorship in AI-assisted work.
 
 ---
 
-## Repository Purpose
+# Repository Purpose
 
 This repository serves as a public cryptographic declaration of authorship and provenance.
 
 It establishes:
 
-- Authorship declaration
-- Priority of creation
-- Cryptographic identity anchoring
-- Document lineage continuity
+- Authorship declaration  
+- Priority of creation  
+- Cryptographic identity anchoring  
+- Document lineage continuity  
 
 This repository publishes cryptographic hashes of protected materials without distributing original source files.
 
@@ -201,10 +230,17 @@ Full source materials remain privately retained by the author.
 
 ---
 
-## Cryptographic Manifest
+# Cryptographic Manifest
 
-**[Open MANIFEST.md](MANIFEST.md)**
+[Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
 
-**Current Manifest Version:** v4.1
+**Current Manifest Version:** v4.1  
+**Archive Source:** Lineage8PFApril26.zip  
 
-**Archive Source:** Lineage8PFApril26.zip
+**Archive SHA-256:**  
+(To be populated within MANIFEST.md)
+
+---
+
+This site is open source.  
+[Improve this page](https://github.com/mmke01404-collab/Primary/edit/main/README.md)
