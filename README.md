@@ -167,10 +167,10 @@ If you are new to this work:
    Verification and provenance anchor.
 
 5. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
-   Structural model showing how technological capability must be rebuilt step-by-step to regain the ability to read dense storage systems.
+   Structural model showing how technological capability must be rebuilt step-by-step.
 
-6. [Kobayashi Maru — Post-tf0 Alteration Case](https://github.com/mmke01404-collab/Primary/blob/main/docs/kobayashi_maru.txt)  
-   Worked structural case demonstrating authority-boundary breach within established lineage.
+6. [Open kobayashi_maru.txt](https://github.com/mmke01404-collab/Primary/blob/main/docs/kobayashi_maru.txt)  
+   Worked structural case demonstrating post-tf0 authority-boundary breach within established lineage.
 
 ---
 
