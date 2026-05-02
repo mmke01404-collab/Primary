@@ -1,0 +1,255 @@
+# Kobayashi Maru — Post-tf0 Alteration Case
+
+Author: M. Keen  
+Date: April 2026  
+Version: 1.0 — Worked Concept Note  
+Status: Non-operational explanatory document
+
+---
+
+# Purpose
+
+This document clarifies the Kobayashi Maru scenario as a case of **post-tf0 modification**, not fraudulent tf0.
+
+It demonstrates how lineage continuity behaves when a declared system is later altered by an authorized agent.
+
+This document aligns with:
+
+Part 0 — tf0: Trusted Foundational Zero  
+Part 2 — Four Lineage Predicates  
+Part 5 — Operational Response to ¬L  
+
+---
+
+# Foundational Context
+
+The Kobayashi Maru simulation existed prior to intervention.
+
+Therefore:
+
+tf0 had already been declared.
+
+The system had:
+
+- A defined origin  
+- Established inheritance  
+- Known operational rules  
+- Recognized authority structure  
+
+tf0 remained intact.
+
+The foundational inception event was not fraudulent.
+
+---
+
+# The Alteration Event
+
+An authorized trainee altered the simulation parameters.
+
+This change did not occur at tf0.
+
+It occurred at a later lineage point (tₙ).
+
+The intervention created:
+
+A transformation event within the lineage chain.
+
+---
+
+# Structural Evaluation
+
+N = 1  
+Single simulation lineage chain.
+
+Evaluation proceeds using:
+
+O → I → D → S
+
+(as defined in predicate order). 0  
+
+---
+
+# Predicate Evaluation
+
+O — Origin  
+Origin remains acknowledged.
+
+The simulation lineage traces back to its declared tf0.
+
+Result:
+
+O holds.
+
+---
+
+I — Inheritance  
+Inheritance requires continuous intermediate states.
+
+The simulation code was modified rather than replaced without trace.
+
+If modification is recorded:
+
+I holds.
+
+If modification is hidden:
+
+I fails.
+
+---
+
+D — Descent  
+Descent requires continued acceptance of lineage.
+
+If the alteration acknowledges the original simulation lineage:
+
+D holds.
+
+If the alteration attempts to redefine authorship or deny descent:
+
+D fails.
+
+---
+
+S — Sanctioned  
+Authority determines whether the change is legitimate.
+
+If the modifying agent possesses legitimate authority:
+
+S holds.
+
+If authority is exceeded:
+
+S fails.
+
+This predicate becomes the likely point of breach.
+
+---
+
+# Likely Structural Outcome
+
+Most interpretations of the Kobayashi Maru scenario suggest:
+
+Authority was exceeded.
+
+Therefore:
+
+Nearest Breach likely occurs at:
+
+S — Sanctioned.
+
+This produces:
+
+¬L at the alteration point.
+
+Not at tf0.
+
+---
+
+# Operational Consequences
+
+Once ¬L occurs:
+
+One of three responses must follow:
+
+Honest Repair  
+Fork  
+Hybrid  
+
+(as defined in operational response logic). 1  
+
+The most structurally consistent outcome is:
+
+Fork.
+
+A new lineage branch begins.
+
+Original lineage remains historically intact.
+
+---
+
+# Why tf0 Remains Valid
+
+tf0 is immutable.
+
+It represents:
+
+Foundational declaration.
+
+Subsequent misuse does not invalidate tf0.
+
+It invalidates the altered branch.
+
+This distinction preserves:
+
+System grounding integrity.
+
+---
+
+# Relationship to Near Breach Advisory
+
+Prior to formal violation:
+
+A Near Breach Advisory could be issued.
+
+Possible indicators include:
+
+- Authority pressure accumulating  
+- Intent divergence emerging  
+- Structural expectations being stressed  
+
+Near breach does not terminate lineage.
+
+It provides:
+
+Advance warning.
+
+---
+
+# Structural Insight
+
+The true lesson of the Kobayashi Maru scenario is:
+
+Not foundational fraud.
+
+Not lineage collapse at origin.
+
+But:
+
+**Authority breach within an established lineage.**
+
+This distinction is critical.
+
+---
+
+# Final Statement
+
+The Kobayashi Maru case demonstrates:
+
+A valid tf0  
+Followed by unauthorized structural modification.
+
+The failure occurs:
+
+Within lineage.
+
+Not at origin.
+
+This makes it:
+
+**A sanctioned predicate breach case — not a fraudulent tf0 case.**
+
+---
+
+# Status
+
+This document introduces:
+
+No new axioms  
+No new predicates  
+No new thresholds  
+
+It exists solely to clarify:
+
+**Post-tf0 lineage alteration within an authority boundary.**
+
+End of Document
