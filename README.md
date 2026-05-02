@@ -180,7 +180,7 @@ If you are new to this work:
 
 [Read Baton and the Race — PDF](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
 
-[View Baton and the Race — Visual (v9.5a PNG)](docs/baton%20and%20the%20race%209.5a.png)
+[View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
 
 ![Baton and the Race — Lineage Continuity Diagram](docs/baton%20and%20the%20race%209.5a.png)
 
