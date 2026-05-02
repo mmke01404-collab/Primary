@@ -154,19 +154,22 @@ This repository demonstrates how continuity can remain visible even when systems
 
 If you are new to this work:
 
-1. [Baton and the Race](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
+1. [Baton and the Race — Visual Overview (PNG)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-race-9.5a.png)  
+   Primary visual explanation of lineage continuity.
+
+2. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
    Conceptual demonstration of lineage continuity.
 
-2. [Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)  
+3. [Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)  
    Historical reflection on continuity-first systems.
 
-3. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
+4. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
    Applied architecture exploration.
 
-4. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
+5. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
    Verification and provenance anchor.
 
-5. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
+6. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
    Structural model showing how technological capability must be rebuilt step-by-step.
 
 ---
@@ -175,9 +178,11 @@ If you are new to this work:
 
 ## Baton and the Race
 
-[Read Baton and the Race](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
+[Read Baton and the Race — PDF](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
 
-Conceptual illustration showing how identity persists through sequential transmission.
+[View Baton and the Race — Visual (v9.5a PNG)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-race-9.5a.png)
+
+Conceptual illustration showing how identity persists through sequential transmission across generations of custodians.
 
 ---
 
