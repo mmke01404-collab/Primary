@@ -169,9 +169,6 @@ If you are new to this work:
 5. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
    Structural model showing how technological capability must be rebuilt step-by-step.
 
-6. [A Fictional Test Kobayashi Maru — Post-tf0 Alteration Case](https://github.com/mmke01404-collab/Primary/blob/main/docs/Kobayashi_maru.md)  
-   Worked structural case demonstrating post-tf0 authority-boundary breach within established lineage.
-
 ---
 
 # Core Documents
