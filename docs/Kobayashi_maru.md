@@ -4,7 +4,7 @@
 **Author:** M. Keen  
 **Date:** April 2026  
 **Version:** 1.0 — Worked Concept Note  
-**Status:** Non-operational explanatory document
+**Status:** Non-operational explanatory document  
 
 ---
 
@@ -18,8 +18,8 @@ It demonstrates how lineage continuity behaves when a declared system is later a
 
 This case aligns with:
 
-- Part 0 — tf0: Trusted Foundational Zero
-- Part 2 — Four Lineage Predicates
+- Part 0 — tf0: Trusted Foundational Zero  
+- Part 2 — Four Lineage Predicates  
 - Part 5 — Operational Response to ¬L  
 
 ---
@@ -63,9 +63,8 @@ It was modified.
 
 This created a transformation event within the lineage chain.
 
-Not a new origin.
-
-Not a fraudulent inception.
+Not a new origin.  
+Not a fraudulent inception.  
 
 A modification within continuity.
 
@@ -85,9 +84,8 @@ O → I → D → S
 
 This order determines where failure occurs.
 
-Not speculation.
-
-Not assumption.
+Not speculation.  
+Not assumption.  
 
 Structure.
 
@@ -165,9 +163,8 @@ Sanction fails.
 
 This becomes the most probable rupture point.
 
-Not origin.
-
-Not inheritance.
+Not origin.  
+Not inheritance.  
 
 Authority.
 
@@ -199,4 +196,126 @@ It fractures within continuity.
 
 # The Required Response
 
-Once ¬
+Once ¬L occurs, continuation cannot proceed silently.
+
+One of three structural responses must follow:
+
+Honest Repair  
+Fork  
+Hybrid  
+
+In this case, the most structurally consistent outcome is:
+
+**Fork.**
+
+A new lineage branch begins.
+
+The original lineage remains intact.
+
+The altered lineage proceeds separately.
+
+Continuity remains visible.
+
+Not erased.
+
+---
+
+# The Near Breach Horizon
+
+Continuity rarely collapses without warning.
+
+Pressure builds first.
+
+Authority stretches.
+
+Intent begins to drift.
+
+These signals appear before rupture.
+
+They do not terminate lineage.
+
+They announce danger.
+
+They provide:
+
+**Time.**
+
+---
+
+# The Structural Lesson
+
+The Kobayashi Maru scenario is not a case of fraudulent origin.
+
+It is not a failure of foundational declaration.
+
+It is:
+
+**Authority breach within an established lineage.**
+
+That distinction matters.
+
+It determines where continuity breaks.
+
+Not at birth.
+
+But during transformation.
+
+---
+
+# Why This Case Matters
+
+Systems do not usually fail at creation.
+
+They fail later.
+
+Under pressure.  
+Under urgency.  
+Under authority.
+
+Most collapses begin not at origin,  
+but at the moment rules are exceeded.
+
+This is where continuity breaks.
+
+This is where lineage ends.
+
+Not because the foundation was false.
+
+But because authority stepped beyond its boundary.
+
+---
+
+# Final Statement
+
+The Kobayashi Maru case demonstrates:
+
+A valid tf0.  
+A later alteration.  
+An authority boundary crossed.
+
+The rupture occurs:
+
+**Within lineage.  
+Not at origin.**
+
+This makes the scenario:
+
+**A sanctioned predicate breach case — not a fraudulent tf0 case.**
+
+---
+
+# Status
+
+This document introduces no new axioms.
+
+No new predicates.
+
+No new thresholds.
+
+It exists solely to clarify:
+
+**Post-tf0 lineage alteration within an authority boundary.**
+
+---
+
+_End of Document_
