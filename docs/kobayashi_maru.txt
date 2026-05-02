@@ -1,4 +1,5 @@
-# Kobayashi Maru — Post-tf0 Alteration Case
+# Kobayashi Maru — Post-tf0 Alteration Case  
+# Authority Breach Within Established Lineage  
 
 **Author:** M. Keen  
 **Date:** April 2026  
@@ -7,13 +8,13 @@
 
 ---
 
-## Purpose
+# Purpose
 
-This document clarifies the **Kobayashi Maru scenario** as a case of **post-tf0 modification**, not fraudulent tf0.
+This document clarifies the Kobayashi Maru scenario as a case of **post-tf0 modification**, not fraudulent tf0.
 
-It demonstrates how lineage continuity behaves when a declared system is later altered by an authorized agent.
+It demonstrates how lineage continuity behaves when a declared system is later altered within an existing lineage.
 
-**Framework Alignment**
+This case aligns with:
 
 - Part 0 — tf0: Trusted Foundational Zero  
 - Part 2 — Four Lineage Predicates  
@@ -21,235 +22,179 @@ It demonstrates how lineage continuity behaves when a declared system is later a
 
 ---
 
-## Foundational Context
+# Foundational Context
 
-The Kobayashi Maru simulation existed prior to intervention.
+The Kobayashi Maru simulation existed before intervention occurred.
 
-> **Key Structural Condition**  
-> **tf0 had already been declared.**
+tf0 had already been declared.
 
 The system possessed:
 
-- Defined origin  
+- A defined origin  
 - Established inheritance  
 - Known operational rules  
 - Recognized authority structure  
 
-**tf0 remained intact.**
+tf0 remained intact.
 
 The foundational inception event was not fraudulent.
 
+This distinction matters.
+
+The failure in this case does not occur at origin.
+
+It occurs within lineage.
+
 ---
 
-## The Alteration Event
+# The Alteration Event
 
 An authorized trainee altered the simulation parameters.
 
-This change:
+The change did not occur at tf0.
 
-- Did **not** occur at tf0  
-- Occurred at a later lineage point (**tₙ**)  
-- Created a transformation event within the lineage chain  
+It occurred at a later lineage point.
 
----
+The simulation was not recreated.
 
-## Structural Evaluation
+It was modified.
 
-### Chain Count
+This created a transformation event within the lineage chain.
 
-**N = 1**
+Not a new origin.
 
-Single simulation lineage chain.
+Not a fraudulent inception.
 
-### Predicate Order
-
-**O → I → D → S**
-
-Evaluation proceeds strictly in predicate order.
+A modification within continuity.
 
 ---
 
-# Predicate Evaluation
+# Structural Evaluation
 
-## O — Origin
+Chain count remained singular.
 
-Origin remains acknowledged.
+N = 1
 
-The simulation lineage traces back to its declared tf0.
+A single simulation lineage chain existed.
 
-**Result:**  
-**O holds**
+Evaluation proceeded in predicate order:
 
----
+O → I → D → S
 
-## I — Inheritance
+This order determines where failure occurs.
 
-Inheritance requires continuous intermediate states.
+Not speculation.
 
-The simulation code was modified rather than replaced without trace.
+Not assumption.
 
-| Condition | Result |
-|-----------|--------|
-| Modification recorded | **I holds** |
-| Modification hidden | **I fails** |
+Structure.
 
 ---
 
-## D — Descent
+# Origin Holds
+
+Origin remained acknowledged.
+
+The simulation lineage traced back to its declared tf0.
+
+No concealment of origin occurred.
+
+No substitution of foundational identity occurred.
+
+Origin remained stable.
+
+O holds.
+
+---
+
+# Inheritance Depends on Trace
+
+Inheritance requires continuity of transmission.
+
+Modification alone is not failure.
+
+Unrecorded modification is.
+
+If the alteration is recorded:
+
+Inheritance holds.
+
+If the alteration is hidden:
+
+Inheritance fails.
+
+The distinction is not technical.
+
+It is structural.
+
+Trace determines continuity.
+
+---
+
+# Descent Requires Acknowledgment
 
 Descent requires continued acceptance of lineage.
 
-| Condition | Result |
-|-----------|--------|
-| Original lineage acknowledged | **D holds** |
-| Authorship or descent denied | **D fails** |
+If the modified simulation acknowledges its origin:
+
+Descent holds.
+
+If authorship or lineage is denied:
+
+Descent fails.
+
+This is not about mechanics.
+
+It is about continuity of recognition.
 
 ---
 
-## S — Sanctioned
+# Authority Becomes the Critical Boundary
 
-Authority determines whether the change is legitimate.
+Authority determines whether transformation remains legitimate.
 
-| Condition | Result |
-|-----------|--------|
-| Authority valid | **S holds** |
-| Authority exceeded | **S fails** |
+If the modifying agent possesses authority:
 
-> **Most Likely Breach Location:**  
-> **S — Sanctioned**
+Sanction holds.
+
+If authority is exceeded:
+
+Sanction fails.
+
+This becomes the most probable rupture point.
+
+Not origin.
+
+Not inheritance.
+
+Authority.
 
 ---
 
-# Likely Structural Outcome
+# The Likely Breach
 
-Most interpretations of the Kobayashi Maru scenario suggest:
+Most interpretations of the Kobayashi Maru scenario suggest authority was exceeded.
 
-> **Authority was exceeded**
+The rupture therefore occurs at:
 
-### Nearest Breach
-
-| Field | Value |
-|------|-------|
-| Predicate | **S — Sanctioned** |
-| Location | **Alteration point (tₙ)** |
-
-### Result
-
-**¬L occurs at alteration**
+S — Sanctioned.
 
 Not at tf0.
 
----
+Not at the beginning.
 
-# Operational Consequences
+At the moment authority boundaries were crossed.
 
-Once:
+This produces:
 
-**¬L occurs**
+¬L at the alteration point.
 
-One of three responses must follow:
+Lineage does not collapse at origin.
 
-- **Honest Repair**  
-- **Fork**  
-- **Hybrid**
-
-### Most Structurally Consistent Outcome
-
-> **Fork**
-
-A new lineage branch begins.
-
-Original lineage remains historically intact.
+It fractures within continuity.
 
 ---
 
-# Why tf0 Remains Valid
+# The Required Response
 
-> **tf0 is immutable**
-
-It represents:
-
-**Foundational declaration**
-
-Subsequent misuse does **not** invalidate tf0.
-
-It invalidates:
-
-> **The altered branch**
-
-This preserves:
-
-**System grounding integrity**
-
----
-
-# Relationship to Near Breach Advisory
-
-Prior to formal violation:
-
-A **Near Breach Advisory** could be issued.
-
-### Possible Indicators
-
-- Authority pressure accumulating  
-- Intent divergence emerging  
-- Structural expectations being stressed  
-
-**Near Breach Status**
-
-Does not terminate lineage  
-
-Purpose:
-
-> **Advance warning**
-
----
-
-# Structural Insight
-
-The true lesson of the Kobayashi Maru scenario is:
-
-Not foundational fraud.  
-Not lineage collapse at origin.
-
-But:
-
-> **Authority breach within an established lineage**
-
-This distinction is critical.
-
----
-
-# Final Statement
-
-The Kobayashi Maru case demonstrates:
-
-- A valid tf0  
-- Followed by unauthorized structural modification  
-
-The failure occurs:
-
-Within lineage  
-Not at origin  
-
-This makes it:
-
-> **A sanctioned predicate breach case — not a fraudulent tf0 case**
-
----
-
-# Status
-
-This document introduces:
-
-- No new axioms  
-- No new predicates  
-- No new thresholds  
-
-It exists solely to clarify:
-
-> **Post-tf0 lineage alteration within an authority boundary**
-
----
-
-_End of Document_
+Once ¬
