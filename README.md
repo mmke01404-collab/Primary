@@ -176,9 +176,13 @@ If you are new to this work:
 
 # Core Documents
 
-## Baton and the Race
+## Baton and the Race Document
 
 [Read Baton and the Race — PDF](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
+
+---
+
+## Baton and the Race a Pictorial Illustration
 
 [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
 
