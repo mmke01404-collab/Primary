@@ -331,8 +331,10 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 **SHA-256:** `BE272725D6E257500FB4F6C88281F789B06BC3F767339A20622C8DE6C861F86B`  
 **File Date:** 2026-04-29
 
+---
+
 **File Path:** docs/baton and the race 9.5a.png  
-**SHA-256:** `57477D188E6D08C4767E446E5ADD16D32BFA0119F71B859B89BA89D8FA1BA04A`  
+**SHA-256:** `441ebb366b35201ac9e9df4cb2f0f6d51eaa21b8527d755be0ebaa76748c30ee`  
 **File Date:** 2026-05-02
 
 ---
