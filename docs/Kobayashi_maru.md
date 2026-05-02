@@ -10,14 +10,16 @@
 
 # Purpose
 
+The term "Kobayashi Maru" is used here as a widely recognized reference case involving post-declaration system modification under authority constraint.
+
 This document clarifies the Kobayashi Maru scenario as a case of **post-tf0 modification**, not fraudulent tf0.
 
 It demonstrates how lineage continuity behaves when a declared system is later altered within an existing lineage.
 
 This case aligns with:
 
-- Part 0 — tf0: Trusted Foundational Zero  
-- Part 2 — Four Lineage Predicates  
+- Part 0 — tf0: Trusted Foundational Zero
+- Part 2 — Four Lineage Predicates
 - Part 5 — Operational Response to ¬L  
 
 ---
