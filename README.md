@@ -1,5 +1,5 @@
 # Primary — Lineage-Primary Framework  
-# Humming Box Problem — 8PF & Lineage-Primary Framework  
+## Humming Box Problem — 8PF & Lineage-Primary Framework  
 
 **Author:** M. Keen  
 **Copyright:** © 2026 M. Keen  
@@ -7,7 +7,7 @@
 
 ---
 
-# What This Repository Is
+## What This Repository Is
 
 This repository establishes a public declaration of authorship and continuity under the Lineage-Primary framework.
 
@@ -22,7 +22,7 @@ This repository functions as a lineage anchor, not simply a document store.
 
 ---
 
-# The Core Problem — The Humming Box
+## The Core Problem — The Humming Box
 
 **Your files are doomed — but not for the reason you think.**
 
@@ -46,7 +46,7 @@ And yet — there is nothing left to understand.
 
 ---
 
-# The Domesday Lesson
+## The Domesday Lesson
 
 In 1986 the BBC created a “future-proof” snapshot of British life on LaserDisc.
 
@@ -65,7 +65,7 @@ It simply had nothing left to say.
 
 ---
 
-# The Real Delusion
+## The Real Delusion
 
 We preserve files as if the object is the thing.
 
@@ -92,7 +92,7 @@ The identity does not.
 
 ---
 
-# The Ship of Theseus Was the Wrong Question
+## The Ship of Theseus Was the Wrong Question
 
 Replacement isn’t the problem.  
 Drift is.
@@ -104,7 +104,7 @@ slowly slide out of alignment.
 
 ---
 
-# The Human Body Proves the Point
+## The Human Body Proves the Point
 
 Your body replaces most of its cells over time.
 
@@ -118,7 +118,7 @@ This is the lesson digital preservation keeps missing.
 
 ---
 
-# Stop Preserving. Start Engineering Continuity.
+## Stop Preserving. Start Engineering Continuity.
 
 Preservation assumes stability.
 
@@ -140,7 +140,7 @@ And we are building more of them every second.
 
 ---
 
-# Why This Matters
+## Why This Matters
 
 Loss of identity is not rare.
 
@@ -150,13 +150,15 @@ This repository demonstrates how continuity can remain visible even when systems
 
 ---
 
-# Start Here
+## Start Here
 
 If you are new to this work:
 
-1. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
+1. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)  
+   Primary visual explanation of lineage continuity.
 
-2. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)
+2. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)  
+   Multiple-copy lineage scenario.
 
 3. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
    Conceptual demonstration of lineage continuity.
@@ -175,17 +177,15 @@ If you are new to this work:
 
 ---
 
-# Core Documents
+## Core Documents
 
-## Baton and the Race Document
+### Baton and the Race — Document
 
 [Read Baton and the Race — PDF](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
 
 ---
 
-## Baton and the Race a Pictorial Illustration
-
-[View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
+### Baton and the Race — Pictorial Illustration
 
 ![Baton and the Race — Lineage Continuity Diagram v9.5a](docs/baton%20and%20the%20race%209.5a.png)
 
@@ -195,7 +195,7 @@ Conceptual illustration showing how identity persists through sequential transmi
 
 ---
 
-## Library and the Lineage
+### Library and the Lineage
 
 [Read Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)
 
@@ -203,7 +203,7 @@ Practical reflection examining how traditional libraries operated as record-firs
 
 ---
 
-## Raw + 8PF Resilience
+### Raw + 8PF Resilience
 
 [Read Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)
 
@@ -211,7 +211,7 @@ Technical application specification exploring lineage-first preservation.
 
 ---
 
-## Post-Collapse Technology Ladder
+### Post-Collapse Technology Ladder
 
 [Read Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)
 
@@ -219,7 +219,7 @@ Structural model describing the sequential technological reconstruction required
 
 ---
 
-## The Cognitive Bicycle
+### The Cognitive Bicycle
 
 [Read The Cognitive Bicycle](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
 
@@ -227,7 +227,7 @@ Framework describing human direction and authorship in AI-assisted work.
 
 ---
 
-# Repository Purpose
+## Repository Purpose
 
 This repository serves as a public cryptographic declaration of authorship and provenance.
 
@@ -244,7 +244,7 @@ Full source materials remain privately retained by the author.
 
 ---
 
-# Cryptographic Manifest
+## Cryptographic Manifest
 
 [Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
 
