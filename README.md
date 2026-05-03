@@ -155,8 +155,8 @@ This repository demonstrates how continuity can remain visible even when systems
 If you are new to this work:
 
 1. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
-2. 
-   Primary visual explanation of lineage continuity.
+
+2. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)
 
 3. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
    Conceptual demonstration of lineage continuity.
