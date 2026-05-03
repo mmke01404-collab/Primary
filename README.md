@@ -150,6 +150,20 @@ This repository demonstrates how continuity can remain visible even when systems
 
 ---
 
+## Core Principle
+
+The Lineage-Primary Framework asserts:
+
+- Identity does not reside in the object  
+- Identity persists through recorded continuity  
+- Transformation is not loss if lineage is preserved  
+- Drift is acceptable within coherent bounds  
+
+Preservation must therefore shift from protecting objects  
+to recording and validating continuity over time.
+
+---
+
 ## Start Here
 
 If you are new to this work:
@@ -248,12 +262,13 @@ Full source materials remain privately retained by the author.
 
 [Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
 
-Work Title: Humming Box Problem — 8PF & Lineage-Primary Framework  
-Author: Matthew Keen  
-Copyright: © 2026 Matthew Keen. All rights reserved.  
-Hash Algorithm: SHA-256  
-Manifest Version: v5.2 — Recomputed From Source ZIP  
-Date Generated: 2026-05-02
+**Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
+**Author:** Matthew Keen  
+**Copyright:** © 2026 Matthew Keen. All rights reserved.  
+**Hash Algorithm:** SHA-256  
+**Manifest Version:** v5.2 — Recomputed From Source ZIP  
+**Date Generated:** 2026-05-02
+
 ---
 
 This site is open source.  
