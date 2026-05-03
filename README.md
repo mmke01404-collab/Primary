@@ -169,11 +169,11 @@ If you are new to this work:
 5. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
    Applied architecture exploration.
 
-6. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
-   Verification and provenance anchor.
-
-7. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
+6. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
    Structural model showing how technological capability must be rebuilt step-by-step.
+
+7. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
+   Verification and provenance anchor.
 
 ---
 
