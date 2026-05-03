@@ -187,7 +187,9 @@ If you are new to this work:
 
 [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
 
-![Baton and the Race — Lineage Continuity Diagram](docs/baton%20and%20the%20race%209.5a.png)
+![Baton and the Race — Lineage Continuity Diagram v9.5a](docs/baton%20and%20the%20race%209.5a.png)
+
+![Baton and the Race — Lineage Continuity Diagram v3](docs/baton%20v3.png)
 
 Conceptual illustration showing how identity persists through sequential transmission across generations of custodians.
 
