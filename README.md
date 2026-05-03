@@ -157,8 +157,6 @@ If you are new to this work:
 1. [Baton and the Race — Visual Overview and Multiple Copies(PNG)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-race-9.5a.png)  
    Primary visual explanation of lineage continuity.
 
-(https://github.com/mmke01404-collab/Primary/blob/main/docs/baton v3.png)  
-
 
 2. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
    Conceptual demonstration of lineage continuity.
