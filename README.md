@@ -250,7 +250,7 @@ Full source materials remain privately retained by the author.
 
 *Work Title:* Humming Box Problem — 8PF & Lineage-Primary Framework  
 *Author:* Matthew Keen  
-**Copyright:* © 2026 Matthew Keen. All rights reserved.  
+*Copyright:* © 2026 Matthew Keen. All rights reserved.  
 *Hash Algorithm:* SHA-256  
 *Manifest Version:* v5.2 — Recomputed From Source ZIP  
 *Date Generated:* 2026-05-02
