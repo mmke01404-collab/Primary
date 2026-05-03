@@ -248,12 +248,12 @@ Full source materials remain privately retained by the author.
 
 [Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
 
-**Current Manifest Version:** v4.1  
-**Archive Source:** Lineage8PFApril26.zip  
-
-**Archive SHA-256:**  
-(To be populated within MANIFEST.md)
-
+**Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
+**Author:** Matthew Keen  
+**Copyright:** © 2026 Matthew Keen. All rights reserved.  
+**Hash Algorithm:** SHA-256  
+**Manifest Version:** v5.2 — Recomputed From Source ZIP  
+**Date Generated:** 2026-05-02
 ---
 
 This site is open source.  
