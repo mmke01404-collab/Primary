@@ -154,9 +154,8 @@ This repository demonstrates how continuity can remain visible even when systems
 
 If you are new to this work:
 
-1.[View Baton and the Race — Visual](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-race-9.5a.png)
+1. [Baton and the Race — Visual Overview (PNG)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-race-9.5a.png)  
    Primary visual explanation of lineage continuity.
-
 
 2. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
    Conceptual demonstration of lineage continuity.
@@ -187,11 +186,7 @@ If you are new to this work:
 
 [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
 
----
-
-![Baton and the Race — Lineage Continuity Diagram](docs/baton%20and%20the%20race v3.png)
-
----
+![Baton and the Race — Lineage Continuity Diagram](docs/baton%20and%20the%20race%209.5a.png)
 
 Conceptual illustration showing how identity persists through sequential transmission across generations of custodians.
 
