@@ -154,22 +154,23 @@ This repository demonstrates how continuity can remain visible even when systems
 
 If you are new to this work:
 
-1. [Baton and the Race — Visual Overview (PNG)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-race-9.5a.png)  
+1. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
+2. 
    Primary visual explanation of lineage continuity.
 
-2. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
+3. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
    Conceptual demonstration of lineage continuity.
 
-3. [Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)  
+4. [Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)  
    Historical reflection on continuity-first systems.
 
-4. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
+5. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
    Applied architecture exploration.
 
-5. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
+6. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
    Verification and provenance anchor.
 
-6. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
+7. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
    Structural model showing how technological capability must be rebuilt step-by-step.
 
 ---
