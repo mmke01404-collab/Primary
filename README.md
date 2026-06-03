@@ -168,34 +168,45 @@ to recording and validating continuity over time.
 
 If you are new to this work:
 
-1. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)  
+1. [View 8PF Automotive Analogy (HTML)](docs/8pf_automotive_analogy.html)  
+   Applied application narrative exploring core 8PF concepts.
+
+2. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)  
    Primary visual explanation of lineage continuity.
 
-2. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)  
+3. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)  
    Multiple-copy lineage scenario.
 
-3. [Baton and the Race — Detailed Version (PDF)](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)  
+4. [Baton and the Race — Detailed Version (PDF)](https://github.com)  
    Conceptual demonstration of lineage continuity.
 
-4. [Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)  
+5. [Library and the Lineage](https://github.com)  
    Historical reflection on continuity-first systems.
 
-5. [Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)  
+6. [Raw + 8PF Resilience](https://github.com)  
    Applied architecture exploration.
 
-6. [Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)  
+7. [Post-Collapse Technology Ladder](https://github.com)  
    Structural model showing how technological capability must be rebuilt step-by-step.
 
-7. [Cryptographic Manifest](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)  
+8. [Cryptographic Manifest](https://github.com)  
    Verification and provenance anchor.
 
 ---
 
 ## Core Documents
 
+### 8PF Automotive Analogy
+
+[Read 8PF Automotive Analogy — HTML](docs/8pf_automotive_analogy.html)
+
+Practical framing text mapping the 8PF architecture constraints onto systemic hardware/software transitions.
+
+---
+
 ### Baton and the Race — Document
 
-[Read Baton and the Race — PDF](https://github.com/mmke01404-collab/Primary/blob/main/docs/baton-and-racev2.pdf)
+[Read Baton and the Race — PDF](https://github.com)
 
 ---
 
@@ -211,7 +222,7 @@ Conceptual illustration showing how identity persists through sequential transmi
 
 ### Library and the Lineage
 
-[Read Library and the Lineage](https://github.com/mmke01404-collab/Primary/blob/main/docs/library%20and%20the%20lineage.pdf)
+[Read Library and the Lineage](https://github.com)
 
 Practical reflection examining how traditional libraries operated as record-first systems.
 
@@ -219,7 +230,7 @@ Practical reflection examining how traditional libraries operated as record-firs
 
 ### Raw + 8PF Resilience
 
-[Read Raw + 8PF Resilience](https://github.com/mmke01404-collab/Primary/blob/main/docs/raw+8pf%20resillience.pdf)
+[Read Raw + 8PF Resilience](https://github.com)
 
 Technical application specification exploring lineage-first preservation.
 
@@ -227,7 +238,7 @@ Technical application specification exploring lineage-first preservation.
 
 ### Post-Collapse Technology Ladder
 
-[Read Post-Collapse Technology Ladder](https://github.com/mmke01404-collab/Primary/blob/main/docs/Post-Collapse_Technology_Ladder.pdf)
+[Read Post-Collapse Technology Ladder](https://github.com)
 
 Structural model describing the sequential technological reconstruction required for recovering advanced reading environments after collapse. Demonstrates why preservation survivability depends on the lowest recoverable technological tier.
 
@@ -235,7 +246,7 @@ Structural model describing the sequential technological reconstruction required
 
 ### The Cognitive Bicycle
 
-[Read The Cognitive Bicycle](https://github.com/lineageframework/Cognitive-Bicycle/blob/main/CognitiveBicycle_v2.3.pdf)
+[Read The Cognitive Bicycle](https://github.com)
 
 Framework describing human direction and authorship in AI-assisted work.
 
@@ -260,7 +271,7 @@ Full source materials remain privately retained by the author.
 
 ## Cryptographic Manifest
 
-[Open MANIFEST.md](https://github.com/mmke01404-collab/Primary/blob/main/MANIFEST.md)
+[Open MANIFEST.md](https://github.com)
 
 **Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
 **Author:** Matthew Keen  
@@ -272,4 +283,4 @@ Full source materials remain privately retained by the author.
 ---
 
 This site is open source.  
-[Improve this page](https://github.com/mmke01404-collab/Primary/edit/main/README.md)
+[Improve this page](https://github.com)
