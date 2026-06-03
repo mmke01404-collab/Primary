@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8PF — The Automotive Lineage Analogy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+  :root {
+    --black: #0a0a0a;
+    --off-white: #f0ede6;
+    --chrome: #c8c4bc;
+    --amber: #d4820a;
+    --red: #c0392b;
+    --green: #2d6a4f;
+    --amber-light: #f5a623;
+    --red-light: #e74c3c;
+    --green-light: #27ae60;
+    --stripe: #1a1a1a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--black);
+    color: var(--off-white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    border-top: 3px solid var(--chrome);
+    border-bottom: 1px solid #333;
+    padding: 32px 0 28px;
+    margin-bottom: 56px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .header-left h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: var(--off-white);
+  }
+
+  .header-left h1 span {
+    color: var(--chrome);
+    font-size: 48px;
+  }
+
+  .header-right {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+  }
+
+  .tagline {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--chrome);
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  /* CORE PRINCIPLE BOX */
+  .principle-box {
+    border: 1px solid #333;
+    border-left: 4px solid var(--chrome);
+    padding: 20px 24px;
+    margin-bottom: 56px;
+    background: var(--stripe);
+  }
+
+  .principle-box p {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--chrome);
+    line-height: 1.7;
+  }
+
+  .principle-box .label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 8px;
+    font-style: normal;
+  }
+
+  /* SECTION HEADERS */
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--chrome);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #2a2a2a;
+  }
+
+  /* MAIN TIMELINE */
+  .timeline {
+    position: relative;
+    margin-bottom: 64px;
+  }
+
+  .timeline-spine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--chrome), #333 80%);
+    transform: translateX(-50%);
+  }
+
+  .timeline-node {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .node-left {
+    padding-right: 32px;
+    text-align: right;
+  }
+
+  .node-right {
+    padding-left: 32px;
+    text-align: left;
+  }
+
+  .node-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    z-index: 2;
+  }
+
+  .node-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--chrome);
+    background: var(--black);
+    flex-shrink: 0;
+  }
+
+  .node-dot.tf0 {
+    width: 28px;
+    height: 28px;
+    background: var(--chrome);
+    border-color: var(--off-white);
+    box-shadow: 0 0 20px rgba(200,196,188,0.4);
+  }
+
+  .node-dot.green { border-color: var(--green-light); background: var(--green); }
+  .node-dot.amber { border-color: var(--amber-light); background: var(--amber); }
+  .node-dot.red { border-color: var(--red-light); background: var(--red); }
+  .node-dot.scar { border-color: #666; border-style: dashed; }
+
+  .node-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #555;
+    text-transform: uppercase;
+  }
+
+  .framework-term {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--chrome);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .auto-term {
+    font-size: 13px;
+    color: var(--off-white);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .auto-example {
+    font-size: 11px;
+    color: #666;
+    font-style: italic;
+    margin-top: 3px;
+  }
+
+  .node-spacer {
+    height: 32px;
+  }
+
+  /* STATUS PILLS */
+  .status-pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 2px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  .pill-green { background: rgba(39,174,96,0.2); color: var(--green-light); border: 1px solid var(--green); }
+  .pill-amber { background: rgba(212,130,10,0.2); color: var(--amber-light); border: 1px solid var(--amber); }
+  .pill-red { background: rgba(192,57,43,0.2); color: var(--red-light); border: 1px solid var(--red); }
+
+  /* MAPPING TABLE */
+  .mapping-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-bottom: 56px;
+    border: 1px solid #222;
+  }
+
+  .mapping-header {
+    background: #1a1a1a;
+    padding: 12px 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--chrome);
+    border-bottom: 1px solid #333;
+  }
+
+  .mapping-cell {
+    padding: 14px 20px;
+    border-bottom: 1px solid #1a1a1a;
+    background: var(--stripe);
+  }
+
+  .mapping-cell:nth-child(even) { background: #0f0f0f; }
+
+  .mapping-cell .fw {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--chrome);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .mapping-cell .av {
+    font-size: 13px;
+    color: var(--off-white);
+    line-height: 1.5;
+  }
+
+  /* LENS ANALYSIS */
+  .lens-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-bottom: 56px;
+  }
+
+  .lens-card {
+    background: var(--stripe);
+    border: 1px solid #1e1e1e;
+    padding: 18px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lens-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--chrome);
+    opacity: 0.3;
+  }
+
+  .lens-card.decisive::before { opacity: 1; background: var(--chrome); }
+  .lens-card.critical::before { opacity: 0.8; background: var(--amber-light); }
+
+  .lens-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: #2a2a2a;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .lens-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--chrome);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .lens-auto {
+    font-size: 12px;
+    color: var(--off-white);
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .lens-role {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #555;
+    font-style: italic;
+  }
+
+  /* NEAR BREACH BOX */
+  .near-breach-box {
+    border: 1px solid var(--amber);
+    background: rgba(212,130,10,0.06);
+    padding: 28px 32px;
+    margin-bottom: 56px;
+    position: relative;
+  }
+
+  .near-breach-box::before {
+    content: 'NEAR BREACH';
+    position: absolute;
+    top: -1px;
+    left: 32px;
+    background: var(--amber);
+    color: var(--black);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding: 3px 10px;
+    font-weight: 500;
+  }
+
+  .near-breach-examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  .nb-item {
+    border-left: 2px solid #333;
+    padding-left: 16px;
+  }
+
+  .nb-item .brand {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--amber-light);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .nb-item p {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.6;
+  }
+
+  .nb-intro {
+    font-size: 13px;
+    color: var(--off-white);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  /* VISIBLE SCAR */
+  .scar-box {
+    border: 1px dashed #444;
+    padding: 24px 28px;
+    margin-bottom: 56px;
+    background: #0d0d0d;
+    position: relative;
+  }
+
+  .scar-box .scar-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .scar-box p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+  }
+
+  .scar-examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .scar-eg {
+    background: #111;
+    border: 1px solid #222;
+    padding: 14px;
+    font-size: 11px;
+    color: #777;
+    line-height: 1.6;
+  }
+
+  .scar-eg strong {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    color: #555;
+    margin-bottom: 4px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  /* FOOTER */
+  .footer {
+    border-top: 1px solid #222;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .footer-left {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #444;
+    line-height: 1.8;
+  }
+
+  .footer-right {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: #2a2a2a;
+    letter-spacing: 3px;
+  }
+
+  /* TIMELINE CONNECTOR LABELS */
+  .connector-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4px 0;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #1e1e1e;
+    margin: 48px 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>8PF <span>AUTOMOTIVE</span></h1>
+      <div class="tagline">The Lineage Analogy · Volkswagen Beetle tf0 to Fork</div>
+    </div>
+    <div class="header-right">
+      8PF v9.5 Lite<br>
+      M. Keen · May 2026<br>
+      Analogy: Automotive Lineage<br>
+      Near Breach Detection
+    </div>
+  </div>
+
+  <!-- CORE PRINCIPLE -->
+  <div class="principle-box">
+    <p class="label">Core Principle</p>
+    <p>"The car industry already operates largely through lineage identity, and even uses the word 'lineage' correctly. Continuity is not a property of the parts that remain, but of the lineage that endures."</p>
+  </div>
+
+  <!-- MAPPING TABLE -->
+  <div class="section-title">Framework → Automotive Mapping</div>
+  <div class="mapping-grid">
+    <div class="mapping-header">8PF Term</div>
+    <div class="mapping-header">Automotive Equivalent</div>
+
+    <div class="mapping-cell"><span class="fw">tf0 — Foundational Inception</span><span class="av">Original declaration by a named human with standing. Defines the vehicle's identity, intent, and bounded characteristics. B = 0 at this point.</span></div>
+    <div class="mapping-cell"><span class="fw">Ferdinand Porsche Sr. · 1934</span><span class="av">Ferdinand Porsche Sr., acting under documented governmental commission and authority, declares the Type 60 specification. Porsche is the named human declarant; the commission provides the standing. Bounded identity established. This is tf0.</span></div>
+
+    <div class="mapping-cell"><span class="fw">Species Descriptor</span><span class="av">The bounded identity of the model: rear-mounted air-cooled engine, rounded monocoque body, affordable mass production, seating for four. Variation bounds define what the Beetle IS.</span></div>
+    <div class="mapping-cell"><span class="fw">Type 60 / KdF-Wagen specification</span><span class="av">Rear engine, air cooling, torsion bar suspension, distinctive silhouette. These are the axes of the Species Descriptor. Drift from these axes is measurable.</span></div>
+
+    <div class="mapping-cell"><span class="fw">t0 — Subsequent preservation state</span><span class="av">Each documented revision: a new t0 carrying the tf0 record forward, within Species Descriptor bounds.</span></div>
+    <div class="mapping-cell"><span class="fw">Model year revisions · 1938–2003</span><span class="av">KdF-Wagen → Type 1 → successive annual updates. Each a t0. Engine displacement, suspension refinements, safety additions — all within drift tolerance. Lineage intact for decades.</span></div>
+
+    <div class="mapping-cell"><span class="fw">Drift Tolerance (B)</span><span class="av">How much change is permissible before the t0 falls outside the Species Descriptor. Defined at tf0; no subsequent t0 may exceed it.</span></div>
+    <div class="mapping-cell"><span class="fw">The 1970s pressure point</span><span class="av">Emissions regulations, safety requirements, and market pressure began pushing the Beetle toward its tolerance boundary. The Golf was VW's acknowledgement that the Species Descriptor could not absorb the required changes.</span></div>
+
+    <div class="mapping-cell"><span class="fw">Visible Scar</span><span class="av">A permanent, prominent record of any discontinuity — proof of honest repair or fork. A badge of honour: a lineage that displays its scars is more trustworthy than one that conceals them.</span></div>
+    <div class="mapping-cell"><span class="fw">Ivan Hirst's 1945 restart</span><span class="av">British Army Major Ivan Hirst resurrects Wolfsburg production post-war. This is a sanctioned lineage event — documented authority, documented handoff. Within the analogy, it functions like a Visible Scar: an acknowledged interruption and authorized continuation that strengthens rather than weakens the lineage.</span></div>
+
+    <div class="mapping-cell"><span class="fw">Fork</span><span class="av">New lineage declared. Original lineage terminates. New species descriptor required. The Fork Event must itself be recorded as a Visible Scar on the original lineage.</span></div>
+    <div class="mapping-cell"><span class="fw">New Beetle · 1998 / Beetle · 2011</span><span class="av">VW launches front-engine, water-cooled, Golf-platform vehicles under the Beetle name. These are best understood as new lineages that inherit semantic elements of the Beetle but not direct Type 1 lineage continuity. The name is shared; the lineage is distinct.</span></div>
+
+    <div class="mapping-cell"><span class="fw">Honest Repair</span><span class="av">Breach repaired within tolerance. Visible Scar appended. Lineage endures.</span></div>
+    <div class="mapping-cell"><span class="fw">Ongoing Type 1 revisions · 1950s–70s</span><span class="av">Engine upgrades, improved heating, revised suspension: all repairs within bounds. Each a documented lineage event. Each preserving continuity with the tf0 specification.</span></div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="section-title">Lineage Through Time · Volkswagen Beetle · Complete Version History</div>
+  <div class="timeline">
+    <div class="timeline-spine"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">tf0 · Foundational Inception</span>
+        <div class="auto-term">Ferdinand Porsche Sr., as named human declarant, declares the People's Car specification</div>
+        <div class="auto-example">1934 · named human + documented commission · B = 0</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot tf0"></div>
+        <div class="node-label">tf0</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Origin Established</span>
+        <div class="auto-example" style="margin-top:6px">Named human declarant: Ferdinand Porsche Sr.<br>Standing supplied by documented commission.<br>Type 60 specification: rear engine · air cooled · mass production.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">→ Type 60 prototypes 1935–1937 · KdF-Wagen 1938 · war halts production 1939–1945 →</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">Sanctioned Lineage Event · Visible Scar</span>
+        <div class="auto-term">Major Ivan Hirst restarts Wolfsburg production under British Army authority</div>
+        <div class="auto-example">1946 · Documented authority · war gap acknowledged · Descent maintained</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot green"></div>
+        <div class="node-label">1946</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Lineage Endures</span>
+        <div class="auto-example" style="margin-top:6px">S holds: Hirst has documented military authority.<br>Visible Scar: war interruption recorded.<br>tf0 carried forward. Chain intact.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">→ t0 sequence begins · all revisions within Species Descriptor bounds →</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · Split Window</span>
+        <div class="auto-term">Type 1 · split rear window · earliest production form</div>
+        <div class="auto-example">1946–1952 · Within bounds · Green</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot green"></div>
+        <div class="node-label">t0</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Lineage Intact</span>
+        <div class="auto-example" style="margin-top:6px">Closest to tf0 object form.<br>25 bhp · 1131cc · torsion bar suspension.<br>All five predicates hold.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">→ window redesign · incremental improvement →</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · Oval Window</span>
+        <div class="auto-term">Enlarged oval rear window · improved visibility · minor mechanical revisions</div>
+        <div class="auto-example">1953–1957 · Within bounds · Green</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot green"></div>
+        <div class="node-label">t0</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Lineage Intact</span>
+        <div class="auto-example" style="margin-top:6px">Structural grammar preserved.<br>Drift tolerance well within bounds.<br>Species Descriptor respected.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">→ window enlarged again · engine variants introduced →</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · Large Rear Window</span>
+        <div class="auto-term">Full-width rear window · 1200 / 1300 / 1500 engine variants</div>
+        <div class="auto-example">1958–1964 · Engine growth within bounds · Green</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot green"></div>
+        <div class="node-label">t0</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Lineage Intact</span>
+        <div class="auto-example" style="margin-top:6px">Displacement increases: permitted drift.<br>Air cooling retained. Silhouette unchanged.<br>Species Descriptor bounds respected.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">→ 1960s revisions · safety additions · export growth → becoming globally iconic →</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · Classic Era</span>
+        <div class="auto-term">1300 / 1500 / 1302 predecessors · peak global production · incremental improvement</div>
+        <div class="auto-example">1965–1970 · All predicates hold · Green</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot green"></div>
+        <div class="node-label">t0</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Lineage Intact</span>
+        <div class="auto-example" style="margin-top:6px">Semantic identity at its strongest.<br>Pattern lens: global production rhythm established.<br>Temporal Care: continuous, active.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">↓ suspension redesign · Species Descriptor begins to flex ↓</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · 1302 Super Beetle · First Drift Signal</span>
+        <div class="auto-term">MacPherson strut front suspension replaces torsion bar · enlarged front boot</div>
+        <div class="auto-example">1971–1972 · Structural grammar drifting · first amber pressure</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot amber"></div>
+        <div class="node-label">t0~</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-amber">Drift Detected</span>
+        <div class="auto-example" style="margin-top:6px">Departure from tf0 suspension specification.<br>Still within outer bounds — just.<br>Lens 3 (Pattern): rhythm disrupted. Advisory warranted.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">↓ curved windscreen · further from tf0 object profile ↓</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · 1303 · Deepening Drift</span>
+        <div class="auto-term">Curved panoramic windscreen · 1302 suspension retained · further from tf0 silhouette</div>
+        <div class="auto-example">1973–1975 · Object lens weakening · near-breach internal to lineage</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot amber"></div>
+        <div class="node-label">t0~</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-amber">Near Breach</span>
+        <div class="auto-example" style="margin-top:6px">Silhouette drifting from tf0 profile.<br>Lens 1 (Object) and Lens 5 (Semantic) diverging.<br>External regulatory pressure now compounding.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">↓ emissions law · safety regulation · Golf launched 1974 · Species Descriptor cannot absorb required changes ↓</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">Near Breach · External Pressure</span>
+        <div class="auto-term">Required compliance changes exceed all remaining drift tolerance</div>
+        <div class="auto-example">Mid-1970s · Object lens failing · Fork decision required</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot amber"></div>
+        <div class="node-label">AMBER</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-amber">Tolerance Exceeded</span>
+        <div class="auto-example" style="margin-top:6px">Water cooling demanded by emissions law.<br>Front crumple zone demanded by safety law.<br>Species Descriptor boundary breached. Fork required.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">↓ German production winds down · Mexican SEDÁN continues original lineage →</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">t0 · Mexican SEDÁN · Lineage's Final Chapter</span>
+        <div class="auto-term">Original Type 1 specification maintained · Puebla plant · genuine continuation</div>
+        <div class="auto-example">1978–2003 · German production ended · Mexico carries tf0 forward</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot green"></div>
+        <div class="node-label">t0</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-green">Lineage Continues</span>
+        <div class="auto-example" style="margin-top:6px">Rear engine · air cooled · original specification.<br>Sanctioned continuation by VW AG.<br>tf0 carried forward to the last car.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">↓ last Type 1 rolls off Puebla line · July 2003 · VIN 1 303 000 001 ↓</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">Honest Close · Original Lineage Ends</span>
+        <div class="auto-term">Final Type 1 produced · public ceremony · documented termination</div>
+        <div class="auto-example">30 July 2003 · 21,529,464 cars · lineage terminates with dignity</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot scar"></div>
+        <div class="node-label">END</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-amber">Lineage Closed</span>
+        <div class="auto-example" style="margin-top:6px">Original tf0 lineage terminates.<br>Documented. Public. Honest.<br>The scar is the record. The record is complete.</div>
+      </div>
+    </div>
+
+    <div class="node-spacer"></div>
+    <div class="connector-text">↓ New Beetle 1998 (concurrent) · Beetle 2011 · Golf platform · front engine · water cooled ↓</div>
+    <div class="node-spacer"></div>
+
+    <div class="timeline-node">
+      <div class="node-left">
+        <span class="framework-term">Undeclared Fork · Name Without Lineage</span>
+        <div class="auto-term">New Beetle (1998) and Beetle (2011) — name shared, lineage separate</div>
+        <div class="auto-example">1998–2019 · Distinct Species Descriptor · Semantic inheritance, not direct continuity</div>
+      </div>
+      <div class="node-center">
+        <div class="node-dot red"></div>
+        <div class="node-label">RED</div>
+      </div>
+      <div class="node-right">
+        <span class="status-pill pill-red">Undeclared Fork</span>
+        <div class="auto-example" style="margin-top:6px">Front engine. Water cooled. Golf floorpan.<br>Semantic inheritance — shape and meaning carried forward.<br>Under 8PF, a formal Fork declaration would make the relationship explicit.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NEAR BREACH ANALYSIS -->
+  <div class="near-breach-box">
+    <p class="nb-intro">The Beetle lineage is one of the clearest demonstrations that near-breach is not failure — it is information. The framework identifies the approaching tolerance boundary in the 1970s: emissions rules, safety expectations, and market pressure pushed the original Type 1 Species Descriptor toward its outer limits. The Golf is best read as a new lineage rather than a hidden continuation. The New Beetle illustrates a different phenomenon: semantic inheritance without direct lineage continuity.</p>
+    <div class="near-breach-examples">
+      <div class="nb-item">
+        <div class="brand">Near Breach · 1970s</div>
+        <p>Emissions and safety regulation pushed required changes beyond the Species Descriptor's drift tolerance. Lens 7 (Temporal) detects the approaching boundary. Lens 5 (Semantic) still holds — but Lens 1 (Object) is failing. The eight lenses disagree: Synthesis must arbitrate.</p>
+      </div>
+      <div class="nb-item">
+        <div class="brand">Honest Fork · Golf 1974</div>
+        <p>VW's implicit acknowledgement that the Type 1 could not absorb the required changes. A new tf0 is declared for the Golf. The original Beetle lineage continues in reduced form — correctly, as a diminishing but genuine continuation — until the last Mexican car in 2003.</p>
+      </div>
+      <div class="nb-item">
+        <div class="brand">Undeclared Fork · New Beetle 1998</div>
+        <p>Front engine, water cooled, Golf platform. Under 8PF analysis, the New Beetle has its own valid origin, but that origin is distinct from the 1934 Type 60 tf0. It carries Beetle meaning and design memory, but not direct Type 1 lineage continuity. A formal Fork declaration would make this distinction explicit.</p>
+      </div>
+      <div class="nb-item">
+        <div class="brand">The Correct Resolution</div>
+        <p>Under 8PF, the cleaner declaration would be: "The original Beetle lineage closes with the last Type 1. This vehicle is a new design, inspired by the Beetle's semantic legacy, and stands on its own tf0." That declaration would be an honest Fork — preserving both the original lineage and the new vehicle's independent identity.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EIGHT LENSES IN AUTOMOTIVE -->
+  <div class="section-title">The Eight Lenses · Automotive Application</div>
+  <div class="lens-grid">
+    <div class="lens-card">
+      <div class="lens-num">1</div>
+      <span class="lens-name">Object</span>
+      <div class="lens-auto">The physical vehicle: chassis, body, drivetrain. Fixity = VIN, homologation records.</div>
+      <div class="lens-role">Active · establishes what the thing is</div>
+    </div>
+    <div class="lens-card decisive">
+      <div class="lens-num">2</div>
+      <span class="lens-name">Lineage</span>
+      <div class="lens-auto">Unbroken chain of custody. Every owner, every documented rebuild, every transfer of title.</div>
+      <div class="lens-role">Decisive · primary determinant</div>
+    </div>
+    <div class="lens-card">
+      <div class="lens-num">3</div>
+      <span class="lens-name">Pattern</span>
+      <div class="lens-auto">Regular service, preservation activity, consistent use pattern. Disruption = first warning signal.</div>
+      <div class="lens-role">Active · earliest breach warning</div>
+    </div>
+    <div class="lens-card">
+      <div class="lens-num">4</div>
+      <span class="lens-name">Relational</span>
+      <div class="lens-auto">Custodial (owner), Delegated (restoration specialist), Adversarial (disputed provenance claim).</div>
+      <div class="lens-role">Active · maps authority</div>
+    </div>
+    <div class="lens-card critical">
+      <div class="lens-num">5</div>
+      <span class="lens-name">Semantic</span>
+      <div class="lens-auto">What does this model MEAN? Character, purpose, driving philosophy. Survives object change if intent preserved.</div>
+      <div class="lens-role">Critical for modern near-breach</div>
+    </div>
+    <div class="lens-card">
+      <div class="lens-num">6</div>
+      <span class="lens-name">Decision</span>
+      <div class="lens-auto">Manufacturer choices: maintain, delegate production, disclaim (discontinue). Abstention pressures Temporal Care.</div>
+      <div class="lens-role">Active · choice quality</div>
+    </div>
+    <div class="lens-card decisive">
+      <div class="lens-num">7</div>
+      <span class="lens-name">Temporal</span>
+      <div class="lens-auto">When did changes occur? Long periods without active stewardship, documentation, or renewal would pressure Temporal Care and eventually risk lineage extinction under the framework.</div>
+      <div class="lens-role">Decisive · locates breach</div>
+    </div>
+    <div class="lens-card decisive">
+      <div class="lens-num">8</div>
+      <span class="lens-name">Synthesis</span>
+      <div class="lens-auto">Formal verdict. Resolves lens conflicts. The New Beetle is not a failed object; it is a distinct lineage whose semantic connection to the Type 1 must not be mistaken for direct continuity.</div>
+      <div class="lens-role">Decisive · final verdict</div>
+    </div>
+  </div>
+
+  <!-- VISIBLE SCAR -->
+  <div class="scar-box">
+    <div class="scar-label">Visible Scar Protocol · Volkswagen Beetle</div>
+    <p>The Beetle lineage contains two moments where the Visible Scar Protocol was either correctly applied, correctly implied — or conspicuously absent. The difference between an honest lineage and a compromised one is not the existence of discontinuity. It is whether the discontinuity is declared.</p>
+    <div class="scar-examples">
+      <div class="scar-eg">
+        <strong>Scar Correctly Applied</strong>
+        Ivan Hirst's 1945 restart. A war interrupted production. British Army authority is documented. The gap is acknowledged. The chain of custody is traceable. This scar strengthens the lineage — it proves the handoff was sanctioned and recorded.
+      </div>
+      <div class="scar-eg">
+        <strong>Honest Fork · Scar Implied</strong>
+        The last Type 1 rolls off the Puebla line, July 2003. VIN 1 303 000 001. A ceremony is held. The original lineage closes with dignity. VW did not explicitly invoke Fork protocol — but the closure was public, dated, and documented. The scar exists in the record.
+      </div>
+      <div class="scar-eg">
+        <strong>Scar Obligation Unmet</strong>
+        The New Beetle (1998) and Beetle (2011) carry the name and design memory of the original Beetle while standing on a different technical foundation. Under 8PF, a formal Fork declaration would have clarified that these vehicles are inspired by the Type 1 lineage rather than direct continuations of it.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CONCLUSION -->
+  <div class="scar-box">
+    <div class="scar-label">Conclusion · Lineage Made Explicit</div>
+    <p>The Volkswagen Beetle demonstrates the central insight of 8PF. Most people intuitively recognise that a 2003 Mexican Type 1 Beetle remains part of the same historical lineage as the original 1930s Type 60 despite decades of accumulated modifications. Continuity is recognised not because every component remains unchanged, but because a documented chain of sanctioned inheritance persists through time.</p>
+    <p style="margin-top:14px">The New Beetle and later Beetle models illustrate a different phenomenon: semantic inheritance without direct lineage continuity. They inherit meaning, inspiration, and brand identity, but do so through a new lineage rather than as direct continuations of the original Type 1 chain. Viewed through 8PF, the distinction becomes explicit rather than intuitive.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      8PF Version 9.5 Lite · M. Keen · May 2026<br>
+      Automotive Lineage Analogy · Near Breach Detection<br>
+      "Continuity is not a property of the parts that remain,<br>but of the lineage that endures."
+    </div>
+    <div class="footer-right">8PF</div>
+  </div>
+
+</div>
+</body>
+</html>
