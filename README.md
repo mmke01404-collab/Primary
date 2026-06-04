@@ -1,14 +1,14 @@
-Primary — Lineage-Primary Framework
+# Primary — Lineage-Primary Framework
 
-Humming Box Problem — 8PF & Lineage-Primary Framework
+## Humming Box Problem — 8PF & Lineage-Primary Framework
 
-Author: M. Keen
-Copyright: © 2026 M. Keen
-Version: 1.0 — Primary Public Declaration
+**Author:** M. Keen  
+**Copyright:** © 2026 M. Keen  
+**Version:** 1.0 — Primary Public Declaration
 
 ---
 
-What This Repository Is
+## What This Repository Is
 
 This repository establishes a public declaration of authorship and continuity under the Lineage-Primary framework.
 
@@ -23,41 +23,41 @@ This repository functions as a lineage anchor, not simply a document store.
 
 ---
 
-The Core Problem — The Humming Box
+## The Core Problem — The Humming Box
 
-Your files are doomed — but not for the reason you think.
+**Your files are doomed — but not for the reason you think.**
 
-We've spent decades protecting the bits.
+We've spent decades protecting the bits.  
 We forgot to protect the meaning.
 
 We've been sold the wrong problem.
 
-Digital preservation isn't failing because of bit rot.
+Digital preservation isn't failing because of bit rot.  
 It's failing because we've built a world full of humming boxes.
 
-You know the sound — the low, constant whir of a server rack or an old external drive.
+You know the sound — the low, constant whir of a server rack or an old external drive.  
 A machine that is technically alive, but in terms of meaning, already silent.
 
-The data is intact.
+The data is intact.  
 The system is running.
 
 And yet — there is nothing left to understand.
 
-This is the Humming Box Problem.
+**This is the Humming Box Problem.**
 
 ---
 
-The Domesday Lesson
+## The Domesday Lesson
 
 In 1986 the BBC created a "future-proof" snapshot of British life on LaserDisc.
 
 Fifteen years later the bits were still perfect.
 
-No corruption.
+No corruption.  
 No loss.
 
-The hardware was gone.
-The software was extinct.
+The hardware was gone.  
+The software was extinct.  
 The interpretive context had vanished.
 
 The box was still humming.
@@ -66,12 +66,12 @@ It simply had nothing left to say.
 
 ---
 
-The Real Delusion
+## The Real Delusion
 
 We preserve files as if the object is the thing.
 
-We checksum it.
-Clone it.
+We checksum it.  
+Clone it.  
 Migrate it.
 
 We think we're saving the ship.
@@ -80,20 +80,20 @@ But we preserve the ship and lose the sea.
 
 You can keep a PDF bit-perfect for a century.
 
-But when the last person who understands its cultural context is gone,
+But when the last person who understands its cultural context is gone,  
 and the last system that renders it correctly has disappeared…
 
 What remains?
 
-Not a living document.
+Not a living document.  
 A semantic tombstone.
 
-The object survives.
+The object survives.  
 The identity does not.
 
 ---
 
-The Ship of Theseus Was the Wrong Question
+## The Ship of Theseus Was the Wrong Question
 
 Replacement isn't the problem.
 
@@ -105,7 +105,7 @@ It breaks when meaning, context, and interpretation slowly slide out of alignmen
 
 ---
 
-The Human Body Proves the Point
+## The Human Body Proves the Point
 
 Your body replaces most of its cells over time.
 
@@ -117,7 +117,7 @@ This is the lesson digital preservation keeps missing.
 
 ---
 
-Stop Preserving. Start Engineering Continuity.
+## Stop Preserving. Start Engineering Continuity.
 
 Preservation assumes stability.
 
@@ -141,7 +141,7 @@ And we are building more of them every second.
 
 ---
 
-Why This Matters
+## Why This Matters
 
 Loss of identity is not rare.
 
@@ -151,7 +151,7 @@ This repository demonstrates how continuity can remain visible even when systems
 
 ---
 
-Core Principle
+## Core Principle
 
 The Lineage-Primary Framework asserts:
 
@@ -164,104 +164,104 @@ Preservation must therefore shift from protecting objects to recording and valid
 
 ---
 
-Start Here
+## Start Here
 
-1. "View Cadbury 8PF Example (HTML)" (docs/cadbury-8pf.html)
+1. [View Cadbury 8PF Example (HTML)](docs/cadbury-8pf.html)  
    Applied example showing 8PF continuity through the Cadbury case.
 
-2. "View 8PF Automotive Analogy (HTML)" (docs/8pf_automotive_analogy.html)
+2. [View 8PF Automotive Analogy (HTML)](docs/8pf_automotive_analogy.html)  
    Applied application narrative exploring core 8PF concepts.
 
-3. "View Baton and the Race — Visual" (docs/baton%20and%20the%20race%209.5a.png)
+3. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)  
    Primary visual explanation of lineage continuity.
 
-4. "View Baton and the Race Multiple Batons — Visual" (docs/baton%20v3.png)
+4. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)  
    Multiple-copy lineage scenario.
 
-5. "Baton and the Race — Detailed Version (PDF)" (https://github.com)
+5. [Baton and the Race — Detailed Version (PDF)](https://github.com)  
    Conceptual demonstration of lineage continuity.
 
-6. "Library and the Lineage" (https://github.com)
+6. [Library and the Lineage](https://github.com)  
    Historical reflection on continuity-first systems.
 
-7. "Raw + 8PF Resilience" (https://github.com)
+7. [Raw + 8PF Resilience](https://github.com)  
    Applied architecture exploration.
 
-8. "Post-Collapse Technology Ladder" (https://github.com)
+8. [Post-Collapse Technology Ladder](https://github.com)  
    Structural model showing how technological capability must be rebuilt step-by-step.
 
-9. "Cryptographic Manifest" (https://github.com)
+9. [Cryptographic Manifest](https://github.com)  
    Verification and provenance anchor.
 
 ---
 
-Core Documents
+## Core Documents
 
-Cadbury 8PF Example
+### Cadbury 8PF Example
 
-"Read Cadbury 8PF Example — HTML" (docs/cadbury-8pf.html)
+[Read Cadbury 8PF Example — HTML](docs/cadbury-8pf.html)
 
 Applied continuity case study demonstrating how organisational identity persists through transformation.
 
 ---
 
-8PF Automotive Analogy
+### 8PF Automotive Analogy
 
-"Read 8PF Automotive Analogy — HTML" (docs/8pf_automotive_analogy.html)
+[Read 8PF Automotive Analogy — HTML](docs/8pf_automotive_analogy.html)
 
 Practical framing text mapping the 8PF architecture constraints onto systemic hardware/software transitions.
 
 ---
 
-Baton and the Race — Document
+### Baton and the Race — Document
 
-"Read Baton and the Race — PDF" (https://github.com)
+[Read Baton and the Race — PDF](https://github.com)
 
 ---
 
-Baton and the Race — Pictorial Illustration
+### Baton and the Race — Pictorial Illustration
 
-"Baton and the Race — Lineage Continuity Diagram v9.5a" (docs/baton%20and%20the%20race%209.5a.png)
+![Baton and the Race — Lineage Continuity Diagram v9.5a](docs/baton%20and%20the%20race%209.5a.png)
 
-"Baton and the Race — Lineage Continuity Diagram v3" (docs/baton%20v3.png)
+![Baton and the Race — Lineage Continuity Diagram v3](docs/baton%20v3.png)
 
 Conceptual illustration showing how identity persists through sequential transmission across generations of custodians.
 
 ---
 
-Library and the Lineage
+### Library and the Lineage
 
-"Read Library and the Lineage" (https://github.com)
+[Read Library and the Lineage](https://github.com)
 
 Practical reflection examining how traditional libraries operated as record-first systems.
 
 ---
 
-Raw + 8PF Resilience
+### Raw + 8PF Resilience
 
-"Read Raw + 8PF Resilience" (https://github.com)
+[Read Raw + 8PF Resilience](https://github.com)
 
 Technical application specification exploring lineage-first preservation.
 
 ---
 
-Post-Collapse Technology Ladder
+### Post-Collapse Technology Ladder
 
-"Read Post-Collapse Technology Ladder" (https://github.com)
+[Read Post-Collapse Technology Ladder](https://github.com)
 
 Structural model describing the sequential technological reconstruction required for recovering advanced reading environments after collapse. Demonstrates why preservation survivability depends on the lowest recoverable technological tier.
 
 ---
 
-The Cognitive Bicycle
+### The Cognitive Bicycle
 
-"Read The Cognitive Bicycle" (https://github.com)
+[Read The Cognitive Bicycle](https://github.com)
 
 Framework describing human direction and authorship in AI-assisted work.
 
 ---
 
-Repository Purpose
+## Repository Purpose
 
 This repository serves as a public cryptographic declaration of authorship and provenance.
 
@@ -278,19 +278,19 @@ Full source materials remain privately retained by the author.
 
 ---
 
-Cryptographic Manifest
+## Cryptographic Manifest
 
-"Open MANIFEST.md" (https://github.com)
+[Open MANIFEST.md](https://github.com)
 
-Work Title: Humming Box Problem — 8PF & Lineage-Primary Framework
-Author: Matthew Keen
-Copyright: © 2026 Matthew Keen. All rights reserved.
-Hash Algorithm: SHA-256
-Manifest Version: v5.2 — Recomputed From Source ZIP
-Date Generated: 2026-05-02
+**Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
+**Author:** Matthew Keen  
+**Copyright:** © 2026 Matthew Keen. All rights reserved.  
+**Hash Algorithm:** SHA-256  
+**Manifest Version:** v5.2 — Recomputed From Source ZIP  
+**Date Generated:** 2026-05-02
 
 ---
 
 This site is open source.
 
-"Improve this page" (https://github.com)
+[Improve this page](https://github.com)
