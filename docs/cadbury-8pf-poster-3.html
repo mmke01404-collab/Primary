@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8PF · Cadbury Creme Egg · Lineage Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1208;
+    --parchment: #f5ead4;
+    --cream: #fdf6e8;
+    --gold: #b8860b;
+    --gold-light: #d4a820;
+    --amber: #c47a15;
+    --rust: #8b3a0f;
+    --green-dk: #1a4a2a;
+    --green: #2d7a3a;
+    --red: #8b1a1a;
+    --red-bright: #c0392b;
+    --orange: #b5541a;
+    --grey: #6a5a48;
+    --border: #c8a878;
+    --mono: 'Share Tech Mono', monospace;
+    --serif: 'Crimson Pro', Georgia, serif;
+    --display: 'Playfair Display', Georgia, serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--serif);
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: var(--ink);
+    padding: 3rem 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(184,134,11,0.04) 40px,
+      rgba(184,134,11,0.04) 41px
+    );
+  }
+
+  .header-rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin-bottom: 1.5rem;
+  }
+
+  .header-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  .header-title {
+    font-family: var(--display);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--parchment);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .header-title span {
+    color: var(--gold-light);
+  }
+
+  .header-subtitle {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: #a09070;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .header-meta-item {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    color: #7a6a54;
+    letter-spacing: 0.1em;
+  }
+
+  .header-meta-item strong {
+    color: #b09070;
+    display: block;
+    font-size: 0.65rem;
+  }
+
+  .header-rule2 {
+    height: 1px;
+    background: linear-gradient(to right, var(--gold), transparent);
+    margin-top: 1.5rem;
+  }
+
+  /* ── CORE PRINCIPLE ── */
+  .principle {
+    background: var(--parchment);
+    border-bottom: 2px solid var(--border);
+    padding: 1.25rem 3rem;
+    text-align: center;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--grey);
+  }
+
+  .principle span { color: var(--gold); }
+
+  /* ── BODY ── */
+  .body {
+    padding: 2rem 2.5rem;
+    background: var(--cream);
+  }
+
+  /* ── SECTION LABEL ── */
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.2rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--green), var(--amber), var(--orange), var(--red), var(--orange), var(--green));
+  }
+
+  .stage {
+    position: relative;
+    margin-bottom: 1.75rem;
+    animation: fadeIn 0.4s ease both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-8px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .stage-dot {
+    position: absolute;
+    left: -1.35rem;
+    top: 0.6rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--cream);
+    z-index: 2;
+  }
+
+  .dot-green { background: var(--green); box-shadow: 0 0 6px rgba(45,122,58,0.5); }
+  .dot-amber { background: var(--amber); box-shadow: 0 0 6px rgba(196,122,21,0.5); }
+  .dot-orange { background: var(--orange); box-shadow: 0 0 6px rgba(181,84,26,0.5); }
+  .dot-red { background: var(--red-bright); box-shadow: 0 0 10px rgba(192,57,43,0.7); }
+
+  .stage-card {
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .stage-card.green { border-color: #2d7a3a; }
+  .stage-card.amber { border-color: #c47a15; }
+  .stage-card.orange { border-color: #b5541a; }
+  .stage-card.red { border-color: #c0392b; border-width: 2px; }
+  .stage-card.green-scarred { border-color: #2d7a3a; border-style: dashed; }
+
+  .stage-header {
+    padding: 0.6rem 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sh-green { background: #1a3a20; }
+  .sh-amber { background: #3a2808; }
+  .sh-orange { background: #3a1a08; }
+  .sh-red { background: #3a0808; }
+  .sh-green-scarred { background: #152815; }
+
+  .stage-year {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: #a09070;
+  }
+
+  .stage-title {
+    font-family: var(--display);
+    font-size: 0.95rem;
+    color: var(--parchment);
+    font-weight: 700;
+  }
+
+  .stage-verdict {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .verd-green { color: #4ade80; }
+  .verd-amber { color: #fbbf24; }
+  .verd-orange { color: #fb923c; }
+  .verd-red { color: #f87171; }
+
+  .stage-body {
+    padding: 0.75rem 0.9rem;
+    background: var(--cream);
+  }
+
+  .stage-summary {
+    font-size: 0.78rem;
+    color: #4a3a28;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  /* ── LENSES GRID ── */
+  .lenses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .lens-cell {
+    padding: 0.35rem 0.4rem;
+    border-radius: 2px;
+    border: 1px solid;
+  }
+
+  .lc-pass { background: rgba(45,122,58,0.1); border-color: rgba(45,122,58,0.4); }
+  .lc-near { background: rgba(196,122,21,0.12); border-color: rgba(196,122,21,0.4); }
+  .lc-breach { background: rgba(192,57,43,0.12); border-color: rgba(192,57,43,0.4); }
+
+  .lens-key {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    color: #8a7a6a;
+    display: block;
+  }
+
+  .lens-name {
+    font-size: 0.65rem;
+    color: #2a1a0a;
+    font-weight: 600;
+    display: block;
+    margin: 0.1rem 0;
+  }
+
+  .lens-status {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+
+  .ls-pass { color: #2d7a3a; }
+  .ls-near { color: #c47a15; }
+  .ls-breach { color: #c0392b; }
+
+  .lens-note {
+    font-size: 0.6rem;
+    color: #6a5a48;
+    line-height: 1.5;
+    margin-top: 0.15rem;
+  }
+
+  /* ── SCARS ── */
+  .scar {
+    background: #fdf0e0;
+    border: 1px solid #c8a060;
+    border-left: 3px solid var(--rust);
+    padding: 0.4rem 0.6rem;
+    font-size: 0.68rem;
+    color: #6a4a28;
+    font-style: italic;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .scar::before {
+    content: '🔹 VISIBLE SCAR · ';
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+    color: var(--rust);
+  }
+
+  /* ── BREACH CALLOUT ── */
+  .breach-callout {
+    background: #2a0808;
+    border: 2px solid #c0392b;
+    border-radius: 3px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .breach-callout::before {
+    content: '¬L';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--display);
+    font-size: 4rem;
+    color: rgba(192,57,43,0.15);
+    font-weight: 900;
+    pointer-events: none;
+  }
+
+  .bc-title {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: #f87171;
+    margin-bottom: 0.4rem;
+  }
+
+  .bc-body {
+    font-family: var(--serif);
+    font-size: 0.82rem;
+    color: #e8c8b0;
+    line-height: 1.7;
+  }
+
+  /* ── LENS LEGEND ── */
+  .legend {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.65rem;
+    color: var(--grey);
+    font-family: var(--mono);
+  }
+
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+  }
+
+  /* ── COMPLETE SCAR REGISTER ── */
+  .scar-register {
+    background: #fdf6e8;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1rem 1.25rem;
+  }
+
+  .scar-row {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(200,168,120,0.3);
+    align-items: flex-start;
+  }
+
+  .scar-row:last-child { border-bottom: none; }
+
+  .scar-year {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--gold);
+    width: 40px;
+    flex-shrink: 0;
+    padding-top: 0.1rem;
+  }
+
+  .scar-text {
+    font-size: 0.72rem;
+    color: #5a4a38;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--ink);
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footer-left {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    color: #5a4a38;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-right {
+    font-family: var(--display);
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #7a6a54;
+  }
+
+  /* ── AXIOM BAR ── */
+  .axiom-bar {
+    background: #f0e8d4;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .axiom-item {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    color: var(--grey);
+    letter-spacing: 0.05em;
+  }
+
+  .axiom-item strong { color: var(--gold); }
+
+  /* ── STATUS BAR ── */
+  .status-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .status-card {
+    padding: 0.75rem 1rem;
+    border-radius: 3px;
+    border: 1px solid;
+    text-align: center;
+  }
+
+  .sc-green { background: rgba(45,122,58,0.08); border-color: rgba(45,122,58,0.3); }
+  .sc-red { background: rgba(192,57,43,0.08); border-color: rgba(192,57,43,0.3); }
+  .sc-amber { background: rgba(196,122,21,0.1); border-color: rgba(196,122,21,0.3); }
+
+  .sc-num {
+    font-family: var(--display);
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+
+  .sc-green .sc-num { color: var(--green); }
+  .sc-red .sc-num { color: var(--red-bright); }
+  .sc-amber .sc-num { color: var(--amber); }
+
+  .sc-label {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    color: var(--grey);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-rule"></div>
+  <div class="header-eyebrow">8PF v9.5 Lite · Lineage-Primary Framework · Applied Analysis</div>
+  <div class="header-title">Cadbury <span>Creme Egg</span></div>
+  <div class="header-subtitle">A Full Identity and Continuity Analysis from tf0 to Present · All Eight Lenses · Breach and Near Breach Record</div>
+  <div class="header-meta">
+    <div class="header-meta-item"><strong>AUTHOR</strong>M. Keen · May 2026</div>
+    <div class="header-meta-item"><strong>tf0</strong>1963 · Fry's Creme Egg</div>
+    <div class="header-meta-item"><strong>LENSES</strong>1–8 Fully Applied</div>
+    <div class="header-meta-item"><strong>AXIOMS</strong>A0–A7 Active</div>
+    <div class="header-meta-item"><strong>CHAIN</strong>N=1 (UK) · Fork 1988 (US)</div>
+    <div class="header-meta-item"><strong>STATUS</strong>L = TRUE (Scarred)</div>
+  </div>
+  <div class="header-rule2"></div>
+</div>
+
+<!-- PRINCIPLE -->
+<div class="principle">
+  <span>"</span>Continuity is not a property of the bits that remain, but of the lineage that endures.<span>"</span>
+</div>
+
+<!-- AXIOM BAR -->
+<div class="axiom-bar">
+  <div class="axiom-item"><strong>A0</strong> Foundational Trust</div>
+  <div class="axiom-item"><strong>A1</strong> Lineage Definition</div>
+  <div class="axiom-item"><strong>A2</strong> Breach</div>
+  <div class="axiom-item"><strong>A3</strong> Temporal Continuity</div>
+  <div class="axiom-item"><strong>A4</strong> Change &amp; Intermediate States</div>
+  <div class="axiom-item"><strong>A5</strong> Temporal Care</div>
+  <div class="axiom-item"><strong>A6</strong> Visible Scar Integrity</div>
+  <div class="axiom-item"><strong>A7</strong> Sanctioned Scope</div>
+</div>
+
+<!-- BODY -->
+<div class="body">
+
+  <!-- STATUS SUMMARY -->
+  <div class="section-label">Lineage Health Overview · All Stages</div>
+  <div class="status-summary">
+    <div class="status-card sc-green">
+      <div class="sc-num">3</div>
+      <div class="sc-label">Green Stages<br>L = True / Hybrid True</div>
+    </div>
+    <div class="status-card sc-amber">
+      <div class="sc-num">4</div>
+      <div class="sc-label">Amber / Near Breach<br>Pressure Accumulating</div>
+    </div>
+    <div class="status-card sc-red">
+      <div class="sc-num">3</div>
+      <div class="sc-label">Orange–Red / Breach<br>~1971 Hybrid · 2006 · 2015</div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#2d7a3a"></div>Lens HOLDS</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#c47a15"></div>Lens PRESSURE</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#c0392b"></div>Lens FAILS</div>
+  </div>
+
+  <!-- SECTION: TIMELINE -->
+  <div class="section-label">Lineage Timeline · tf0 → Present</div>
+
+  <div class="timeline">
+
+    <!-- tf0 1963 -->
+    <div class="stage" style="animation-delay:0.05s">
+      <div class="stage-dot dot-green"></div>
+      <div class="stage-card green">
+        <div class="stage-header sh-green">
+          <div>
+            <div class="stage-year">1963 · tf0 — FOUNDATIONAL INCEPTION</div>
+            <div class="stage-title">Fry's Creme Egg: The Species Declared</div>
+          </div>
+          <div class="stage-verdict verd-green">L = TRUE</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">J.S. Fry &amp; Sons launches the Creme Egg. Shell is <em>Fry's own milk chocolate</em> — not Cadbury Dairy Milk, which is a separate Cadbury house formulation. White-and-yellow fondant interior. tf0 declared. B=0. <strong>Species Descriptor as declared:</strong> seasonal egg-shaped confection, <em>Fry's milk chocolate shell</em>, fondant core mimicking egg yolk and white. This is the origin against which all subsequent drift is measured. <strong>Critical structural note:</strong> at tf0 the egg is a <em>Fry's</em> product with <em>Fry's</em> chocolate. Cadbury Dairy Milk is not the shell at this point. The implication — which the 1971 stage must address — is that when the egg becomes a Cadbury product and the shell becomes Dairy Milk, that is a formula change from tf0, not a continuation of it.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-pass"><span class="lens-key">L1 · Object</span><span class="lens-name">Object</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Species fully identifiable. Fixity established.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L2 · Lineage</span><span class="lens-name">Lineage</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">O✓ I✓ D✓ S✓ A✓. N=1. L = True.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L3 · Pattern</span><span class="lens-name">Pattern</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Pattern origin. Stable foundation established.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L4 · Relational</span><span class="lens-name">Relational</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Custodial: Fry's/Cadbury. No challenge.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5 · Semantic</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ NOTE</span><span class="lens-note">Meaning = object at tf0. Shell is Fry's milk chocolate. "Dairy Milk" does not yet appear in the identity. Semantic intent: Fry's-chocolate-shelled fondant egg.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L6 · Decision</span><span class="lens-name">Decision</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Maintain. Species Descriptor committed at tf0.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L7 · Temporal</span><span class="lens-name">Temporal</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Generation begins. A(t)=True.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L8 · Synthesis</span><span class="lens-name">Synthesis</span><span class="lens-status ls-near">⚠ NOTE</span><span class="lens-note">Formal Verdict: L=True. Forward advisory: shell is Fry's chocolate at tf0. Any transition to Cadbury Dairy Milk requires a declared Lineage Event to preserve L.</span></div>
+          </div>
+          <div style="background:#f5f0e0; border:1px solid #c8a060; border-left:3px solid #b8860b; padding:0.4rem 0.6rem; font-size:0.68rem; color:#5a4a28; font-style:italic; line-height:1.6; margin-top:0.5rem; border-radius:0 2px 2px 0;">
+            ⚑ SPECIES DESCRIPTOR · tf0 1963 — Shell: Fry's milk chocolate (not Cadbury Dairy Milk). Fondant: white and yellow, egg-mimicking. Seasonality: Easter. The egg is a <em>Fry's</em> product at this point. When ownership transitions to Cadbury and the shell transitions to Dairy Milk, that is a formula change from tf0 — not an extension of it. A Lineage Event is required for L to hold across that transition.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1971 Rename + Hybrid -->
+    <div class="stage" style="animation-delay:0.1s">
+      <div class="stage-dot dot-orange"></div>
+      <div class="stage-card orange">
+        <div class="stage-header sh-orange">
+          <div>
+            <div class="stage-year">1971 · LINEAGE EVENT + UNDECLARED HYBRID — TWO SIMULTANEOUS EVENTS</div>
+            <div class="stage-title">Rename (Clean) · Dairy Milk Shell Adoption (Undeclared Hybrid)</div>
+          </div>
+          <div class="stage-verdict verd-orange">L = HYBRID · Breach Badge · Repair Arguable</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">Two things happen around 1971 that must be evaluated separately. <strong>Event 1 — Rename (Clean):</strong> Following the 1969 Cadbury–Schweppes merger, the egg is renamed from Fry's Creme Egg to Cadbury Creme Egg. This is a documented corporate rebrand. Custodial authority clear. S✓. Honest transition — the rename alone would be an Amber lineage event with a clean Visible Scar. <strong>Event 2 — Dairy Milk Shell Adoption (Undeclared Hybrid):</strong> At the same time, the shell transitions from Fry's milk chocolate to Cadbury Dairy Milk. Mondelez later stated Dairy Milk was used "for over forty years" before 2015 — placing adoption squarely at ~1971–75. This formula change is never declared as a Lineage Event. No Intermediate State recorded. No Species Descriptor update. The shell formula changes from the tf0-declared Fry's chocolate to a new formulation — without any formal acknowledgement. Under 8PF this is a <strong>Hybrid</strong>: a new branch grafted onto the original lineage without claiming Fork status and without recording the graft. The Hybrid carries a <strong>breach badge</strong> — I fails at the point of silent formula substitution. The egg that emerges from 1971 is not the tf0 egg plus a rename. It is the tf0 egg plus a rename <em>plus an undeclared shell substitution</em>. All subsequent lineage — including the 1985 consolidation and the 2015 breach — is evaluated against this Hybrid state, not against tf0 directly.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-near"><span class="lens-key">L1 · Object</span><span class="lens-name">Object</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Object changed: Fry's chocolate shell → Dairy Milk shell. No fixity record for transition. Object identity: Hybrid.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L2 · Lineage</span><span class="lens-name">Lineage</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">I FAILS at shell substitution: no Intermediate State between Fry's chocolate and Dairy Milk. Formula change exceeds Variation Bounds (0%) without declaration. Breach badge attached.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L3 · Pattern</span><span class="lens-name">Pattern</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Pattern disrupted at shell formula level. Production continues but recipe provenance broken from tf0.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L4 · Relational</span><span class="lens-name">Relational</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Custodial: Cadbury Schweppes documented. S✓. Authority to act — but scope of undeclared change is the problem.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5 · Semantic</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Semantic intent preserved (egg shape, fondant fill, seasonality). But shell material changes. D near-pressure: continuity of significant properties contested at formula level.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L6 · Decision</span><span class="lens-name">Decision</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">Undeclared substitution. No Lineage Event for formula change. No Visible Scar offered. Hybrid without declaration = silent graft.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L7 · Temporal</span><span class="lens-name">Temporal</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Rename Lineage Event declared (honest). Shell change unrecorded. Temporal Care renewed for rename only — formula change has no temporal anchor.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L8 · Synthesis</span><span class="lens-name">Synthesis</span><span class="lens-status ls-breach">✗ HYBRID</span><span class="lens-note">Formal Verdict: HYBRID with breach badge. Rename: L holds (clean). Shell substitution: I fails, undeclared. Hybrid recorded. New branch from ~1971 carries Dairy Milk shell. This Hybrid state becomes the de facto lineage going forward. 2015 breach must be evaluated against this Hybrid — not against tf0 directly.</span></div>
+          </div>
+          <div class="scar">RENAME EVENT 1971 — Fry's Creme Egg → Cadbury Creme Egg. Corporate rebrand post-Schweppes merger. S confirmed. Honest transition. Clean Lineage Event.</div>
+          <div class="scar" style="border-left-color:#c0392b; background:#fff0ee;">HYBRID WITH BREACH BADGE ~1971 — Fry's milk chocolate shell replaced by Cadbury Dairy Milk. Undeclared formula change. No Lineage Event. No Intermediate State. No Visible Scar offered at the time. I fails. L = Hybrid from this point. The Dairy Milk Creme Egg is not the tf0 egg — it is a Hybrid that was never declared as such. All subsequent lineage including the 2015 breach is evaluated against this Hybrid state.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1985 Peak + Descriptor Consolidation -->
+    <div class="stage" style="animation-delay:0.15s">
+      <div class="stage-dot dot-green"></div>
+      <div class="stage-card green">
+        <div class="stage-header sh-green">
+          <div>
+            <div class="stage-year">1985 · STABLE PERIOD — SPECIES DESCRIPTOR CONSOLIDATION</div>
+            <div class="stage-title">"How Do You Eat Yours?" — Dairy Milk Becomes Definitional</div>
+          </div>
+          <div class="stage-verdict verd-green">L = TRUE · Descriptor Tightened by Community</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">Dairy Milk shell in continuous unbroken use since the ~1971 Hybrid. Seasonal availability locked (year-round test failed). 'How do you eat yours?' campaign cements cultural semantic identity. <strong>Critically for 8PF:</strong> this consolidation event must now be understood correctly. The designated community is not consolidating the tf0 object — they are consolidating the <em>Hybrid state</em> that emerged ~1971 when Dairy Milk silently replaced Fry's chocolate. Through 14+ years of continuous Dairy Milk use, the community's Significant Property understanding locks onto Dairy Milk as definitional. The Hybrid's breach badge remains on the lineage record — but the consolidated community understanding from 1985 forward means that <em>any further change away from Dairy Milk</em> will be evaluated as a breach of the Hybrid-state Descriptor. The 2015 change is therefore a breach of the consolidated Hybrid, with the original ~1971 breach unremedied beneath it.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-pass"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Fully stable. Dairy Milk shell. No structural change.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">All predicates O✓I✓D✓S✓A✓. High confidence.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Annual seasonal production. Stable 22-year rhythm.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Cadbury Schweppes. Unchallenged custody.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-pass">✓ CONSOLIDATES</span><span class="lens-note">KEY EVENT: Designated community consolidates Dairy Milk as Significant Property of the <em>Hybrid-state</em> Descriptor. Note: community is consolidating the Hybrid, not tf0. The ~1971 breach badge persists beneath this.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Maintain. Seasonal restriction confirmed. Descriptor implicitly ratified by continued use.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Active Temporal Care. Generation mid-cycle.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Formal Verdict: L=True (Hybrid state). Advisory: ~1971 breach badge persists on lineage record. Community has consolidated around the Hybrid state — this governs all future breach evaluation. 2015 change = breach of the consolidated Hybrid Descriptor.</span></div>
+          </div>
+          <div style="background:#eef5ee; border:1px solid #2d7a3a; border-left:3px solid #1a4a2a; padding:0.4rem 0.6rem; font-size:0.68rem; color:#1a3a28; font-style:italic; line-height:1.6; margin-top:0.5rem; border-radius:0 2px 2px 0;">
+            ⚑ HYBRID-STATE DESCRIPTOR CONSOLIDATION 1985 — Lens 5 (Semantic) consolidates Dairy Milk as a de facto Significant Property. Crucially: this consolidation is of the <em>~1971 Hybrid state</em>, not of the tf0 object. The ~1971 breach badge remains on the lineage record — it is not cured by consolidation. But from 1985 forward, any further change away from Dairy Milk will be evaluated as a breach of this consolidated Hybrid Descriptor. The 2015 change is therefore a second undeclared formula change stacked on top of an unremedied first one.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1988 US Fork -->
+    <div class="stage" style="animation-delay:0.2s">
+      <div class="stage-dot dot-amber"></div>
+      <div class="stage-card amber">
+        <div class="stage-header sh-amber">
+          <div>
+            <div class="stage-year">1988 · LINEAGE EVENT — AUTHORISED US FORK</div>
+            <div class="stage-title">Hershey Acquires US Licence · Divergent Branch Begins</div>
+          </div>
+          <div class="stage-verdict verd-amber">L = TRUE (UK) · FORK (US)</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">Cadbury sells US manufacturing rights to Hershey for ~$300M. US-market egg begins diverging in recipe and ingredient proportions. UK lineage intact. US product is an Authorised Fork — not the same object, not claiming to be. Visible Scar entered. S confirmed for both branches via licence documentation.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-near"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Two objects, one name. UK unchanged. US diverges.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">UK: L holds. US: Fork. Identity claims across territories contested.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">US branch enters separate production rhythm.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Delegated Authority documented. S✓ both branches.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Semantic drift between territories begins.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Authorised Fork. Honest bifurcation documented.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">UK care active. US Fork starts own clock.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-near">⚠ ADVISORY</span><span class="lens-note">UK L=True. US = Fork. Cross-territory identity pressure noted.</span></div>
+          </div>
+          <div class="scar">US FORK 1988 — Hershey acquires US licence. US-market Creme Egg diverges in recipe and weight from UK original. Authorised Fork — S confirmed via licence documentation. Not the same lineage.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2006 Silent Reduction -->
+    <div class="stage" style="animation-delay:0.25s">
+      <div class="stage-dot dot-orange"></div>
+      <div class="stage-card orange">
+        <div class="stage-header sh-orange">
+          <div>
+            <div class="stage-year">~2006 · NEAR BREACH — UNDISCLOSED US SIZE REDUCTION</div>
+            <div class="stage-title">Silent Bitrot: 39g → 34g Without Declaration</div>
+          </div>
+          <div class="stage-verdict verd-orange">¬L (US) · NEAR BREACH</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">Hershey quietly reduces US Creme Egg from 39g to 34g — a 13% reduction. No Lineage Event declared. No Species Descriptor update. No public announcement. Variation Bounds exceeded without Intermediate State record. Near-breach via I failure (US branch). No Honest Repair performed. B.J. Novak draws public attention on Conan O'Brien (2007).</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-near"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Object smaller. No updated fixity record.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">I fails: variation exceeds 0% bounds. O pressured by undisclosed change.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">Pattern disruption, no recorded care event.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">S holds legally — but transparency absent.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">'Same egg' claimed. Object says otherwise. D near-breach.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">Abstain-class: change with no recorded authorisation. Decision: failure.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Near breach flagged: undisclosed change, no renewal.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">US ¬L. Breach predicate: I. No Honest Repair. No Scar. A6 pressure.</span></div>
+          </div>
+          <div class="scar">UNDISCLOSED US SIZE REDUCTION ~2006 — 39g → 34g. No Lineage Event. No Species Descriptor update. I failure. O pressured. No Honest Repair performed. Scar absent from institutional record — only consumer record exists.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2010 Kraft -->
+    <div class="stage" style="animation-delay:0.3s">
+      <div class="stage-dot dot-amber"></div>
+      <div class="stage-card amber">
+        <div class="stage-header sh-amber">
+          <div>
+            <div class="stage-year">2010 · CUSTODIAL TRANSFER — KRAFT ACQUISITION</div>
+            <div class="stage-title">New Agent: S Under Scrutiny · Maturation Queue Opens</div>
+          </div>
+          <div class="stage-verdict verd-amber">L = TRUE (conditional)</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">Kraft Foods acquires Cadbury in hostile takeover for £11.5 billion. Recipe unchanged at acquisition — but agent motivation shifts from mission-aligned to cost-driven. Broken post-acquisition pledges (Somerdale factory) signal agent integrity problems. Lens 8 issues Maturation Queue advisory: all predicates within 2–3 years of potential failure.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-pass"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">UK egg unchanged at acquisition point.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">S: new agent has authority — but integrity contested. All predicates under pressure.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Disruption risk rising: cost-cutting mandate ahead.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Adversarial dimension: hostile takeover. Custodial motivation: commercial not mission.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">'Cadbury' under US commercial ownership. Consumer meaning strains.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Maintain declared — but broken promises raise D pressure.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Atrophic phase onset. Care events less mission-driven.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-near">⚠ MATURATION</span><span class="lens-note">L=True (just). MATURATION QUEUE: all predicates near failure within 2–3 years if cost-cutting applied. Gift of time — use it.</span></div>
+          </div>
+          <div class="scar">KRAFT ACQUISITION 2010 — Hostile takeover. Agent change documented. S technically confirmed. Near Breach Advisory: all predicates under commercial pressure. Maturation Queue issued by Lens 8.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2015 BREACH -->
+    <div class="stage" style="animation-delay:0.35s">
+      <div class="stage-dot dot-red"></div>
+      <div class="stage-card red">
+        <div class="stage-header sh-red">
+          <div>
+            <div class="stage-year">2015 · BREACH — DAIRY MILK REMOVED · 12 JANUARY</div>
+            <div class="stage-title">The Shell Changes · Mondelez Denies It Matters</div>
+          </div>
+          <div class="stage-verdict verd-red">¬L — BREACH + A6 VIOLATION</div>
+        </div>
+        <div class="stage-body">
+          <div class="breach-callout">
+            <div class="bc-title">BREACH RECORD · NEAREST BREACH DIAGNOSTIC · A2 ACTIVATED · STACKED ON UNREMEDIED ~1971 HYBRID</div>
+            <div class="bc-body">Mondelez announces the shell is no longer Cadbury Dairy Milk but "standard cocoa mix chocolate." Pack size simultaneously reduced 6→5 at unchanged price. <strong>Breach predicate: I (Inheritance).</strong> No intermediate state between Dairy Milk and standard cocoa mix shell. <strong>Structural position:</strong> This is the <em>second</em> undeclared shell formula change in the egg's history. The first was ~1971 (Fry's → Dairy Milk, unremedied Hybrid). The 2015 change is a breach of the consolidated Hybrid-state Descriptor — evaluated against the Dairy Milk shell that the designated community locked in by 1985, not against tf0 directly. Mondelez's claim that Dairy Milk was never part of the product's declared identity fails doubly: (1) the ~1971 transition <em>made</em> Dairy Milk the shell without declaration — Mondelez's corporate predecessors never declared it, so they cannot now disclaim what was silently established; (2) the 1985 community consolidation governs regardless. <strong>A6 violation:</strong> "the fundamentals remain exactly the same" = attempted concealment, triggering additional O and S failure. £6–8M in sales lost.</div>
+          </div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-breach"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">Shell formula changed. Fixity of composition: FAILED.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">I FAILS. No intermediate state. Change undeclared regardless of Bounds dispute. Breach: I at Jan 2015.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">44-year Dairy Milk shell pattern terminated without Lineage Event.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">S holds legally but scope exceeded: Descriptor never updated to authorise formula change.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">D FAILS. 1985 Hybrid-state Descriptor governs. Designated community rejects change. Mondelez's disclaimers fail: their own predecessors made Dairy Milk the shell silently — they cannot now disclaim what was silently installed.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">Second undeclared formula change in lineage history. No Scar. A6 concealment attempt.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">SOLID RED. I fails Jan 2015. No renewal event. Second breach stacked on unremedied ~1971 Hybrid.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">¬L. Breach predicate: I. Breach point: 12 Jan 2015. Evaluated against consolidated Hybrid-state Descriptor (1985). ~1971 breach badge on lineage record beneath this. Two unremedied undeclared formula changes stacked. A6 violation: O+S additionally fail.</span></div>
+          </div>
+          <div class="scar">BREACH — DAIRY MILK REMOVAL 2015. Breach predicate: I (Inheritance). Three independent grounds: (1) Change undeclared — no Lineage Event, no Intermediate State, regardless of Bounds; (2) 1985 Descriptor Consolidation — community-resolved Significant Property violated; (3) A6 violation — concealment attempt.</div>
+          <div class="scar">A6 VIOLATION 2015. Mondelez statement "fundamentals remain exactly the same" = attempted concealment of breach. Mondelez's tf0 under-specification defence does not survive Lens 5 analysis: 22+ years of consolidated community meaning governs. O(t)=False and S(t)=False at point of statement per A6.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2016 Repair -->
+    <div class="stage" style="animation-delay:0.4s">
+      <div class="stage-dot dot-amber"></div>
+      <div class="stage-card amber">
+        <div class="stage-header sh-amber">
+          <div>
+            <div class="stage-year">2016 · INCOMPLETE HONEST REPAIR</div>
+            <div class="stage-title">Dairy Milk Quietly Restored — Without the Scar</div>
+          </div>
+          <div class="stage-verdict verd-amber">L = CONDITIONAL · A6 Persists</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">Mondelez restores Dairy Milk chocolate shell following consumer backlash and £6–8M sales fall. Confirmed via spokesperson: "the company returned to the original recipe following consumer feedback." Critically: no formal announcement, no Visible Scar, no acknowledgement of breach. Under A6, silent repair does not satisfy Honest Repair protocol. The scar is missing. The repair is real but incomplete.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-pass"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Dairy Milk shell restored. Formula back within bounds.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">I restored. O still pressured — breach period unacknowledged. L conditional.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Pattern re-establishes. 2015 break unrecorded.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">S holds. But silence on breach is an integrity concern.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Meaning partially restored. But consumers now know identity is commercially negotiable.</span></div>
+            <div class="lens-cell lc-breach"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-breach">✗ FAILS</span><span class="lens-note">Silent repair without Honest Repair declaration. A6 violation continues.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Restoration unrecorded as Lineage Event. Temporal Care renewed but not declared.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-near">⚠ ADVISORY</span><span class="lens-note">L conditional. A6 violation persists. Silent repair ≠ Honest Repair. Scar outstanding.</span></div>
+          </div>
+          <div class="scar">INCOMPLETE REPAIR 2016 — Dairy Milk restored, no public acknowledgement. No Visible Scar entered. A6 violation persists: silent repair does not satisfy Honest Repair protocol. Lineage requires Scar to fully clear.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2026 Current -->
+    <div class="stage" style="animation-delay:0.45s">
+      <div class="stage-dot dot-green"></div>
+      <div class="stage-card green-scarred">
+        <div class="stage-header sh-green">
+          <div>
+            <div class="stage-year">2026 · CURRENT STATE — POST-BREACH RECOVERY</div>
+            <div class="stage-title">Lineage Endures — Maintained by Consumer Memory</div>
+          </div>
+          <div class="stage-verdict verd-green">L = TRUE · Outstanding Scar Deficit</div>
+        </div>
+        <div class="stage-body">
+          <div class="stage-summary">UK Cadbury Creme Egg: Dairy Milk shell, fondant core, Bournville manufacture. 200M+ sold annually Jan–Easter. Core object intact. However: the 2015 breach has never received a formal Visible Scar from Mondelez. The lineage endures — but it is maintained not by institutional transparency, by consumer collective memory as de facto custodian. If another recipe change occurs without honest reckoning with 2015, ¬L is near-certain.</div>
+          <div class="lenses-grid">
+            <div class="lens-cell lc-pass"><span class="lens-key">L1</span><span class="lens-name">Object</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Object stable. 200M+/year. Bournville manufacture.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L2</span><span class="lens-name">Lineage</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">L=True. O under A6 pressure from unacknowledged 2015 breach.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L3</span><span class="lens-name">Pattern</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Pattern stable since 2016. 2015 gap unrecorded officially.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L4</span><span class="lens-name">Relational</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Mondelez custodial. Consumer trust deficit persists from 2015.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L5</span><span class="lens-name">Semantic</span><span class="lens-status ls-near">⚠ PRESSURE</span><span class="lens-note">Culturally potent — but identity now known to be commercially contingent.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L6</span><span class="lens-name">Decision</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Maintain. Recipe stable. Post-2016 decision quality: adequate.</span></div>
+            <div class="lens-cell lc-pass"><span class="lens-key">L7</span><span class="lens-name">Temporal</span><span class="lens-status ls-pass">✓ HOLDS</span><span class="lens-note">Temporal Care active. One generation not yet elapsed. A(t)=True.</span></div>
+            <div class="lens-cell lc-near"><span class="lens-key">L8</span><span class="lens-name">Synthesis</span><span class="lens-status ls-near">⚠ ADVISORY</span><span class="lens-note">L=True. Standing A6 advisory: 2015 Scar absent. If further change occurs: ¬L near-certain. Consumer memory = de facto custodian.</span></div>
+          </div>
+          <div class="scar">OUTSTANDING ADVISORY 2026 — 2015 Dairy Milk removal breach has never received a formal Visible Scar from Mondelez. A6 pressure persists. The lineage is currently maintained by consumer collective memory as de facto custodian of the lineage record. Institutional transparency deficit unresolved.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end timeline -->
+
+  <!-- COMPLETE SCAR REGISTER -->
+  <div class="section-label">Complete Visible Scar Register · Full Lineage Record</div>
+  <div class="scar-register">
+    <div class="scar-row">
+      <div class="scar-year">1971</div>
+      <div class="scar-text">RENAME EVENT — Fry's Creme Egg → Cadbury Creme Egg. S confirmed. Honest transition. Clean Lineage Event.</div>
+    </div>
+    <div class="scar-row" style="background:rgba(192,57,43,0.04);">
+      <div class="scar-year" style="color:#b5541a">~1971</div>
+      <div class="scar-text">HYBRID WITH BREACH BADGE — Fry's milk chocolate shell silently replaced by Cadbury Dairy Milk. Undeclared formula change. No Lineage Event. No Intermediate State. I fails. L = Hybrid. Breach badge attached. Never remedied. All subsequent lineage is the Hybrid lineage — not the tf0 lineage.</div>
+    </div>
+    <div class="scar-row" style="background:rgba(45,122,58,0.05);">
+      <div class="scar-year" style="color:#2d7a3a">1985</div>
+      <div class="scar-text">HYBRID-STATE DESCRIPTOR CONSOLIDATION (Lens 5) — Designated community consolidates Dairy Milk as Significant Property of the <em>Hybrid-state</em> Descriptor. Note: consolidation is of the Hybrid, not tf0. ~1971 breach badge persists. 2015 change = breach of this consolidated Hybrid Descriptor.</div>
+    </div>
+    <div class="scar-row">
+      <div class="scar-year">1988</div>
+      <div class="scar-text">US FORK — Hershey acquires US licence. US-market Creme Egg diverges in recipe and weight from UK original. Authorised Fork. Not the same lineage. S confirmed via licence documentation.</div>
+    </div>
+    <div class="scar-row">
+      <div class="scar-year">~2006</div>
+      <div class="scar-text">UNDISCLOSED US SIZE REDUCTION — 39g → 34g. No Lineage Event. I failure. O pressured. No Honest Repair. Scar absent from institutional record. Consumer record only.</div>
+    </div>
+    <div class="scar-row">
+      <div class="scar-year">2010</div>
+      <div class="scar-text">KRAFT ACQUISITION — Hostile takeover. Agent change. S confirmed. Maturation Queue issued: all predicates under commercial pressure within 2–3 years of potential failure.</div>
+    </div>
+    <div class="scar-row" style="background: rgba(192,57,43,0.05);">
+      <div class="scar-year" style="color:#c0392b">2015</div>
+      <div class="scar-text"><strong>PRIMARY BREACH</strong> — Dairy Milk removed. Breach predicate: I. Evaluated against consolidated Hybrid-state Descriptor (1985). Second undeclared formula change stacked on unremedied ~1971 Hybrid. Mondelez's tf0 disclaimer defence fails: their predecessors silently installed Dairy Milk — they cannot now disclaim it. + A6 VIOLATION: concealment attempt. O+S additionally fail.</div>
+    </div>
+    <div class="scar-row">
+      <div class="scar-year">2016</div>
+      <div class="scar-text">INCOMPLETE REPAIR — Dairy Milk restored silently. No Honest Repair declaration. No Visible Scar entered. A6 violation persists. Lineage conditionally restored.</div>
+    </div>
+    <div class="scar-row">
+      <div class="scar-year">2026</div>
+      <div class="scar-text">OUTSTANDING ADVISORY — 2015 Scar absent from institutional record. Consumer memory = de facto lineage custodian. L=True but A6 pressure unresolved.</div>
+    </div>
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="section-label">Synthesis · Final Verdict</div>
+  <div style="border:1px solid var(--border); border-radius:3px; padding:1.25rem 1.5rem; background:#fdf8f0;">
+    <div style="font-family:var(--display); font-size:1.1rem; font-weight:700; color:var(--ink); margin-bottom:0.75rem;">The Creme Egg is a Hybrid that was breached twice — and neither event was ever declared.</div>
+    <div style="font-family:var(--serif); font-size:0.82rem; color:#4a3a28; line-height:1.8;">
+      At tf0 (1963) the egg had a Fry's milk chocolate shell. Around 1971, that shell was silently replaced with Cadbury Dairy Milk — an undeclared formula change that should have been recorded as a Hybrid with a breach badge. It was not. The egg that became culturally iconic from 1985 onward was not the tf0 egg: it was the undeclared Hybrid. In 2015, Mondelez removed Dairy Milk — the second undeclared shell formula change in the egg's history. Their defence that Dairy Milk was never formally part of the product's declared identity is technically true of tf0, but fatally undermined by the fact that their own predecessors silently installed it without declaration. You cannot disclaim what you silently established. The 2015 breach is evaluated against the 1985-consolidated Hybrid-state Descriptor, and it fails on that basis — plus the A6 concealment violation. The lineage endures as a Hybrid, scarred twice, with both scars absent from the institutional record. Consumer memory carries what the institution refuses to write down.
+    </div>
+    <div style="margin-top:1rem; font-family:var(--mono); font-size:0.58rem; letter-spacing:0.1em; color:var(--gold); border-top:1px solid var(--border); padding-top:0.75rem;">
+      CHAIN: N=1 (UK) · tf0 SHELL: FRY'S CHOCOLATE · ~1971 HYBRID (UNDECLARED): DAIRY MILK INSTALLED · 1985 HYBRID-STATE CONSOLIDATED · 2015 BREACH: SECOND UNDECLARED CHANGE · A6 OUTSTANDING · STATUS: L=TRUE (HYBRID, DOUBLY SCARRED) · CUSTODIAN: CONSUMER COLLECTIVE
+    </div>
+  </div>
+
+</div><!-- end body -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-left">
+    8PF v9.5 Lite · Author: M. Keen · May 2026<br>
+    Axioms A0–A7 · Lenses 1–8 · tf0 1963
+  </div>
+  <div class="footer-right">
+    "A lineage that hides its scars is compromised.<br>A lineage that displays them honestly is worthy of continuity."
+  </div>
+</div>
+
+</body>
+</html>
