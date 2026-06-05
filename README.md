@@ -1,16 +1,16 @@
-# Primary — Lineage-Primary Framework
+##  Primary — Lineage-Primary Framework
 
 ## Humming Box Problem — 8PF & Lineage-Primary Framework
 
-**Author:** M. Keen
-**Copyright:** © 2026 M. Keen
-**Version:** 1.1 — Primary Public Declaration
+**Author:** M. Keen  
+**Copyright:** © 2026 M. Keen  
+**Version:** 1.0 — Primary Public Declaration
 
 ---
 
 ## What This Repository Is
 
-This repository establishes a public declaration of authorship, continuity, and provenance under the Lineage-Primary Framework.
+This repository establishes a public declaration of authorship and continuity under the Lineage-Primary framework.
 
 It exists to record:
 
@@ -27,27 +27,129 @@ This repository functions as a lineage anchor, not simply a document store.
 
 **Your files are doomed — but not for the reason you think.**
 
-We've spent decades protecting the bits.
-
+We've spent decades protecting the bits.  
 We forgot to protect the meaning.
 
 We've been sold the wrong problem.
 
-Digital preservation isn't failing because of bit rot.
-
+Digital preservation isn't failing because of bit rot.  
 It's failing because we've built a world full of humming boxes.
 
-You know the sound — the low, constant whir of a server rack or an old external drive.
-
+You know the sound — the low, constant whir of a server rack or an old external drive.  
 A machine that is technically alive, but in terms of meaning, already silent.
 
-The data is intact.
-
+The data is intact.  
 The system is running.
 
 And yet — there is nothing left to understand.
 
 **This is the Humming Box Problem.**
+
+---
+
+## The Domesday Lesson
+
+In 1986 the BBC created a "future-proof" snapshot of British life on LaserDisc.
+
+Fifteen years later the bits were still perfect.
+
+No corruption.  
+No loss.
+
+The hardware was gone.  
+The software was extinct.  
+The interpretive context had vanished.
+
+The box was still humming.
+
+It simply had nothing left to say.
+
+---
+
+## The Real Delusion
+
+We preserve files as if the object is the thing.
+
+We checksum it.  
+Clone it.  
+Migrate it.
+
+We think we're saving the ship.
+
+But we preserve the ship and lose the sea.
+
+You can keep a PDF bit-perfect for a century.
+
+But when the last person who understands its cultural context is gone,  
+and the last system that renders it correctly has disappeared…
+
+What remains?
+
+Not a living document.  
+A semantic tombstone.
+
+The object survives.  
+The identity does not.
+
+---
+
+## The Ship of Theseus Was the Wrong Question
+
+Replacement isn't the problem.
+
+Drift is.
+
+Digital identity doesn't break because parts change.
+
+It breaks when meaning, context, and interpretation slowly slide out of alignment.
+
+---
+
+## The Human Body Proves the Point
+
+Your body replaces most of its cells over time.
+
+Yet you remain you.
+
+Identity survives turnover because it lives in continuity, not in the components.
+
+This is the lesson digital preservation keeps missing.
+
+---
+
+## Stop Preserving. Start Engineering Continuity.
+
+Preservation assumes stability.
+
+Stability is the illusion.
+
+Change is the default.
+
+We don't need more backups.
+
+We need better maps of change.
+
+If drift is coherent, identity survives.
+
+If it isn't, identity collapses — no matter how perfect the data is.
+
+A humming box isn't a memory.
+
+It's a mausoleum.
+
+And we are building more of them every second.
+
+---
+
+## Why This Matters
+
+Loss of identity is not rare.
+
+It is predictable when transformation is not recorded.
+
+This repository demonstrates how continuity can remain visible even when systems evolve.
+
+---
 
 ---
 
