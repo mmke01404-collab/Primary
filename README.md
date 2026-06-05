@@ -4,7 +4,7 @@
 
 **Author:** M. Keen  
 **Copyright:** © 2026 M. Keen  
-**Version:** 1.0 — Primary Public Declaration
+**Version:** 1.1 — Primary Public Declaration
 
 ---
 
