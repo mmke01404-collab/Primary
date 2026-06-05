@@ -1,11 +1,10 @@
 # Cryptographic Manifest — Lineage-Primary Framework
-
 **Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework  
 **Author:** Matthew Keen  
 **Copyright:** © 2026 Matthew Keen. All rights reserved.  
 **Hash Algorithm:** SHA-256  
-**Manifest Version:** v5.2 — Recomputed From Source ZIP  
-**Date Generated:** 2026-05-02
+**Manifest Version:** v5.3 — Recomputed From Source ZIP  
+**Date Generated:** 2026-06-05
 
 ---
 
@@ -25,8 +24,8 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 
 ## Archive Identity
 
-**Source Archive:** Lineage8PFmayv3.zip  
-**Archive SHA-256:** `4763A43554EED33E86C7C96CAD39845E51C0D00764D32DEB6ED07058144E35D5`  
+**Source Archive:** Lineage8PF.zip  
+**Archive SHA-256:** `A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8`  
 
 ---
 
@@ -352,6 +351,11 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 **File Date:** 2026-05-02
 
 ---
+**File Path:** Lineage8PF/Final/Stable/baton v3.png  
+**SHA-256:** `C763BEAECE9E74074EB727D620F83219193201CED04117C14BEC8D7E1D9D2529`  
+**File Date:** 2026-05-03
+
+---
 **File Path:** Lineage8PF/Final/Stable/baton-and-race.pdf  
 **SHA-256:** `CB819337346783EA599EC982AFFC073398C00741FEA97912B99A335D9638B70D`  
 **File Date:** 2026-04-24
@@ -377,6 +381,11 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 **File Date:** 2026-04-21
 
 ---
+**File Path:** Lineage8PF/Final/Stable/file_000000001f5072439228f2298a7c4b8b.png  
+**SHA-256:** `CFBF3EAFD5BED1D06BA128CE7FEAA1B04428EE04AC3963667F613D75177EC283`  
+**File Date:** 2026-05-04
+
+---
 **File Path:** Lineage8PF/Final/Stable/final rosetta stone glass storage.pdf  
 **SHA-256:** `EF68CA1CEC787A946BC87F1374236F3BA55C5178ED6D6BE3F4432AF74B9671EB`  
 **File Date:** 2026-04-06
@@ -395,6 +404,46 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 **File Path:** Lineage8PF/Final/Stable/raw+8pf resillience.pdf  
 **SHA-256:** `1B99C0FE1EFC100240CE23A6B4B71635B1D264FEDCCA07B20D1A4A0FBB486800`  
 **File Date:** 2026-04-29
+
+---
+**File Path:** Lineage8PF/Final/Stable/this.pdf  
+**SHA-256:** `BE6BCB15255B23E1BCD3EC55C4EA61B3B33C82E674C777BC85B836D1801E4C34`  
+**File Date:** 2026-05-04
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/8PF_AI_Handbrake_v2.docx  
+**SHA-256:** `782180CC52EA15AD7FA941ABF5BB468D4E9EF9ECB02430EB7EE7C58A3969B1B1`  
+**File Date:** 2026-06-05
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/8pf_automotive_analogy.html  
+**SHA-256:** `4C0CC15C21891335164745A902288A61EE867BCE232608761A7FE491E36E0885`  
+**File Date:** 2026-06-03
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/8PF_v9.6_Lite.pdf  
+**SHA-256:** `61B55ACEA14737D8A8F9DA8D29AFF70D4781618BD30826EABE40407CAE94550C`  
+**File Date:** 2026-05-04
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/8PF_v9.6a_Lite.pdf  
+**SHA-256:** `045CEDE59DAB7380996C5807377BA699EEC8A43285549267CE941CC7C53199A8`  
+**File Date:** 2026-05-04
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/8PF_v9.6a_teaching edition.pdf  
+**SHA-256:** `72215B479A3DFCA57D4E8EBCF57C50919E66A23175B970915B98D1341CD08042`  
+**File Date:** 2026-05-04
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/cadbury-8pf-poster-3.html  
+**SHA-256:** `81A71C116147880010E414E4110FE4522806CB61A9D19524FE097882BAB5E3BB`  
+**File Date:** 2026-06-04
+
+---
+**File Path:** Lineage8PF/Final/Stable/working/file_000000000a4c720c880c44ac8954e3f0.png  
+**SHA-256:** `2C06426B34E718E44FCC8F6253C0A066CF1C0F32D249AB013A110882322C4E13`  
+**File Date:** 2026-06-05
 
 ---
 **File Path:** Lineage8PF/First works 1/doc1.pdf  
@@ -950,7 +999,7 @@ File metadata includes **date-only values (YYYY-MM-DD)** extracted from ZIP arch
 
 ## Repository Integrity Status
 
-**Total Files Anchored:** 183  
+**Total Files Anchored:** 193  
 **Hash Algorithm:** SHA-256  
 
 ---
@@ -961,7 +1010,7 @@ This manifest represents a fixed declaration of document identity states at time
 
 Future updates should increment version numbering:
 
-- v5.3  
+- v5.4  
 - v6.0  
 - etc.
 
