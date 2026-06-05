@@ -2,8 +2,8 @@
 
 ## Humming Box Problem — 8PF & Lineage-Primary Framework
 
-**Author:** M. Keen  
-**Copyright:** © 2026 M. Keen  
+**Author:** M. Keen
+**Copyright:** © 2026 M. Keen
 **Version:** 1.1 — Primary Public Declaration
 
 ---
@@ -57,7 +57,7 @@ And yet — there is nothing left to understand.
 
 **Archive SHA-256**
 
-`A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8`
+A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8
 
 **Files Anchored:** 193
 
@@ -71,21 +71,43 @@ The manifest serves as the primary cryptographic verification anchor for this re
 
 1. [View Cadbury 8PF Example (HTML)](docs/cadbury-8pf.html)
 
+   Applied example showing 8PF continuity through the Cadbury case.
+
 2. [View 8PF Automotive Analogy (HTML)](docs/8pf_automotive_analogy.html)
+
+   Applied application narrative exploring core 8PF concepts.
 
 3. [View Baton and the Race — Visual](docs/baton%20and%20the%20race%209.5a.png)
 
+   Primary visual explanation of lineage continuity.
+
 4. [View Baton and the Race Multiple Batons — Visual](docs/baton%20v3.png)
+
+   Multiple-copy lineage scenario.
 
 5. [Baton and the Race — Detailed Version (PDF)](docs/baton-and-racev2.pdf)
 
+   Conceptual demonstration of lineage continuity.
+
 6. [Library and the Lineage](docs/library%20and%20the%20lineage.pdf)
+
+   Historical reflection on continuity-first systems.
 
 7. [Raw + 8PF Resilience](docs/raw%2B8pf%20resillience.pdf)
 
+   Applied architecture exploration.
+
 8. [Post-Collapse Technology Ladder](docs/Post-Collapse_Technology_Ladder.pdf)
 
-9. [Cryptographic Manifest](MANIFEST.md)
+   Structural model showing how technological capability must be rebuilt step-by-step.
+
+9. [The Cognitive Bicycle](https://github.com/lineageframework/Cognitive-Bicycle)
+
+   Framework describing human direction, intellectual ownership, and authorship in AI-assisted work.
+
+10. [Cryptographic Manifest](MANIFEST.md)
+
+    Verification and provenance anchor.
 
 ---
 
@@ -149,6 +171,16 @@ Structural model describing the sequential technological reconstruction required
 
 ---
 
+### The Cognitive Bicycle
+
+[Read The Cognitive Bicycle Repository](https://github.com/lineageframework/Cognitive-Bicycle)
+
+Framework describing human direction, intellectual ownership, and authorship in AI-assisted work.
+
+The Cognitive Bicycle explores how AI can amplify human capability without displacing human responsibility, originality, or creative direction.
+
+---
+
 ## Repository Purpose
 
 This repository serves as a public cryptographic declaration of:
@@ -181,7 +213,7 @@ Full source materials remain privately retained by the author.
 
 **Archive SHA-256:**
 
-`A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8`
+A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8
 
 **Files Anchored:** 193
 
