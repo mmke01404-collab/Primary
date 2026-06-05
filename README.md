@@ -291,15 +291,7 @@ The Cognitive Bicycle explores how AI can amplify human capability without displ
 
 ---
 
-## Related Repositories
 
-### The Cognitive Bicycle
-
-A companion repository exploring authorship, intellectual ownership, and human direction in AI-assisted creation.
-
-https://github.com/lineageframework/Cognitive-Bicycle
-
----
 
 ## Repository Purpose
 
