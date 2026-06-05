@@ -1,16 +1,18 @@
-##  Primary — Lineage-Primary Framework
+# Primary — Lineage-Primary Framework
 
-## Humming Box Problem — 8PF & Lineage-Primary Framework
+# Humming Box Problem — 8PF & Lineage-Primary Framework
 
-**Author:** M. Keen  
-**Copyright:** © 2026 M. Keen  
+**Author:** M. Keen
+
+**Copyright:** © 2026 M. Keen
+
 **Version:** 1.1 — Primary Public Declaration
 
 ---
 
 ## What This Repository Is
 
-This repository establishes a public declaration of authorship and continuity under the Lineage-Primary framework.
+This repository establishes a public declaration of authorship and continuity under the Lineage-Primary Framework.
 
 It exists to record:
 
@@ -27,23 +29,29 @@ This repository functions as a lineage anchor, not simply a document store.
 
 **Your files are doomed — but not for the reason you think.**
 
-We've spent decades protecting the bits.  
+We've spent decades protecting the bits.
+
 We forgot to protect the meaning.
 
 We've been sold the wrong problem.
 
-Digital preservation isn't failing because of bit rot.  
+Digital preservation isn't failing because of bit rot.
+
 It's failing because we've built a world full of humming boxes.
 
-You know the sound — the low, constant whir of a server rack or an old external drive.  
+You know the sound — the low, constant whir of a server rack or an old external drive.
+
 A machine that is technically alive, but in terms of meaning, already silent.
 
-The data is intact.  
+The data is intact.
+
 The system is running.
 
 And yet — there is nothing left to understand.
 
 **This is the Humming Box Problem.**
+
+The Lineage-Primary Framework proposes that continuity of meaning, not preservation of objects, is the true unit of long-term survival.
 
 ---
 
@@ -53,11 +61,14 @@ In 1986 the BBC created a "future-proof" snapshot of British life on LaserDisc.
 
 Fifteen years later the bits were still perfect.
 
-No corruption.  
+No corruption.
+
 No loss.
 
-The hardware was gone.  
-The software was extinct.  
+The hardware was gone.
+
+The software was extinct.
+
 The interpretive context had vanished.
 
 The box was still humming.
@@ -70,9 +81,11 @@ It simply had nothing left to say.
 
 We preserve files as if the object is the thing.
 
-We checksum it.  
-Clone it.  
-Migrate it.
+We checksum it.
+
+We clone it.
+
+We migrate it.
 
 We think we're saving the ship.
 
@@ -80,15 +93,16 @@ But we preserve the ship and lose the sea.
 
 You can keep a PDF bit-perfect for a century.
 
-But when the last person who understands its cultural context is gone,  
-and the last system that renders it correctly has disappeared…
+But when the last person who understands its cultural context is gone, and the last system that renders it correctly has disappeared…
 
 What remains?
 
-Not a living document.  
+Not a living document.
+
 A semantic tombstone.
 
-The object survives.  
+The object survives.
+
 The identity does not.
 
 ---
@@ -151,8 +165,6 @@ This repository demonstrates how continuity can remain visible even when systems
 
 ---
 
----
-
 ## Manifest Status
 
 **Current Manifest Version:** v5.3
@@ -210,67 +222,52 @@ The manifest serves as the primary cryptographic verification anchor for this re
 
 ### Cadbury 8PF Example
 
-[Read Cadbury 8PF Example — HTML](docs/cadbury-8pf.html)
-
 Applied continuity case study demonstrating how organisational identity persists through transformation.
 
----
+[Read Cadbury 8PF Example — HTML](docs/cadbury-8pf.html)
 
 ### 8PF Automotive Analogy
 
-[Read 8PF Automotive Analogy — HTML](docs/8pf_automotive_analogy.html)
-
 Practical framing text mapping the 8PF architecture constraints onto systemic hardware and software transitions.
 
----
+[Read 8PF Automotive Analogy — HTML](docs/8pf_automotive_analogy.html)
 
 ### Baton and the Race
 
-[Read Baton and the Race — PDF](docs/baton-and-racev2.pdf)
-
 Conceptual demonstration of lineage continuity.
 
----
+[Read Baton and the Race — PDF](docs/baton-and-racev2.pdf)
 
 ### Baton and the Race — Pictorial Illustration
 
-![Baton and the Race — Lineage Continuity Diagram v9.5a](docs/baton%20and%20the%20race%209.5a.png)
-
-![Baton and the Race — Lineage Continuity Diagram v3](docs/baton%20v3.png)
-
 Conceptual illustration showing how identity persists through sequential transmission across generations of custodians.
 
----
+- [Lineage Continuity Diagram v9.5a](docs/baton%20and%20the%20race%209.5a.png)
+- [Lineage Continuity Diagram v3](docs/baton%20v3.png)
 
 ### Library and the Lineage
 
-[Read Library and the Lineage](docs/library%20and%20the%20lineage.pdf)
-
 Practical reflection examining how traditional libraries operated as record-first systems.
 
----
+[Read Library and the Lineage](docs/library%20and%20the%20lineage.pdf)
 
 ### Raw + 8PF Resilience
 
-[Read Raw + 8PF Resilience](docs/raw%2B8pf%20resillience.pdf)
-
 Technical application specification exploring lineage-first preservation.
 
----
+[Read Raw + 8PF Resilience](docs/raw%2B8pf%20resillience.pdf)
 
 ### Post-Collapse Technology Ladder
 
-[Read Post-Collapse Technology Ladder](docs/Post-Collapse_Technology_Ladder.pdf)
-
 Structural model describing the sequential technological reconstruction required for recovering advanced reading environments after collapse.
 
----
+[Read Post-Collapse Technology Ladder](docs/Post-Collapse_Technology_Ladder.pdf)
 
 ### The Cognitive Bicycle
 
-[Read The Cognitive Bicycle Repository](https://github.com/lineageframework/Cognitive-Bicycle)
-
 Framework describing human direction, intellectual ownership, and authorship in AI-assisted work.
+
+[Read The Cognitive Bicycle Repository](https://github.com/lineageframework/Cognitive-Bicycle)
 
 The Cognitive Bicycle explores how AI can amplify human capability without displacing human responsibility, originality, or creative direction.
 
@@ -280,9 +277,9 @@ The Cognitive Bicycle explores how AI can amplify human capability without displ
 
 ### The Cognitive Bicycle
 
-https://github.com/lineageframework/Cognitive-Bicycle
+A companion repository exploring authorship, intellectual ownership, and human direction in AI-assisted creation.
 
-A companion work exploring authorship, intellectual ownership, and human direction in AI-assisted creation.
+https://github.com/lineageframework/Cognitive-Bicycle
 
 ---
 
