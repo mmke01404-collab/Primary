@@ -1,96 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primary – Lineage-Primary Framework</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary — Lineage-Primary Framework</title>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRTGV8C2TX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-GRTGV8C2TX');
-    </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRTGV8C2TX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GRTGV8C2TX');
+  </script>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f6f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
 
-        h1 {
-            color: #003366;
-        }
+    .wrap {
+      max-width: 960px;
+      margin: auto;
+      padding: 28px 20px;
+    }
 
-        h2 {
-            margin-top: 30px;
-        }
+    header {
+      background: #003366;
+      color: white;
+      padding: 50px 20px;
+    }
 
-        .button {
-            display: inline-block;
-            padding: 12px 20px;
-            margin: 10px 10px 10px 0;
-            background: #0066cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2.4em;
+    }
 
-        .button:hover {
-            background: #004c99;
-        }
+    header p {
+      font-size: 1.15em;
+      max-width: 760px;
+    }
 
-        footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+    .card {
+      background: white;
+      padding: 24px;
+      margin: 24px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .buttons {
+      margin-top: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      margin: 8px 8px 8px 0;
+      background: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: #444;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 
 <body>
 
-    <h1>Primary – Lineage-Primary Framework</h1>
-
+<header>
+  <div class="wrap">
+    <h1>Primary — Lineage-Primary Framework</h1>
     <p>
-        Primary is a framework for understanding continuity,
-        identity, preservation, drift, repair and lineage
-        in digital objects.
+      A public authorship and continuity anchor for the Humming Box Problem,
+      8PF, and the Lineage-Primary Framework.
     </p>
+  </div>
+</header>
 
+<main class="wrap">
+
+  <section class="card">
+    <h2>The Humming Box Problem</h2>
     <p>
-        Developed by Matthew Keen.
+      Your files are doomed — but not for the reason you think.
+      Digital preservation is not only about protecting bits.
+      It is about protecting meaning, context, interpretation and continuity.
     </p>
+    <p>
+      A file can remain technically intact while its identity becomes unreadable.
+      The Lineage-Primary Framework proposes that continuity of meaning,
+      not preservation of objects, is the true unit of long-term survival.
+    </p>
+  </section>
 
-    <h2>Project Links</h2>
+  <section class="card">
+    <h2>Start Here</h2>
+    <div class="buttons">
+      <a class="button" href="docs/cadbury-8pf.html">Cadbury 8PF Example</a>
+      <a class="button" href="docs/8pf_automotive_analogy.html">8PF Automotive Analogy</a>
+      <a class="button" href="docs/baton-and-racev2.pdf">Baton and the Race PDF</a>
+      <a class="button" href="MANIFEST.html">Cryptographic Manifest</a>
+      <a class="button secondary" href="README.md">README</a>
+      <a class="button secondary" href="https://github.com/mmke01404-collab/Primary">GitHub Repository</a>
+    </div>
+  </section>
 
-    <a class="button"
-       href="https://github.com/mmke01404-collab/Primary">
-       GitHub Repository
+  <section class="card">
+    <h2>Visual Introductions</h2>
+
+    <h3>Baton and the Race — Lineage Continuity</h3>
+    <a href="docs/baton%20and%20the%20race%209.5a.png">
+      <img src="docs/baton%20and%20the%20race%209.5a.png" alt="Baton and the Race Lineage Continuity Diagram">
     </a>
 
-    <a class="button"
-       href="https://github.com/mmke01404-collab/Primary#readme">
-       Project README
+    <h3>Multiple Batons Diagram</h3>
+    <a href="docs/baton%20v3.png">
+      <img src="docs/baton%20v3.png" alt="Baton and the Race Multiple Batons Diagram">
     </a>
+  </section>
 
-    <h2>About</h2>
+  <section class="card">
+    <h2>Core Documents</h2>
+    <div class="buttons">
+      <a class="button" href="docs/library%20and%20the%20lineage.pdf">Library and the Lineage</a>
+      <a class="button" href="docs/raw%2B8pf%20resillience.pdf">Raw + 8PF Resilience</a>
+      <a class="button" href="docs/Post-Collapse_Technology_Ladder.pdf">Post-Collapse Technology Ladder</a>
+      <a class="button" href="https://github.com/lineageframework/Cognitive-Bicycle">The Cognitive Bicycle</a>
+    </div>
+  </section>
 
+  <section class="card">
+    <h2>Repository Purpose</h2>
     <p>
-        The framework explores how digital objects maintain
-        continuity through change and how lineage can be
-        understood independently of the object's current form.
+      This repository serves as a public cryptographic declaration of authorship,
+      priority of creation, provenance, lineage continuity and framework evolution.
     </p>
+    <p>
+      <strong>Author:</strong> M. Keen<br>
+      <strong>Copyright:</strong> © 2026 M. Keen<br>
+      <strong>Manifest Version:</strong> v5.3<br>
+      <strong>Files Anchored:</strong> 193
+    </p>
+  </section>
 
-    <footer>
-        Hosted on GitHub Pages • Analytics enabled via Google Analytics
-    </footer>
+  <section class="card">
+    <h2>Verification</h2>
+    <p>
+      For manifest verification requests, contact:
+      <strong>lineage8pf@outlook.com</strong>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Hosted on GitHub Pages • Analytics enabled via Google Analytics
+</footer>
 
 </body>
 </html>
