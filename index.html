@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary — Humming Box Problem & Lineage-Primary Framework</title>
+  <style>
+    :root {
+      --bg:      #0d1117;
+      --surface: #161b22;
+      --border:  #30363d;
+      --text:    #e6edf3;
+      --muted:   #8b949e;
+      --link:    #58a6ff;
+      --gold:    #e3b341;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      height: 52px;
+    }
+
+    .topbar-title {
+      font-size: 0.9em;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .menu-toggle {
+      background: #21262d;
+      border: 1px solid #444c56;
+      color: var(--text);
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 0.85em;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .menu-toggle:active { background: #30363d; }
+
+    /* ── DRAWER ── */
+    .drawer-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 300;
+    }
+
+    .drawer-overlay.open { display: block; }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: min(320px, 90vw);
+      height: 100vh;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      z-index: 400;
+      overflow-y: auto;
+      transition: right 0.25s ease;
+      padding-bottom: 40px;
+    }
+
+    .drawer.open { right: 0; }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 10;
+    }
+
+    .drawer-header strong {
+      font-size: 0.9em;
+      color: var(--text);
+    }
+
+    .drawer-close {
+      background: #21262d;
+      border: 1px solid #444c56;
+      color: var(--text);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 0.85em;
+      cursor: pointer;
+    }
+
+    .drawer-section {
+      padding: 14px 14px 6px;
+    }
+
+    .drawer-section-label {
+      font-size: 0.7em;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding: 0 4px;
+      margin-bottom: 8px;
+    }
+
+    .drawer-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 11px 14px;
+      background: #21262d;
+      border: 1px solid #444c56;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 0.86em;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.1s, border-color 0.1s;
+    }
+
+    .drawer-btn:hover, .drawer-btn:active {
+      background: #30363d;
+      border-color: var(--gold);
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .drawer-btn .badge {
+      font-size: 0.7em;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.08);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .drawer-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 10px 14px;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .main {
+      padding: 28px 20px 64px;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-eyebrow {
+      font-size: 0.72em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #f0f6fc;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .hero-sub {
+      font-size: 0.9em;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.8em;
+      color: var(--muted);
+    }
+
+    .hero-meta strong { color: var(--gold); }
+
+    /* ── PROSE ── */
+    .prose-block {
+      margin-bottom: 40px;
+    }
+
+    .prose-block .section-title {
+      font-size: 1em;
+      font-weight: 700;
+      color: #f0f6fc;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .prose-block p {
+      color: var(--text);
+      margin-bottom: 8px;
+      font-size: 0.93em;
+    }
+
+    .prose-block p:last-child { margin-bottom: 0; }
+    .prose-block p strong { color: #f0f6fc; }
+
+    /* ── MANIFEST ── */
+    .manifest-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.83em;
+      flex-wrap: wrap;
+    }
+
+    .manifest-row:last-of-type { border-bottom: none; }
+    .manifest-row .k { color: var(--muted); }
+    .manifest-row .v { color: var(--text); font-weight: 500; }
+
+    .manifest-wrap {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 14px;
+      background: #161b22;
+    }
+
+    .hash-box {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: #161b22;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.75em;
+      color: var(--gold);
+      word-break: break-all;
+      line-height: 1.7;
+    }
+
+    .hash-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.7em;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px;
+      font-size: 0.75em;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span class="topbar-title">Lineage-Primary Framework</span>
+  <button class="menu-toggle" onclick="openDrawer()">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M1 2.5h14M1 8h14M1 13.5h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    Links
+  </button>
+</div>
+
+<!-- DRAWER OVERLAY -->
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <strong>Navigation</strong>
+    <button class="drawer-close" onclick="closeDrawer()">✕ Close</button>
+  </div>
+
+  <div class="drawer-section">
+    <div class="drawer-section-label">Core Documents</div>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/cadbury-8pf.html">Cadbury 8PF Example <span class="badge">HTML</span></a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/8pf_automotive_analogy.html">Automotive Analogy <span class="badge">HTML</span></a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/baton-and-racev2.pdf">Baton and the Race <span class="badge">PDF</span></a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/library%20and%20the%20lineage.pdf">Library and the Lineage <span class="badge">PDF</span></a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/raw%2B8pf%20resillience.pdf">Raw + 8PF Resilience <span class="badge">PDF</span></a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/Post-Collapse_Technology_Ladder.pdf">Post-Collapse Ladder <span class="badge">PDF</span></a>
+    <a class="drawer-btn" href="https://github.com/lineageframework/Cognitive-Bicycle">The Cognitive Bicycle <span class="badge">Repo</span></a>
+  </div>
+
+  <div class="drawer-divider"></div>
+
+  <div class="drawer-section">
+    <div class="drawer-section-label">Visuals</div>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/baton%20and%20the%20race%209.5a.png">Lineage Diagram v9.5a <span class="badge">PNG</span></a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/docs/baton%20v3.png">Multiple Batons v3 <span class="badge">PNG</span></a>
+  </div>
+
+  <div class="drawer-divider"></div>
+
+  <div class="drawer-section">
+    <div class="drawer-section-label">Repository</div>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/MANIFEST.html">MANIFEST</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/COPYRIGHT.html">COPYRIGHT</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/PROVENANCE_STATEMENT.html">PROVENANCE STATEMENT</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/LICENCE">LICENSE</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/NOTICE">NOTICE</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/CONTRIBUTING.md">CONTRIBUTING</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/CODE_OF_CONDUCT.md">CODE OF CONDUCT</a>
+    <a class="drawer-btn" href="https://mmke01404-collab.github.io/Primary/CONTRIBUTORS.html">CONTRIBUTORS</a>
+  </div>
+
+  <div class="drawer-divider"></div>
+
+  <div class="drawer-section">
+    <a class="drawer-btn" href="https://github.com/mmke01404-collab/Primary">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.01-2.04-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 6.8c1.02.005 2.04.14 3 .41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.21.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub Repository
+    </a>
+    <a class="drawer-btn" href="mailto:lineage8pf@outlook.com">lineage8pf@outlook.com</a>
+  </div>
+
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <div class="hero">
+    <p class="hero-eyebrow">8PF &amp; Lineage-Primary Framework — Cryptographic Provenance &amp; Integrity Archive</p>
+    <h1>Primary — Lineage-Primary Framework</h1>
+    <p class="hero-sub">The Humming Box Problem — why digital preservation fails even when the bits are perfect.</p>
+    <div class="hero-meta">
+      <div><strong>Author</strong> &nbsp;M. Keen</div>
+      <div><strong>Copyright</strong> &nbsp;© 2026 M. Keen</div>
+      <div><strong>Version</strong> &nbsp;1.1 — Primary Public Declaration</div>
+    </div>
+  </div>
+
+  <div id="humming-box" class="prose-block">
+    <div class="section-title">The Core Problem — The Humming Box</div>
+    <p><strong>Your files are doomed — but not for the reason you think.</strong></p>
+    <p>We've spent decades protecting the bits.</p>
+    <p>We forgot to protect the meaning.</p>
+    <p>We've been sold the wrong problem.</p>
+    <p>Digital preservation isn't failing because of bit rot.</p>
+    <p>It's failing because we've built a world full of humming boxes.</p>
+    <p>You know the sound — the low, constant whir of a server rack or an old external drive.</p>
+    <p>A machine that is technically alive, but in terms of meaning, already silent.</p>
+    <p>The data is intact.</p>
+    <p>The system is running.</p>
+    <p>And yet — there is nothing left to understand.</p>
+    <p><strong>This is the Humming Box Problem.</strong></p>
+    <p>The Lineage-Primary Framework proposes that continuity of meaning, not preservation of objects, is the true unit of long-term survival.</p>
+  </div>
+
+  <div id="domesday" class="prose-block">
+    <div class="section-title">The Domesday Lesson</div>
+    <p>In 1986 the BBC created a "future-proof" snapshot of British life on LaserDisc.</p>
+    <p>Fifteen years later the bits were still perfect.</p>
+    <p>No corruption.</p>
+    <p>No loss.</p>
+    <p>The hardware was gone.</p>
+    <p>The software was extinct.</p>
+    <p>The interpretive context had vanished.</p>
+    <p>The box was still humming.</p>
+    <p>It simply had nothing left to say.</p>
+  </div>
+
+  <div id="delusion" class="prose-block">
+    <div class="section-title">The Real Delusion</div>
+    <p>We preserve files as if the object is the thing.</p>
+    <p>We checksum it.</p>
+    <p>We clone it.</p>
+    <p>We migrate it.</p>
+    <p>We think we're saving the ship.</p>
+    <p>But we preserve the ship and lose the sea.</p>
+    <p>You can keep a PDF bit-perfect for a century.</p>
+    <p>But when the last person who understands its cultural context is gone, and the last system that renders it correctly has disappeared…</p>
+    <p>What remains?</p>
+    <p>Not a living document.</p>
+    <p>A semantic tombstone.</p>
+    <p>The object survives.</p>
+    <p>The identity does not.</p>
+  </div>
+
+  <div id="theseus" class="prose-block">
+    <div class="section-title">The Ship of Theseus Was the Wrong Question</div>
+    <p>Replacement isn't the problem.</p>
+    <p>Drift is.</p>
+    <p>Digital identity doesn't break because parts change.</p>
+    <p>It breaks when meaning, context, and interpretation slowly slide out of alignment.</p>
+  </div>
+
+  <div id="human-body" class="prose-block">
+    <div class="section-title">The Human Body Proves the Point</div>
+    <p>Your body replaces most of its cells over time.</p>
+    <p>Yet you remain you.</p>
+    <p>Identity survives turnover because it lives in continuity, not in the components.</p>
+    <p>This is the lesson digital preservation keeps missing.</p>
+  </div>
+
+  <div id="continuity" class="prose-block">
+    <div class="section-title">Stop Preserving. Start Engineering Continuity.</div>
+    <p>Preservation assumes stability.</p>
+    <p>Stability is the illusion.</p>
+    <p>Change is the default.</p>
+    <p>We don't need more backups.</p>
+    <p>We need better maps of change.</p>
+    <p>If drift is coherent, identity survives.</p>
+    <p>If it isn't, identity collapses — no matter how perfect the data is.</p>
+    <p>A humming box isn't a memory.</p>
+    <p>It's a mausoleum.</p>
+    <p>And we are building more of them every second.</p>
+  </div>
+
+  <div class="prose-block">
+    <div class="section-title">Lineage Continuity Diagrams</div>
+    <p style="color:var(--muted); font-size:0.85em; margin-bottom:14px;">Baton and the Race — v9.5a</p>
+    <a href="https://mmke01404-collab.github.io/Primary/docs/baton%20and%20the%20race%209.5a.png" target="_blank">
+      <img src="https://mmke01404-collab.github.io/Primary/docs/baton%20and%20the%20race%209.5a.png"
+           alt="Baton and the Race — Lineage Continuity Diagram v9.5a"
+           style="width:100%; border-radius:8px; border:1px solid var(--border); display:block; margin-bottom:20px;">
+    </a>
+    <p style="color:var(--muted); font-size:0.85em; margin-bottom:14px;">Multiple Batons — v3</p>
+    <a href="https://mmke01404-collab.github.io/Primary/docs/baton%20v3.png" target="_blank">
+      <img src="https://mmke01404-collab.github.io/Primary/docs/baton%20v3.png"
+           alt="Baton and the Race — Multiple Batons Diagram v3"
+           style="width:100%; border-radius:8px; border:1px solid var(--border); display:block;">
+    </a>
+  </div>
+
+  <div id="manifest" class="prose-block">
+    <div class="section-title">Manifest Status</div>
+    <p><strong>Current Manifest Version:</strong> v5.3</p>
+    <div class="manifest-wrap">
+      <div class="manifest-row"><span class="k">Work Title</span><span class="v">Humming Box Problem — 8PF &amp; Lineage-Primary Framework</span></div>
+      <div class="manifest-row"><span class="k">Author</span><span class="v">Matthew Keen</span></div>
+      <div class="manifest-row"><span class="k">Copyright</span><span class="v">© 2026 Matthew Keen. All rights reserved.</span></div>
+      <div class="manifest-row"><span class="k">Hash Algorithm</span><span class="v">SHA-256</span></div>
+      <div class="manifest-row"><span class="k">Manifest Version</span><span class="v">v5.3</span></div>
+      <div class="manifest-row"><span class="k">Files Anchored</span><span class="v">193</span></div>
+      <div class="manifest-row"><span class="k">Date Generated</span><span class="v">2026-06-05</span></div>
+    </div>
+    <div class="hash-box">
+      <div class="hash-label">Archive SHA-256</div>
+      A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8
+    </div>
+    <p style="margin-top:14px;">The manifest serves as the primary cryptographic verification anchor for this repository and records document identity states across the Lineage-Primary corpus.</p>
+    <p>Future manifest releases extend lineage continuity and are versioned sequentially.</p>
+  </div>
+
+</div>
+
+<footer>
+  Hosted on GitHub Pages &nbsp;·&nbsp; Analytics enabled via Google Analytics &nbsp;·&nbsp; © 2026 M. Keen
+</footer>
+
+<script>
+  function openDrawer() {
+    document.getElementById('drawer').classList.add('open');
+    document.getElementById('overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    document.getElementById('drawer').classList.remove('open');
+    document.getElementById('overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>
