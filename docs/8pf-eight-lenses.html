@@ -356,9 +356,9 @@ const lenses = [
     desc:'Identifies the digital object under analysis, establishes minimal context, and records its fixity — checksums, size, format. The foundational prerequisite: without knowing the object, the rest of the system cannot function.',
     phase:'Continuous fixity checks that help maintain a Green status.',
     tags:[],
-    useCase:'A 30-year-old .doc file is ingested into the archive.',
-    action:'The system identifies it as a born-digital word processing document, generates a SHA-256 checksum for the bitstream, and records its file size.',
-    outcomeLbl:'Edge case', outcome:'If the file is actually a .zip archive containing multiple documents, this lens catches the category error before lineage evaluation is misapplied.'
+    useCase:"Grandad's 1975 wedding photo is scanned in 2005 and saved as WeddingPhoto.tiff.",
+    action:'The lens records what the file actually is — a 24MB TIFF image — and takes a SHA-256 checksum at the moment of scanning.',
+    outcomeLbl:'Why it matters', outcome:"Years later, someone finds a file called WeddingPhoto_FINAL_v2.tiff. This lens checks it against the original checksum and confirms it's genuinely the same photo, not a different file that just has a similar name."
   },
   {
     id:'L2', name:'Lineage', role:'Decisive', roleClass:'decisive',
@@ -366,9 +366,9 @@ const lenses = [
     desc:'The core, decisive lens. Verifies whether every preservation chain satisfies all five predicates — Origin, Inheritance, Descent, Sanctioned, Temporal Care — in fixed order. Any single failure breaks the lineage (−L).',
     phase:'Detects Solid Red status — a confirmed breach.',
     tags:['O','I','D','S','A'],
-    useCase:'An audit is performed on a PDF/A file migrated three times.',
-    action:'Origin: does the tf0 record match? Yes. Inheritance: is there a documented migration log? Missing for Migration #2.',
-    outcomeLbl:'Outcome', outcome:'The lens immediately returns −L and triggers a Red alert due to an Inheritance failure.'
+    useCase:'By 2020 the photo has been migrated twice: TIFF (2005) → JPEG (2012) → HEIC (2020).',
+    action:'The lens checks each link in the chain in order. Was the 2012 conversion logged? Yes. Was the 2020 conversion logged? No — nobody recorded who did it or why.',
+    outcomeLbl:'Outcome', outcome:'Because one link (Inheritance) is missing, this lens returns Lineage = False immediately — even though the photo itself still opens perfectly fine today.'
   },
   {
     id:'L3', name:'Pattern', role:'Active', roleClass:'',
@@ -376,9 +376,9 @@ const lenses = [
     desc:'Identifies patterns — three or more similar lineage events at regular intervals — in preservation activity. A stable pattern signals healthy Inheritance and Temporal Care; disruption or extinction is an early warning.',
     phase:'Detects Amber / Red-flashing (near breach) status.',
     tags:['I','A'],
-    useCase:'A system migrates database exports every 5 years.',
-    action:'Migrations are observed in 2016, 2021, and 2026 — a stable pattern.',
-    outcomeLbl:'Pressure', outcome:"It's now 2031 with no migration event. The pattern is disrupted, pressuring the Inheritance predicate and triggering a Near Breach advisory."
+    useCase:'The family has reviewed and backed up their old photos every five years: 2005, 2010, 2015.',
+    action:'This steady five-year rhythm is recognized as a healthy pattern — it means someone is actively paying attention to the photo, not just leaving it untouched.',
+    outcomeLbl:'Pressure', outcome:"It's now 2025 and no review has happened since 2015. The pattern has broken, so this lens raises an early warning before anything is actually lost."
   },
   {
     id:'L4', name:'Relational', role:'Active', roleClass:'',
@@ -386,9 +386,9 @@ const lenses = [
     desc:'Maps the authority topology between the digital object and its preservation agents, determining custodial authority, delegated authority, or adversarial relationships.',
     phase:'Essential for evaluating the Sanctioned predicate in contested situations.',
     tags:['S'],
-    useCase:'A new external partner requests to perform a format migration.',
-    action:'Custodial/Delegated: the partner is listed in the delegation log, pressuring S toward True. Adversarial: the partner is unknown or unauthorized, pressuring S toward False.',
-    outcomeLbl:'Outcome', outcome:'An unrecognized agent flags a potential breach for further review.'
+    useCase:"In 2022, the family's photos move from a home hard drive to a cloud photo-storage app.",
+    action:'The lens asks: who is now responsible for this photo — the cloud provider, or a family member? It checks whether the move was made by someone authorized to make that call.',
+    outcomeLbl:'Outcome', outcome:'The move was made by a teenage grandchild without asking anyone else in the family. This lens flags it as an unauthorized change of custodian — not a sanctioned decision.'
   },
   {
     id:'L5', name:'Semantic', role:'Active', roleClass:'',
@@ -396,9 +396,9 @@ const lenses = [
     desc:"Monitors the meaning or intent of the object relative to its original purpose at tf0, detecting semantic drift invisible to format or bit-level checks.",
     phase:'Captures meaning drift that other lenses cannot see.',
     tags:['O','D'],
-    useCase:'A photograph is migrated from lossless TIFF to compressed JPEG for storage.',
-    action:'The bits change, and the structural migration may be technically valid.',
-    outcomeLbl:'Pressure', outcome:'If the original intent was a "high-quality archival master," the migration creates semantic drift, pressuring the Descent predicate toward breach.'
+    useCase:"The cloud app automatically \"enhances\" the photo — sharpening it and brightening the faces.",
+    action:"This lens compares what the enhanced version now looks like against the original intent: preserving exactly how the photo looked in 1975, imperfections included.",
+    outcomeLbl:'Pressure', outcome:'The enhancement quietly changes what the photo means as a historical record. The file still opens fine, but this lens flags meaning drift that no checksum would ever catch.'
   },
   {
     id:'L6', name:'Decision', role:'Active', roleClass:'',
@@ -406,9 +406,9 @@ const lenses = [
     desc:'Evaluates the quality and nature of preservation decisions — Maintain, Delegate, Disclaimer — and considers the impact of abstention or unrecorded acts.',
     phase:'Captures choice quality and prevents unrecorded decisions.',
     tags:['D','S','A'],
-    useCase:'A legacy software emulator is no longer supported.',
-    action:'The authorized agent abstains from deciding, delaying the migration.',
-    outcomeLbl:'Pressure', outcome:'The inaction pressures Sanctioned and Temporal Care, since the agent is not fulfilling its sanctioned duty — raising the risk of a Red alert.'
+    useCase:'The cloud app announces it will discontinue free storage in six months unless someone re-subscribes.',
+    action:'This lens watches for who makes — or fails to make — the decision to act.',
+    outcomeLbl:'Pressure', outcome:'Nobody in the family notices the announcement, so no decision is ever made. This lens records that silence as a real decision — abandonment — carrying the same weight as an active bad choice.'
   },
   {
     id:'L7', name:'Temporal', role:'Decisive', roleClass:'decisive',
@@ -416,9 +416,9 @@ const lenses = [
     desc:'Two decisive modes: locates the precise moment of a breach by evaluating predicates in temporal order, and enforces Temporal Care (Axiom A5) — rendering lineage extinct if two generations pass without a care event.',
     phase:'Detects Near Breach and Solid Red status.',
     tags:['A','ORDER'],
-    useCase:'Order — a checksum failed yesterday, but an agent was unauthorized 10 years ago.',
-    action:'Temporal order dictates sequential evaluation. The older, unresolved Sanctioned failure is identified as the primary breach, overriding the newer checksum issue.',
-    outcomeLbl:'Care mode', outcome:'The last migration event was in 1996; it is now 2056 (two generations). The lens declares Extinction — A(t) = False, and by Axiom A2, L(t) = False regardless of other predicates.'
+    useCase:"The subscription lapses in early 2023. The photo is deleted by the app in month 4 — three months before the family's next gathering, when someone would have noticed.",
+    action:'This lens works out the true order of events: did the loss happen before or after anyone could realistically have acted?',
+    outcomeLbl:'Care mode', outcome:"This lens identifies the app's deletion — not the family's slow reaction — as the moment lineage actually broke. Separately, if ten years pass with no review at all, this lens declares the lineage extinct outright, regardless of anything else."
   },
   {
     id:'L8', name:'Synthesis', role:'Integrates', roleClass:'integrates',
@@ -426,9 +426,9 @@ const lenses = [
     desc:'The final, authoritative lens. Integrates all data from Lenses 1–7 to issue a Formal Verdict (L or −L), a Near Breach Advisory, and a Maturation Queue, resolving conflicts by hierarchy.',
     phase:'Issues the final authoritative verdict and guides human decision-making.',
     tags:[],
-    useCase:'Lens 4 suggests a Sanctioned issue; Lens 5 shows a Descent issue.',
-    action:'Lens 8 disregards disagreement among non-decisive Lenses 3–6 and focuses on the decisive lenses. Lens 7 has detected a Descent failure, which takes priority.',
-    outcomeLbl:'Final verdict', outcome:'−L (Lineage = False). Report: "Breach — Descent failure due to semantic drift, first detected at [timestamp]."'
+    useCase:'All seven lenses report in: L2 found a missing migration record, L4 flagged an unauthorized custodian change, L7 pinpointed the exact month of deletion.',
+    action:"This lens doesn't just tally up complaints — it applies the hierarchy. The decisive lenses, L2 and L7, override everything the other lenses found.",
+    outcomeLbl:'Final verdict', outcome:'Lineage = False. Report: "Chain broken — undocumented custodial transfer (2022), compounded by an unrecorded storage lapse first detected March 2023." One sentence, and any family member could understand exactly what went wrong.'
   }
 ];
 
