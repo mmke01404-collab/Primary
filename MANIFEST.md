@@ -14,10 +14,6 @@
 **Manifest Version:** v5.4 — Recomputed From Source ZIP
 **Date Generated:** 2026-07-07
 
-## Archive Identity
-**Source Archive:** Lineage8PF.zip
-**Archive SHA-256:** `0C221F6F773291D3703F2C7775D5B0FDB6FBC5789C4C86A9ED47A13D63291647`
-
 ## Full Cryptographic Manifest
 
 **File Path:** Lineage8PF/8PF/8PF for a cross domain analytical tool.pdf
