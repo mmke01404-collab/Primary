@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>8PF — The Eight Lenses</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root{
+  --bg:#10161D;
+  --panel:#181F27;
+  --panel2:#1D2530;
+  --border:#2A3542;
+  --border-soft:#232C37;
+  --text:#E9E4D6;
+  --text-dim:#8B96A3;
+  --text-faint:#5C6773;
+  --green:#4FAE7C;
+  --amber:#D9A441;
+  --red:#C0463E;
+  --decisive:#6FA3C7;
+  --serif:'Fraunces',serif;
+  --sans:'Inter',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--sans);}
+
+body{
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(111,163,199,0.06), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(217,164,65,0.05), transparent 45%);
+}
+
+.wrap{max-width:1180px;margin:0 auto;padding:56px 28px 90px;}
+
+/* ---------- HEADER ---------- */
+header{margin-bottom:48px;}
+.eyebrow{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:0.18em;
+  color:var(--decisive);
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:18px;
+}
+.eyebrow::before{
+  content:'';
+  width:7px;height:7px;border-radius:50%;
+  background:var(--decisive);
+  box-shadow:0 0 0 3px rgba(111,163,199,0.18);
+}
+h1{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(38px,6vw,64px);
+  line-height:1.02;
+  margin:0 0 14px;
+  letter-spacing:-0.01em;
+}
+h1 em{font-style:italic;font-weight:500;color:var(--text-dim);}
+.subtitle{
+  font-size:16px;
+  color:var(--text-dim);
+  max-width:560px;
+  line-height:1.55;
+  font-weight:400;
+}
+
+/* ---------- VERDICT CONSOLE (signature element) ---------- */
+.console{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:36px 30px 30px;
+  margin-bottom:64px;
+  position:relative;
+  overflow:hidden;
+}
+.console::before{
+  content:'VERDICT CONSOLE';
+  position:absolute;
+  top:16px; right:22px;
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:0.16em;
+  color:var(--text-faint);
+}
+.console-caption{
+  font-family:var(--mono);
+  font-size:12px;
+  color:var(--text-faint);
+  margin-bottom:28px;
+  letter-spacing:0.02em;
+}
+.console-caption b{color:var(--text-dim);font-weight:500;}
+
+.tier{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;position:relative;}
+.tier + .tier{margin-top:6px;}
+
+.arrow-row{
+  display:flex;justify-content:center;
+  font-family:var(--mono);
+  color:var(--text-faint);
+  font-size:20px;
+  margin:2px 0;
+  letter-spacing:6px;
+}
+
+.node{
+  border:1px solid var(--border);
+  background:var(--panel2);
+  border-radius:10px;
+  padding:10px 14px;
+  min-width:88px;
+  text-align:center;
+}
+.node .n{font-family:var(--mono);font-size:11px;color:var(--text-faint);}
+.node .name{font-family:var(--sans);font-size:13px;font-weight:600;margin-top:2px;}
+.node .tags{margin-top:6px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap;}
+.tag{
+  font-family:var(--mono);font-size:9px;font-weight:700;
+  padding:1px 5px;border-radius:3px;
+  background:var(--border-soft);color:var(--text-dim);letter-spacing:0.03em;
+}
+.tag.O{color:#7FC7C0;} .tag.I{color:#7FA6E0;} .tag.D{color:#B48FDE;}
+.tag.S{color:#D9A441;} .tag.A{color:#E08FA0;}
+
+.node.decisive{
+  border:1px solid var(--decisive);
+  background:linear-gradient(180deg,rgba(111,163,199,0.10),rgba(111,163,199,0.02));
+  box-shadow:0 0 0 3px rgba(111,163,199,0.08);
+  min-width:120px;
+}
+.node.decisive .n{color:var(--decisive);}
+.node.decisive::after{
+  content:'DECISIVE';
+  display:block;
+  font-family:var(--mono);
+  font-size:8px;
+  letter-spacing:0.14em;
+  color:var(--decisive);
+  margin-top:6px;
+}
+
+.hub{
+  border:1px solid var(--border);
+  background:var(--panel2);
+  border-radius:12px;
+  padding:20px 26px;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  min-width:280px;
+  justify-content:center;
+  margin-top:4px;
+}
+.hub .hub-label .n{font-family:var(--mono);font-size:11px;color:var(--text-faint);}
+.hub .hub-label .name{font-family:var(--serif);font-size:20px;font-weight:600;}
+.leds{display:flex;gap:14px;align-items:center;}
+.led{display:flex;flex-direction:column;align-items:center;gap:5px;}
+.led .dot{width:11px;height:11px;border-radius:50%;}
+.led .lbl{font-family:var(--mono);font-size:9px;color:var(--text-faint);letter-spacing:0.04em;}
+.dot.green{background:var(--green);box-shadow:0 0 8px rgba(79,174,124,0.7);}
+.dot.red{background:var(--red);box-shadow:0 0 8px rgba(192,70,62,0.7);}
+.dot.amber{background:var(--amber);animation:flash 1.4s ease-in-out infinite;}
+@keyframes flash{0%,100%{opacity:1;box-shadow:0 0 10px rgba(217,164,65,0.85);}50%{opacity:0.25;box-shadow:0 0 2px rgba(217,164,65,0.2);}}
+
+.conflict-rule{
+  text-align:center;
+  margin-top:24px;
+  font-family:var(--mono);
+  font-size:11.5px;
+  color:var(--text-faint);
+  letter-spacing:0.02em;
+}
+.conflict-rule b{color:var(--decisive);font-weight:500;}
+
+/* ---------- LEGEND ---------- */
+.legend{
+  display:flex;gap:26px;flex-wrap:wrap;
+  margin-bottom:56px;
+  padding:16px 20px;
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  background:rgba(255,255,255,0.012);
+}
+.legend-item{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--text-dim);}
+.legend-item .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+
+/* ---------- LENS GRID ---------- */
+.section-label{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--text-faint);
+  margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border-soft);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  margin-bottom:20px;
+}
+@media(max-width:760px){.grid{grid-template-columns:1fr;}}
+
+.card{
+  border:1px solid var(--border);
+  background:var(--panel);
+  border-radius:12px;
+  padding:22px 22px 20px;
+  transition:border-color 0.2s ease;
+}
+.card.is-decisive{border-color:rgba(111,163,199,0.4);}
+.card.is-integrator{border-color:rgba(217,164,65,0.35);}
+
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px;}
+.card-id{font-family:var(--mono);font-size:11px;color:var(--text-faint);letter-spacing:0.05em;}
+.card-name{font-family:var(--serif);font-weight:600;font-size:22px;margin:2px 0 0;}
+.role-badge{
+  font-family:var(--mono);font-size:9.5px;font-weight:700;
+  padding:3px 8px;border-radius:20px;
+  border:1px solid var(--border);
+  color:var(--text-dim);white-space:nowrap;letter-spacing:0.03em;
+  margin-top:2px;
+}
+.role-badge.decisive{color:var(--decisive);border-color:rgba(111,163,199,0.5);}
+.role-badge.integrates{color:var(--amber);border-color:rgba(217,164,65,0.5);}
+
+.question{
+  font-family:var(--mono);
+  font-size:12.5px;
+  color:var(--text-dim);
+  margin:10px 0 12px;
+  padding:8px 10px;
+  background:var(--border-soft);
+  border-left:2px solid var(--decisive);
+  border-radius:0 4px 4px 0;
+}
+
+.desc{font-size:13.5px;line-height:1.6;color:var(--text);opacity:0.92;margin-bottom:10px;}
+.phase{font-size:11.5px;color:var(--text-faint);margin-bottom:14px;}
+.phase b{color:var(--text-dim);font-weight:600;}
+
+.pred-tags{display:flex;gap:5px;margin-bottom:12px;flex-wrap:wrap;}
+
+.toggle{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--decisive);
+  cursor:pointer;
+  user-select:none;
+  display:flex;align-items:center;gap:6px;
+  letter-spacing:0.03em;
+}
+.toggle::before{content:'▸';transition:transform 0.18s ease;font-size:10px;}
+.card.open .toggle::before{transform:rotate(90deg);}
+
+.example{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.25s ease;
+}
+.card.open .example{max-height:600px;}
+.example-inner{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  line-height:1.65;
+  color:var(--text-dim);
+}
+.example-inner p{margin:0 0 8px;}
+.example-inner .lbl{color:var(--text-faint);font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.05em;}
+
+footer{
+  margin-top:50px;
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--text-faint);
+  text-align:center;
+  letter-spacing:0.03em;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">8PF · Lineage-Primary Framework</div>
+    <h1>The Eight Lenses<br><em>a diagnostic architecture</em></h1>
+    <p class="subtitle">Eight analytical instruments, each necessary and collectively sufficient, that continuously evaluate whether a digital object's preservation lineage remains unbroken.</p>
+  </header>
+
+  <div class="console">
+    <div class="console-caption"><b>How a verdict is formed</b> — active lenses pressure predicates upward; two decisive lenses gate the outcome; Lens 8 resolves conflicts and issues the formal verdict.</div>
+
+    <div class="tier">
+      <div class="node"><div class="n">L1</div><div class="name">Object</div><div class="tags"><span class="tag">FIXITY</span></div></div>
+      <div class="node"><div class="n">L3</div><div class="name">Pattern</div><div class="tags"><span class="tag I">I</span><span class="tag A">A</span></div></div>
+      <div class="node"><div class="n">L4</div><div class="name">Relational</div><div class="tags"><span class="tag S">S</span></div></div>
+      <div class="node"><div class="n">L5</div><div class="name">Semantic</div><div class="tags"><span class="tag O">O</span><span class="tag D">D</span></div></div>
+      <div class="node"><div class="n">L6</div><div class="name">Decision</div><div class="tags"><span class="tag D">D</span><span class="tag S">S</span><span class="tag A">A</span></div></div>
+    </div>
+
+    <div class="arrow-row">↓ &nbsp; ↓ &nbsp; ↓ &nbsp; ↓ &nbsp; ↓</div>
+
+    <div class="tier">
+      <div class="node decisive"><div class="n">L2</div><div class="name">Lineage</div><div class="tags"><span class="tag O">O</span><span class="tag I">I</span><span class="tag D">D</span><span class="tag S">S</span><span class="tag A">A</span></div></div>
+      <div class="node decisive"><div class="n">L7</div><div class="name">Temporal</div><div class="tags"><span class="tag A">A</span><span class="tag">ORDER</span></div></div>
+    </div>
+
+    <div class="arrow-row">↓</div>
+
+    <div class="tier">
+      <div class="hub">
+        <div class="hub-label"><div class="n">L8 · INTEGRATES</div><div class="name">Synthesis</div></div>
+        <div class="leds">
+          <div class="led"><div class="dot green"></div><div class="lbl">L = TRUE</div></div>
+          <div class="led"><div class="dot amber"></div><div class="lbl">NEAR BREACH</div></div>
+          <div class="led"><div class="dot red"></div><div class="lbl">L = FALSE</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conflict-rule">Conflict resolution hierarchy: <b>Lens 2 &gt; Lens 1</b> &nbsp;·&nbsp; <b>Lens 7 &gt; Lens 2</b></div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="dot" style="background:var(--green)"></div>Green — lineage healthy, all predicates hold</div>
+    <div class="legend-item"><div class="dot" style="background:var(--amber)"></div>Amber flashing — near breach, early warning</div>
+    <div class="legend-item"><div class="dot" style="background:var(--red)"></div>Solid red — breach confirmed, L(t) = False</div>
+    <div class="legend-item"><div class="dot" style="background:var(--decisive)"></div>Decisive lens — primary determinant, overrides active lenses</div>
+  </div>
+
+  <div class="section-label">Full specification — tap a lens to expand its example</div>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>8PF v9.5 · Eight Lenses Specification · M. Keen</footer>
+</div>
+
+<script>
+const lenses = [
+  {
+    id:'L1', name:'Object', role:'Active', roleClass:'',
+    question:'What digital object is this?',
+    desc:'Identifies the digital object under analysis, establishes minimal context, and records its fixity — checksums, size, format. The foundational prerequisite: without knowing the object, the rest of the system cannot function.',
+    phase:'Continuous fixity checks that help maintain a Green status.',
+    tags:[],
+    useCase:"Grandad's 1975 wedding photo is scanned in 2005 and saved as WeddingPhoto.tiff.",
+    action:'The lens records what the file actually is — a 24MB TIFF image — and takes a SHA-256 checksum at the moment of scanning.',
+    outcomeLbl:'Why it matters', outcome:"Years later, someone finds a file called WeddingPhoto_FINAL_v2.tiff. This lens checks it against the original checksum and confirms it's genuinely the same photo, not a different file that just has a similar name."
+  },
+  {
+    id:'L2', name:'Lineage', role:'Decisive', roleClass:'decisive',
+    question:'How many preservation chains? Is each unbroken?',
+    desc:'The core, decisive lens. Verifies whether every preservation chain satisfies all five predicates — Origin, Inheritance, Descent, Sanctioned, Temporal Care — in fixed order. Any single failure breaks the lineage (−L).',
+    phase:'Detects Solid Red status — a confirmed breach.',
+    tags:['O','I','D','S','A'],
+    useCase:'By 2020 the photo has been migrated twice: TIFF (2005) → JPEG (2012) → HEIC (2020).',
+    action:'The lens checks each link in the chain in order. Was the 2012 conversion logged? Yes. Was the 2020 conversion logged? No — nobody recorded who did it or why.',
+    outcomeLbl:'Outcome', outcome:'Because one link (Inheritance) is missing, this lens returns Lineage = False immediately — even though the photo itself still opens perfectly fine today.'
+  },
+  {
+    id:'L3', name:'Pattern', role:'Active', roleClass:'',
+    question:'What repeats in preservation activity?',
+    desc:'Identifies patterns — three or more similar lineage events at regular intervals — in preservation activity. A stable pattern signals healthy Inheritance and Temporal Care; disruption or extinction is an early warning.',
+    phase:'Detects Amber / Red-flashing (near breach) status.',
+    tags:['I','A'],
+    useCase:'The family has reviewed and backed up their old photos every five years: 2005, 2010, 2015.',
+    action:'This steady five-year rhythm is recognized as a healthy pattern — it means someone is actively paying attention to the photo, not just leaving it untouched.',
+    outcomeLbl:'Pressure', outcome:"It's now 2025 and no review has happened since 2015. The pattern has broken, so this lens raises an early warning before anything is actually lost."
+  },
+  {
+    id:'L4', name:'Relational', role:'Active', roleClass:'',
+    question:'How does this object connect to preservation agents?',
+    desc:'Maps the authority topology between the digital object and its preservation agents, determining custodial authority, delegated authority, or adversarial relationships.',
+    phase:'Essential for evaluating the Sanctioned predicate in contested situations.',
+    tags:['S'],
+    useCase:"In 2022, the family's photos move from a home hard drive to a cloud photo-storage app.",
+    action:'The lens asks: who is now responsible for this photo — the cloud provider, or a family member? It checks whether the move was made by someone authorized to make that call.',
+    outcomeLbl:'Outcome', outcome:'The move was made by a teenage grandchild without asking anyone else in the family. This lens flags it as an unauthorized change of custodian — not a sanctioned decision.'
+  },
+  {
+    id:'L5', name:'Semantic', role:'Active', roleClass:'',
+    question:'What does this object mean for preservation purposes?',
+    desc:"Monitors the meaning or intent of the object relative to its original purpose at tf0, detecting semantic drift invisible to format or bit-level checks.",
+    phase:'Captures meaning drift that other lenses cannot see.',
+    tags:['O','D'],
+    useCase:"The cloud app automatically \"enhances\" the photo — sharpening it and brightening the faces.",
+    action:"This lens compares what the enhanced version now looks like against the original intent: preserving exactly how the photo looked in 1975, imperfections included.",
+    outcomeLbl:'Pressure', outcome:'The enhancement quietly changes what the photo means as a historical record. The file still opens fine, but this lens flags meaning drift that no checksum would ever catch.'
+  },
+  {
+    id:'L6', name:'Decision', role:'Active', roleClass:'',
+    question:'What preservation choice is being made?',
+    desc:'Evaluates the quality and nature of preservation decisions — Maintain, Delegate, Disclaimer — and considers the impact of abstention or unrecorded acts.',
+    phase:'Captures choice quality and prevents unrecorded decisions.',
+    tags:['D','S','A'],
+    useCase:'The cloud app announces it will discontinue free storage in six months unless someone re-subscribes.',
+    action:'This lens watches for who makes — or fails to make — the decision to act.',
+    outcomeLbl:'Pressure', outcome:'Nobody in the family notices the announcement, so no decision is ever made. This lens records that silence as a real decision — abandonment — carrying the same weight as an active bad choice.'
+  },
+  {
+    id:'L7', name:'Temporal', role:'Decisive', roleClass:'decisive',
+    question:'When and in what order do preservation events occur?',
+    desc:'Two decisive modes: locates the precise moment of a breach by evaluating predicates in temporal order, and enforces Temporal Care (Axiom A5) — rendering lineage extinct if two generations pass without a care event.',
+    phase:'Detects Near Breach and Solid Red status.',
+    tags:['A','ORDER'],
+    useCase:"The subscription lapses in early 2023. The photo is deleted by the app in month 4 — three months before the family's next gathering, when someone would have noticed.",
+    action:'This lens works out the true order of events: did the loss happen before or after anyone could realistically have acted?',
+    outcomeLbl:'Care mode', outcome:"This lens identifies the app's deletion — not the family's slow reaction — as the moment lineage actually broke. Separately, if ten years pass with no review at all, this lens declares the lineage extinct outright, regardless of anything else."
+  },
+  {
+    id:'L8', name:'Synthesis', role:'Integrates', roleClass:'integrates',
+    question:'How does it all fit together?',
+    desc:'The final, authoritative lens. Integrates all data from Lenses 1–7 to issue a Formal Verdict (L or −L), a Near Breach Advisory, and a Maturation Queue, resolving conflicts by hierarchy.',
+    phase:'Issues the final authoritative verdict and guides human decision-making.',
+    tags:[],
+    useCase:'All seven lenses report in: L2 found a missing migration record, L4 flagged an unauthorized custodian change, L7 pinpointed the exact month of deletion.',
+    action:"This lens doesn't just tally up complaints — it applies the hierarchy. The decisive lenses, L2 and L7, override everything the other lenses found.",
+    outcomeLbl:'Final verdict', outcome:'Lineage = False. Report: "Chain broken — undocumented custodial transfer (2022), compounded by an unrecorded storage lapse first detected March 2023." One sentence, and any family member could understand exactly what went wrong.'
+  }
+];
+
+const grid = document.getElementById('grid');
+lenses.forEach((l,i)=>{
+  const card = document.createElement('div');
+  card.className = 'card' + (l.roleClass ? ' is-'+l.roleClass : '');
+  const tagHtml = l.tags.map(t=>`<span class="tag ${t.length===1?t:''}">${t}</span>`).join('');
+  card.innerHTML = `
+    <div class="card-top">
+      <div>
+        <div class="card-id">${l.id} · LENS ${i+1}</div>
+        <div class="card-name">${l.name}</div>
+      </div>
+      <div class="role-badge ${l.roleClass}">${l.role.toUpperCase()}</div>
+    </div>
+    <div class="question">"${l.question}"</div>
+    <div class="desc">${l.desc}</div>
+    <div class="phase"><b>Phase 3 —</b> ${l.phase}</div>
+    ${tagHtml ? `<div class="pred-tags">${tagHtml}</div>` : ''}
+    <div class="toggle">View worked example</div>
+    <div class="example"><div class="example-inner">
+      <p><span class="lbl">Use case</span><br>${l.useCase}</p>
+      <p><span class="lbl">Lens action</span><br>${l.action}</p>
+      <p><span class="lbl">${l.outcomeLbl}</span><br>${l.outcome}</p>
+    </div></div>
+  `;
+  card.querySelector('.toggle').addEventListener('click', ()=>{
+    card.classList.toggle('open');
+  });
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
