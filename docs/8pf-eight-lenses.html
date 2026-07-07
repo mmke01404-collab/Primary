@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>8PF — The Eight Lenses</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root{
+  --bg:#10161D;
+  --panel:#181F27;
+  --panel2:#1D2530;
+  --border:#2A3542;
+  --border-soft:#232C37;
+  --text:#E9E4D6;
+  --text-dim:#8B96A3;
+  --text-faint:#5C6773;
+  --green:#4FAE7C;
+  --amber:#D9A441;
+  --red:#C0463E;
+  --decisive:#6FA3C7;
+  --serif:'Fraunces',serif;
+  --sans:'Inter',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--sans);}
+
+body{
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(111,163,199,0.06), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(217,164,65,0.05), transparent 45%);
+}
+
+.wrap{max-width:1180px;margin:0 auto;padding:56px 28px 90px;}
+
+/* ---------- HEADER ---------- */
+header{margin-bottom:48px;}
+.eyebrow{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:0.18em;
+  color:var(--decisive);
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:18px;
+}
+.eyebrow::before{
+  content:'';
+  width:7px;height:7px;border-radius:50%;
+  background:var(--decisive);
+  box-shadow:0 0 0 3px rgba(111,163,199,0.18);
+}
+h1{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(38px,6vw,64px);
+  line-height:1.02;
+  margin:0 0 14px;
+  letter-spacing:-0.01em;
+}
+h1 em{font-style:italic;font-weight:500;color:var(--text-dim);}
+.subtitle{
+  font-size:16px;
+  color:var(--text-dim);
+  max-width:560px;
+  line-height:1.55;
+  font-weight:400;
+}
+
+/* ---------- VERDICT CONSOLE (signature element) ---------- */
+.console{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:36px 30px 30px;
+  margin-bottom:64px;
+  position:relative;
+  overflow:hidden;
+}
+.console::before{
+  content:'VERDICT CONSOLE';
+  position:absolute;
+  top:16px; right:22px;
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:0.16em;
+  color:var(--text-faint);
+}
+.console-caption{
+  font-family:var(--mono);
+  font-size:12px;
+  color:var(--text-faint);
+  margin-bottom:28px;
+  letter-spacing:0.02em;
+}
+.console-caption b{color:var(--text-dim);font-weight:500;}
+
+.tier{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;position:relative;}
+.tier + .tier{margin-top:6px;}
+
+.arrow-row{
+  display:flex;justify-content:center;
+  font-family:var(--mono);
+  color:var(--text-faint);
+  font-size:20px;
+  margin:2px 0;
+  letter-spacing:6px;
+}
+
+.node{
+  border:1px solid var(--border);
+  background:var(--panel2);
+  border-radius:10px;
+  padding:10px 14px;
+  min-width:88px;
+  text-align:center;
+}
+.node .n{font-family:var(--mono);font-size:11px;color:var(--text-faint);}
+.node .name{font-family:var(--sans);font-size:13px;font-weight:600;margin-top:2px;}
+.node .tags{margin-top:6px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap;}
+.tag{
+  font-family:var(--mono);font-size:9px;font-weight:700;
+  padding:1px 5px;border-radius:3px;
+  background:var(--border-soft);color:var(--text-dim);letter-spacing:0.03em;
+}
+.tag.O{color:#7FC7C0;} .tag.I{color:#7FA6E0;} .tag.D{color:#B48FDE;}
+.tag.S{color:#D9A441;} .tag.A{color:#E08FA0;}
+
+.node.decisive{
+  border:1px solid var(--decisive);
+  background:linear-gradient(180deg,rgba(111,163,199,0.10),rgba(111,163,199,0.02));
+  box-shadow:0 0 0 3px rgba(111,163,199,0.08);
+  min-width:120px;
+}
+.node.decisive .n{color:var(--decisive);}
+.node.decisive::after{
+  content:'DECISIVE';
+  display:block;
+  font-family:var(--mono);
+  font-size:8px;
+  letter-spacing:0.14em;
+  color:var(--decisive);
+  margin-top:6px;
+}
+
+.hub{
+  border:1px solid var(--border);
+  background:var(--panel2);
+  border-radius:12px;
+  padding:20px 26px;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  min-width:280px;
+  justify-content:center;
+  margin-top:4px;
+}
+.hub .hub-label .n{font-family:var(--mono);font-size:11px;color:var(--text-faint);}
+.hub .hub-label .name{font-family:var(--serif);font-size:20px;font-weight:600;}
+.leds{display:flex;gap:14px;align-items:center;}
+.led{display:flex;flex-direction:column;align-items:center;gap:5px;}
+.led .dot{width:11px;height:11px;border-radius:50%;}
+.led .lbl{font-family:var(--mono);font-size:9px;color:var(--text-faint);letter-spacing:0.04em;}
+.dot.green{background:var(--green);box-shadow:0 0 8px rgba(79,174,124,0.7);}
+.dot.red{background:var(--red);box-shadow:0 0 8px rgba(192,70,62,0.7);}
+.dot.amber{background:var(--amber);animation:flash 1.4s ease-in-out infinite;}
+@keyframes flash{0%,100%{opacity:1;box-shadow:0 0 10px rgba(217,164,65,0.85);}50%{opacity:0.25;box-shadow:0 0 2px rgba(217,164,65,0.2);}}
+
+.conflict-rule{
+  text-align:center;
+  margin-top:24px;
+  font-family:var(--mono);
+  font-size:11.5px;
+  color:var(--text-faint);
+  letter-spacing:0.02em;
+}
+.conflict-rule b{color:var(--decisive);font-weight:500;}
+
+/* ---------- LEGEND ---------- */
+.legend{
+  display:flex;gap:26px;flex-wrap:wrap;
+  margin-bottom:56px;
+  padding:16px 20px;
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  background:rgba(255,255,255,0.012);
+}
+.legend-item{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--text-dim);}
+.legend-item .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+
+/* ---------- LENS GRID ---------- */
+.section-label{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--text-faint);
+  margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border-soft);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  margin-bottom:20px;
+}
+@media(max-width:760px){.grid{grid-template-columns:1fr;}}
+
+.card{
+  border:1px solid var(--border);
+  background:var(--panel);
+  border-radius:12px;
+  padding:22px 22px 20px;
+  transition:border-color 0.2s ease;
+}
+.card.is-decisive{border-color:rgba(111,163,199,0.4);}
+.card.is-integrator{border-color:rgba(217,164,65,0.35);}
+
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px;}
+.card-id{font-family:var(--mono);font-size:11px;color:var(--text-faint);letter-spacing:0.05em;}
+.card-name{font-family:var(--serif);font-weight:600;font-size:22px;margin:2px 0 0;}
+.role-badge{
+  font-family:var(--mono);font-size:9.5px;font-weight:700;
+  padding:3px 8px;border-radius:20px;
+  border:1px solid var(--border);
+  color:var(--text-dim);white-space:nowrap;letter-spacing:0.03em;
+  margin-top:2px;
+}
+.role-badge.decisive{color:var(--decisive);border-color:rgba(111,163,199,0.5);}
+.role-badge.integrates{color:var(--amber);border-color:rgba(217,164,65,0.5);}
+
+.question{
+  font-family:var(--mono);
+  font-size:12.5px;
+  color:var(--text-dim);
+  margin:10px 0 12px;
+  padding:8px 10px;
+  background:var(--border-soft);
+  border-left:2px solid var(--decisive);
+  border-radius:0 4px 4px 0;
+}
+
+.desc{font-size:13.5px;line-height:1.6;color:var(--text);opacity:0.92;margin-bottom:10px;}
+.phase{font-size:11.5px;color:var(--text-faint);margin-bottom:14px;}
+.phase b{color:var(--text-dim);font-weight:600;}
+
+.pred-tags{display:flex;gap:5px;margin-bottom:12px;flex-wrap:wrap;}
+
+.toggle{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--decisive);
+  cursor:pointer;
+  user-select:none;
+  display:flex;align-items:center;gap:6px;
+  letter-spacing:0.03em;
+}
+.toggle::before{content:'▸';transition:transform 0.18s ease;font-size:10px;}
+.card.open .toggle::before{transform:rotate(90deg);}
+
+.example{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.25s ease;
+}
+.card.open .example{max-height:600px;}
+.example-inner{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  line-height:1.65;
+  color:var(--text-dim);
+}
+.example-inner p{margin:0 0 8px;}
+.example-inner .lbl{color:var(--text-faint);font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.05em;}
+
+footer{
+  margin-top:50px;
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--text-faint);
+  text-align:center;
+  letter-spacing:0.03em;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">8PF · Lineage-Primary Framework</div>
+    <h1>The Eight Lenses<br><em>a diagnostic architecture</em></h1>
+    <p class="subtitle">Eight analytical instruments, each necessary and collectively sufficient, that continuously evaluate whether a digital object's preservation lineage remains unbroken.</p>
+  </header>
+
+  <div class="console">
+    <div class="console-caption"><b>How a verdict is formed</b> — active lenses pressure predicates upward; two decisive lenses gate the outcome; Lens 8 resolves conflicts and issues the formal verdict.</div>
+
+    <div class="tier">
+      <div class="node"><div class="n">L1</div><div class="name">Object</div><div class="tags"><span class="tag">FIXITY</span></div></div>
+      <div class="node"><div class="n">L3</div><div class="name">Pattern</div><div class="tags"><span class="tag I">I</span><span class="tag A">A</span></div></div>
+      <div class="node"><div class="n">L4</div><div class="name">Relational</div><div class="tags"><span class="tag S">S</span></div></div>
+      <div class="node"><div class="n">L5</div><div class="name">Semantic</div><div class="tags"><span class="tag O">O</span><span class="tag D">D</span></div></div>
+      <div class="node"><div class="n">L6</div><div class="name">Decision</div><div class="tags"><span class="tag D">D</span><span class="tag S">S</span><span class="tag A">A</span></div></div>
+    </div>
+
+    <div class="arrow-row">↓ &nbsp; ↓ &nbsp; ↓ &nbsp; ↓ &nbsp; ↓</div>
+
+    <div class="tier">
+      <div class="node decisive"><div class="n">L2</div><div class="name">Lineage</div><div class="tags"><span class="tag O">O</span><span class="tag I">I</span><span class="tag D">D</span><span class="tag S">S</span><span class="tag A">A</span></div></div>
+      <div class="node decisive"><div class="n">L7</div><div class="name">Temporal</div><div class="tags"><span class="tag A">A</span><span class="tag">ORDER</span></div></div>
+    </div>
+
+    <div class="arrow-row">↓</div>
+
+    <div class="tier">
+      <div class="hub">
+        <div class="hub-label"><div class="n">L8 · INTEGRATES</div><div class="name">Synthesis</div></div>
+        <div class="leds">
+          <div class="led"><div class="dot green"></div><div class="lbl">L = TRUE</div></div>
+          <div class="led"><div class="dot amber"></div><div class="lbl">NEAR BREACH</div></div>
+          <div class="led"><div class="dot red"></div><div class="lbl">L = FALSE</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conflict-rule">Conflict resolution hierarchy: <b>Lens 2 &gt; Lens 1</b> &nbsp;·&nbsp; <b>Lens 7 &gt; Lens 2</b></div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="dot" style="background:var(--green)"></div>Green — lineage healthy, all predicates hold</div>
+    <div class="legend-item"><div class="dot" style="background:var(--amber)"></div>Amber flashing — near breach, early warning</div>
+    <div class="legend-item"><div class="dot" style="background:var(--red)"></div>Solid red — breach confirmed, L(t) = False</div>
+    <div class="legend-item"><div class="dot" style="background:var(--decisive)"></div>Decisive lens — primary determinant, overrides active lenses</div>
+  </div>
+
+  <div class="section-label">Full specification</div>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>8PF v9.5 · Eight Lenses Specification · M. Keen</footer>
+</div>
+
+<script>
+const lenses = [
+  {
+    id:'L1', name:'Object', role:'Active', roleClass:'',
+    question:'What digital object is this?',
+    desc:'Identifies the digital object under analysis — born-digital document, digitized artifact, database, software, executable, emulated environment, dataset, or audio-visual recording — and establishes minimal context. Records fixity: checksums, size, and format identification. Without Lens 1, there is no object for any other lens to evaluate.',
+    phaseLbl:'Decisive:', phase:'Never, on its own — but without it, Lens 2 cannot begin evaluation. Catches unknown objects and category errors before lineage evaluation is misapplied.',
+    tags:[]
+  },
+  {
+    id:'L2', name:'Lineage', role:'Decisive', roleClass:'decisive',
+    question:'How many preservation chains? Is each unbroken?',
+    desc:'Holds if and only if every preservation chain satisfies all five predicates — Origin, Inheritance, Descent, Sanctioned, Temporal Care — in fixed order (O→I→D→S→A). Default chain count is 1. Any single predicate failure in any chain returns Lineage = False, and evaluation must include review of all Visible Scars.',
+    phaseLbl:'Decisive:', phase:'Always — the primary determinant of Lineage. Catches silent bit-rot, contested origin, and conjunction failures across chains.',
+    tags:['O','I','D','S','A']
+  },
+  {
+    id:'L3', name:'Pattern', role:'Active', roleClass:'',
+    question:'What repeats in preservation activity?',
+    desc:'A pattern is any sequence of three or more similar lineage events at regular intervals. A stable pattern confirms Inheritance and Temporal Care. A disrupted pattern pushes Inheritance toward near-breach and pressures Temporal Care. An extinguished pattern fails Inheritance outright and fails Temporal Care under Axiom A5.',
+    phaseLbl:'Decisive:', phase:'Never — but pattern disruption is often the earliest detectable warning, ahead of any predicate failure.',
+    tags:['I','A']
+  },
+  {
+    id:'L4', name:'Relational', role:'Active', roleClass:'',
+    question:'How does this digital object connect to preservation agents?',
+    desc:'Maps the relationship between the object and its preservation agents across three connection types: Custodial (confirms Sanctioned), Delegated Authority (confirms Sanctioned), or Adversarial (Sanctioned contested).',
+    phaseLbl:'Decisive:', phase:'Never — but essential for evaluating the Sanctioned predicate whenever authority is contested.',
+    tags:['S']
+  },
+  {
+    id:'L5', name:'Semantic', role:'Active', roleClass:'',
+    question:'What does this digital object mean for preservation purposes?',
+    desc:"Tracks whether the object's meaning still matches its original tf0 intent. If meaning matches, Origin and Descent hold. If meaning has drifted but wasn't explicitly changed, Descent moves toward near-breach. If meaning was explicitly changed by an authorized agent, Descent fails.",
+    phaseLbl:'Decisive:', phase:'Never — but semantic drift without any object change is invisible to every other lens.',
+    tags:['O','D']
+  },
+  {
+    id:'L6', name:'Decision', role:'Active', roleClass:'',
+    question:'What preservation choice is being made?',
+    desc:'Evaluates the preservation decision itself: Maintain (Descent holds, Sanctioned confirmed, Temporal Care renewed), Delegate (Sanctioned transfers to a new agent), or Disclaim (Descent fails, Temporal Care fails). Abstaining from a decision pressures both Sanctioned and Temporal Care.',
+    phaseLbl:'Decisive:', phase:'Never — but decision quality provides the gradient other lenses need to detect drift early.',
+    tags:['D','S','A']
+  },
+  {
+    id:'L7', name:'Temporal', role:'Decisive', roleClass:'decisive',
+    question:'When and in what order do preservation events occur?',
+    desc:'Implements Axioms A3 and A5 through two modes. Mode 1 evaluates predicates in strict order (O→I→D→S→A) to locate the earliest point of failure. Mode 2 tracks Temporal Care across generations — Active, Atrophic, or Extinct — where two consecutive generations without renewal makes Temporal Care false, and Lineage false regardless of the other four predicates.',
+    phaseLbl:'Decisive:', phase:'Always — temporal order determines where a breach is located, and Temporal Care extinction overrides every other predicate.',
+    tags:['A','ORDER']
+  },
+  {
+    id:'L8', name:'Synthesis', role:'Integrates', roleClass:'integrates',
+    question:'How does it all fit together?',
+    desc:'Integrates Lenses 1–7 into three outputs: a Formal Verdict (Lineage true or false), a Near Breach Advisory (Lineage holds but pressure is accumulating), and a Maturation Queue (advisory elements that meet their triggers). Conflicts resolve by hierarchy: Lens 2 overrides Lens 1; Lens 7 overrides Lens 2; disagreement among Lenses 3–6 is disregarded; genuine internal inconsistency is reported as Undecidable, requiring human review.',
+    phaseLbl:'Decisive:', phase:'Always — issues the final, authoritative verdict.',
+    tags:[]
+  }
+];
+
+const grid = document.getElementById('grid');
+lenses.forEach((l,i)=>{
+  const card = document.createElement('div');
+  card.className = 'card' + (l.roleClass ? ' is-'+l.roleClass : '');
+  const tagHtml = l.tags.map(t=>`<span class="tag ${t.length===1?t:''}">${t}</span>`).join('');
+  card.innerHTML = `
+    <div class="card-top">
+      <div>
+        <div class="card-id">${l.id} · LENS ${i+1}</div>
+        <div class="card-name">${l.name}</div>
+      </div>
+      <div class="role-badge ${l.roleClass}">${l.role.toUpperCase()}</div>
+    </div>
+    <div class="question">"${l.question}"</div>
+    <div class="desc">${l.desc}</div>
+    <div class="phase"><b>${l.phaseLbl}</b> ${l.phase}</div>
+    ${tagHtml ? `<div class="pred-tags">${tagHtml}</div>` : ''}
+  `;
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
