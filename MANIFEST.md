@@ -6,6 +6,14 @@
 **Manifest Version:** v5.4 — Recomputed From Source ZIP
 **Date Generated:** 2026-07-07
 
+# Cryptographic Manifest — Lineage-Primary Framework
+**Work Title:** Humming Box Problem — 8PF & Lineage-Primary Framework
+**Author:** Matthew Keen
+**Copyright:** © 2026 Matthew Keen. All rights reserved.
+**Hash Algorithm:** SHA-256
+**Manifest Version:** v5.4 — Recomputed From Source ZIP
+**Date Generated:** 2026-07-07
+
 ## Archive Identity
 **Source Archive:** Lineage8PF.zip
 **Archive SHA-256:** `0C221F6F773291D3703F2C7775D5B0FDB6FBC5789C4C86A9ED47A13D63291647`
