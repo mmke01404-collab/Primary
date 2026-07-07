@@ -321,15 +321,15 @@ Full source materials remain privately retained by the author.
 
 **Hash Algorithm:** SHA-256
 
-**Manifest Version:** v5.3
+**Manifest Version:** v5.4
 
 **Archive SHA-256:**
 
-A0F6FF4CAA435E20FA5C2C2CAFB99321EFB66D5C9C43079D68B10A24A3E134D8
+0c221f6f773291d3703f2c7775d5b0fdb6fbc5789c4c86a9ed47a13d63291647
 
-**Files Anchored:** 193
+**Files Anchored:** 239
 
-**Date Generated:** 2026-06-05
+**Date Generated:** 2026-07-07
 
 Future manifest releases extend lineage continuity and are versioned sequentially.
 
