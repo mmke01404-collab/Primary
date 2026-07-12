@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Crocodile, the Ceramic Disc, and the Very Confused Archivist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241d14;
+    --parchment:#efe7d3;
+    --parchment-2:#e7dcc0;
+    --green:#22301f;
+    --green-2:#3a4d33;
+    --brass:#a9813f;
+    --brass-2:#c79c56;
+    --jade:#6f8a72;
+    --rule: rgba(36,29,20,0.25);
+  }
+  *{box-sizing:border-box;}
+  html{background:var(--green);}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1200px 600px at 50% -200px, rgba(255,255,255,0.04), transparent),
+      var(--parchment);
+    color:var(--ink);
+    font-family:'Source Serif 4', serif;
+    font-size:19px;
+    line-height:1.65;
+  }
+  .frame{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 32px 120px;
+  }
+  header.cover{
+    padding:90px 32px 60px;
+    text-align:center;
+    background:
+      linear-gradient(180deg, var(--green) 0%, var(--green-2) 100%);
+    color:var(--parchment);
+    position:relative;
+    overflow:hidden;
+  }
+  header.cover::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image: repeating-linear-gradient(115deg, rgba(255,255,255,0.035) 0 2px, transparent 2px 26px);
+    pointer-events:none;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    font-size:12px;
+    color:var(--brass-2);
+    margin-bottom:18px;
+  }
+  h1.title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:clamp(34px,6vw,54px);
+    line-height:1.08;
+    margin:0 0 20px;
+    max-width:640px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .subtitle{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:rgba(239,231,211,0.75);
+    max-width:420px;
+    margin:0 auto;
+  }
+  .croc-hero{ width:min(420px,80%); margin:38px auto 6px; display:block; }
+
+  section{ padding-top:56px; }
+  h2.beat{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:26px;
+    color:var(--green);
+    margin:0 0 4px;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:14px;
+  }
+  h2.beat .num{
+    font-family:'IBM Plex Mono', monospace;
+    font-style:normal;
+    font-size:12px;
+    color:var(--brass);
+    letter-spacing:0.14em;
+    display:block;
+    margin-bottom:8px;
+  }
+  p{ margin:0 0 18px; }
+  p.beat-line{
+    font-style:italic;
+    color:var(--green-2);
+  }
+  .pause{ display:block; height:2px; }
+
+  /* specimen card */
+  .specimen{
+    margin:38px 0;
+    background:var(--parchment-2);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    padding:26px 26px 18px;
+    position:relative;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 10px 24px -18px rgba(0,0,0,0.5);
+  }
+  .specimen svg{ display:block; margin:0 auto; }
+  .tag{
+    margin-top:16px;
+    padding-top:12px;
+    border-top:1px dashed var(--rule);
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.03em;
+    color:var(--green-2);
+  }
+  .tag .label{ color:var(--ink); font-weight:500; }
+  .tag .no{ color:var(--brass); }
+
+  blockquote{
+    margin:34px 0;
+    padding:4px 0 4px 22px;
+    border-left:3px solid var(--brass);
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:22px;
+    color:var(--green);
+    line-height:1.4;
+  }
+
+  .divider{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin:52px 0 8px;
+    color:var(--brass);
+  }
+  .divider .line{ flex:1; height:1px; background:var(--rule); }
+  .divider svg{ flex:none; }
+
+  .closing{
+    margin-top:60px;
+    padding:34px 26px;
+    background:var(--green);
+    color:var(--parchment);
+    border-radius:2px;
+    text-align:center;
+  }
+  .closing p{ color:var(--parchment); }
+  .closing .beat-line{ color:var(--brass-2); }
+  .closing h2.beat{ color:var(--parchment); border-color:rgba(239,231,211,0.25); }
+  .closing h2.beat .num{ color:var(--brass-2); }
+
+  footer{
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--brass);
+    margin-top:70px;
+    opacity:0.8;
+  }
+
+  @media (max-width:600px){
+    body{font-size:17px;}
+    header.cover{padding:70px 22px 44px;}
+    .frame{padding:0 20px 100px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="eyebrow">Field Notes on Preservation · No. 7</div>
+  <h1 class="title">The Crocodile, the Ceramic Disc,<br>and the Very Confused Archivist</h1>
+  <p class="subtitle">On the difference between surviving and continuing</p>
+  <svg class="croc-hero" viewBox="0 0 400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 95 C40 70, 70 60, 110 62 C120 45, 140 30, 160 32 L158 44 C172 40, 188 40, 200 46 L196 56 C230 50, 260 58, 285 78 C310 72, 335 66, 360 70 L365 80 C345 82, 328 88, 315 96 C300 90, 285 96, 278 106 C260 92, 235 88, 210 92 C185 108, 150 112, 120 106 C90 118, 55 118, 30 108 C20 105, 12 100, 10 95 Z" stroke="#e7dcc0" stroke-width="1.6" fill="rgba(231,220,192,0.06)"/>
+    <path d="M115 58 L128 40 L134 60" stroke="#e7dcc0" stroke-width="1.6" fill="none"/>
+    <path d="M150 30 L158 16 L164 34" stroke="#e7dcc0" stroke-width="1.6" fill="none"/>
+    <path d="M178 40 L184 26 L190 42" stroke="#e7dcc0" stroke-width="1.6" fill="none"/>
+    <circle cx="118" cy="66" r="2.4" fill="#c79c56"/>
+    <path d="M30 108 C55 122, 90 122, 118 110" stroke="#c79c56" stroke-width="1" opacity="0.5" fill="none"/>
+    <path d="M5 100 C20 96, 20 108, 5 112" stroke="#e7dcc0" stroke-width="1.3" fill="none"/>
+  </svg>
+</header>
+
+<div class="frame">
+
+<section>
+  <h2 class="beat"><span class="num">I — The Contestant</span>Let's talk about tough</h2>
+  <p>People think they know tough. But none of them — not one — is as tough as a crocodile.</p>
+  <p>This old fellow's been knocking about for two hundred million years. Dinosaurs come and go. Continents rearrange themselves. Ice ages arrive uninvited. And there he is, floating down the river, thinking: <em>lovely day.</em></p>
+
+  <div class="specimen">
+    <svg viewBox="0 0 500 200" width="100%" height="auto">
+      <ellipse cx="250" cy="150" rx="230" ry="18" fill="#6f8a72" opacity="0.18"/>
+      <path d="M20 130 C60 100, 110 90, 160 92 C172 68, 200 48, 226 50 L223 66 C242 60, 264 60, 282 68 L276 82 C325 74, 365 84, 398 108 C430 100, 462 94, 492 100 L498 112 C470 116, 448 124, 432 136 C410 128, 388 136, 378 148 C352 130, 318 126, 286 132 C252 152, 202 158, 162 150 C120 166, 72 166, 38 152 C26 148, 24 140, 20 130 Z"
+        stroke="#22301f" stroke-width="2" fill="rgba(58,77,51,0.10)"/>
+      <path d="M165 88 L182 60 L192 90" stroke="#22301f" stroke-width="2" fill="none"/>
+      <path d="M210 48 L221 26 L230 52" stroke="#22301f" stroke-width="2" fill="none"/>
+      <path d="M248 62 L257 40 L266 66" stroke="#22301f" stroke-width="2" fill="none"/>
+      <circle cx="170" cy="98" r="3.2" fill="#a9813f"/>
+      <path d="M38 152 C72 172, 122 172, 162 156" stroke="#a9813f" stroke-width="1.3" opacity="0.6" fill="none"/>
+      <path d="M8 122 C28 116, 28 132, 8 138" stroke="#22301f" stroke-width="1.8" fill="none"/>
+      <text x="250" y="190" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#3a4d33" letter-spacing="1">Crocodylia · unbothered since the Triassic</text>
+    </svg>
+    <div class="tag">
+      <span class="label">Specimen A</span>
+      <span class="no">Living lineage — no case required</span>
+    </div>
+  </div>
+
+  <p>Then along comes an archivist who looks at this magnificent beast and says: <strong>"That's exactly like a ceramic storage disc."</strong></p>
+  <p>Now, bear with me.</p>
+</section>
+
+<section>
+  <h2 class="beat"><span class="num">II — The Understudy</span>An expensive paperweight with excellent self-esteem</h2>
+  <p>The disc is marvellous. Heat? Doesn't care. Radiation? Shrugs. Moisture? <em>"Is that all you've got?"</em> Its bits sit there for centuries without moving an inch. Splendid.</p>
+  <p>Except — there's one tiny problem.</p>
+  <p class="beat-line">The crocodile is alive. The disc is a very expensive paperweight with excellent self-esteem.</p>
+
+  <div class="specimen">
+    <svg viewBox="0 0 400 200" width="100%" height="auto">
+      <circle cx="200" cy="100" r="78" fill="none" stroke="#22301f" stroke-width="2"/>
+      <circle cx="200" cy="100" r="60" fill="none" stroke="#22301f" stroke-width="1" opacity="0.55"/>
+      <circle cx="200" cy="100" r="44" fill="none" stroke="#22301f" stroke-width="1" opacity="0.4"/>
+      <circle cx="200" cy="100" r="28" fill="none" stroke="#22301f" stroke-width="1" opacity="0.3"/>
+      <circle cx="200" cy="100" r="10" fill="#a9813f"/>
+      <g stroke="#22301f" stroke-width="0.7" opacity="0.35">
+        <line x1="200" y1="22" x2="200" y2="178"/>
+        <line x1="122" y1="100" x2="278" y2="100"/>
+        <line x1="145" y1="45" x2="255" y2="155"/>
+        <line x1="255" y1="45" x2="145" y2="155"/>
+      </g>
+      <text x="200" y="196" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#3a4d33" letter-spacing="1">5D ceramic disc · bits: perfect · meaning: pending</text>
+    </svg>
+    <div class="tag">
+      <span class="label">Specimen B</span>
+      <span class="no">Inert medium — awaiting a reader</span>
+    </div>
+  </div>
+
+  <p>He has children. Those children have children. Generation after generation they pass on what it means to be a crocodile. No instruction manual. No PDF. No README file. No poor engineer in the year 3126 desperately searching through ancient ruins asking, <em>"Does anyone remember what this machine was supposed to do?"</em></p>
+  <p>The crocodile simply carries on being a crocodile. Meanwhile the ceramic disc is lying in a vault somewhere looking absolutely magnificent. Perfect bits. Perfect structure. Not the faintest idea what any of it means.</p>
+  <p>It's rather like discovering the complete works of Shakespeare engraved onto indestructible glass — except nobody remembers English. Or books. Or computers.</p>
+  <p>So the whole thing begins to unravel. Because surviving isn't the same as continuing.</p>
+</section>
+
+<div class="divider">
+  <span class="line"></span>
+  <svg width="26" height="26" viewBox="0 0 26 26"><path d="M2 13 C7 6, 12 6, 13 13 C14 20, 19 20, 24 13" stroke="#a9813f" stroke-width="1.6" fill="none"/></svg>
+  <span class="line"></span>
+</div>
+
+<section>
+  <h2 class="beat"><span class="num">III — What Survives Isn't the Point</span>Lineage</h2>
+  <p>The bits surviving isn't the interesting bit.</p>
+  <blockquote>Identity survives because somebody remembers where it came from, what changed, who changed it, why they changed it, and whether it's still the same thing.</blockquote>
+  <p>That's lineage. Without lineage you've preserved <em>something</em>. Could be the Magna Carta. Could be somebody's holiday photos from Skegness. The disc certainly isn't telling.</p>
+</section>
+
+<section>
+  <h2 class="beat"><span class="num">IV — Evidence vs. History</span>The wedding ring</h2>
+  <p>A brand-new wedding ring sitting in a velvet box is flawless. Not a scratch. Beautiful. But it isn't the marriage.</p>
+
+  <div class="specimen">
+    <svg viewBox="0 0 460 190" width="100%" height="auto">
+      <circle cx="130" cy="95" r="52" fill="none" stroke="#22301f" stroke-width="4"/>
+      <circle cx="130" cy="95" r="52" fill="none" stroke="#c79c56" stroke-width="1" opacity="0.7"/>
+      <text x="130" y="168" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#3a4d33" letter-spacing="0.5">new · velvet box · day one</text>
+
+      <g>
+        <circle cx="330" cy="95" r="52" fill="none" stroke="#22301f" stroke-width="4" stroke-dasharray="5 3 1 3 8 2 2 4"/>
+        <path d="M295 62 l4 4 M360 128 l5 5 M300 132 l4 -4 M355 60 l5 -5 M290 95 l6 0 M370 95 l6 0" stroke="#a9813f" stroke-width="1.4"/>
+      </g>
+      <text x="330" y="168" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#3a4d33" letter-spacing="0.5">worn · fifty years · every day</text>
+
+      <path d="M205 95 L255 95" stroke="#22301f" stroke-width="1" stroke-dasharray="3 4"/>
+      <path d="M240 87 L255 95 L240 103" stroke="#22301f" stroke-width="1" fill="none"/>
+    </svg>
+    <div class="tag">
+      <span class="label">Specimen C</span>
+      <span class="no">Left: evidence &nbsp;·&nbsp; Right: history</span>
+    </div>
+  </div>
+
+  <p>The ring that's been worn every day for fifty years — polished smooth, covered in tiny dents and scratches — now that's carrying a life. One is evidence. The other is history. That's the difference.</p>
+  <p>And suddenly our immaculate ceramic disc starts looking less like an immortal crocodile and more like a museum exhibit proudly announcing: <em>"Contents preserved forever. Meaning not included."</em></p>
+</section>
+
+<div class="divider">
+  <span class="line"></span>
+  <svg width="26" height="26" viewBox="0 0 26 26"><path d="M2 13 C7 6, 12 6, 13 13 C14 20, 19 20, 24 13" stroke="#a9813f" stroke-width="1.6" fill="none"/></svg>
+  <span class="line"></span>
+</div>
+
+<section>
+  <h2 class="beat"><span class="num">V — The Verdict</span>The strongest safe, and no key</h2>
+  <p>Nobody's saying the ceramic disc isn't brilliant. It is. It's the fossil. It's the reference point. It's the wonderfully stubborn thing that refuses to decay.</p>
+  <p>But if you actually want something to remain itself for a thousand years, you need more than perfect storage. You need lineage. You need context. You need people making decisions, recording changes, and passing understanding from one generation to the next.</p>
+  <p>Otherwise you've built the strongest safe in human history — and lost the key.</p>
+
+  <div class="specimen">
+    <svg viewBox="0 0 300 200" width="100%" height="auto">
+      <rect x="80" y="40" width="140" height="130" rx="4" fill="none" stroke="#22301f" stroke-width="3"/>
+      <circle cx="150" cy="100" r="26" fill="none" stroke="#a9813f" stroke-width="2.4"/>
+      <circle cx="150" cy="100" r="4" fill="#a9813f"/>
+      <rect x="146" y="100" width="20" height="4" fill="#a9813f" transform="rotate(35 150 100)"/>
+      <path d="M92 52 L92 62 M92 148 L92 158" stroke="#22301f" stroke-width="2"/>
+      <text x="150" y="188" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" fill="#3a4d33" letter-spacing="1">Vault: intact. Key: nowhere.</text>
+    </svg>
+    <div class="tag">
+      <span class="label">Specimen D</span>
+      <span class="no">Storage without stewardship</span>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <h2 class="beat"><span class="num">VI — Back to the River</span>Just another Tuesday</h2>
+  <p>Which brings us back to the crocodile. He's still floating there. Completely unbothered.</p>
+  <p>No metadata. No XML. No semantic ontology. No preservation strategy. Just another perfectly ordinary Tuesday, being exactly what crocodiles have always been.</p>
+  <p class="beat-line">And somehow, that's the cleverest archival strategy of the lot.</p>
+</section>
+
+</div>
+
+<footer>Field Notes on Preservation — Specimens A–D catalogued, lineage unbroken</footer>
+
+</body>
+</html>
